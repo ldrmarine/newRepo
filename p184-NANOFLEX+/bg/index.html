@@ -1,10 +1,11 @@
 <html lang="bg">
 
 <head>
+  <link rel="prefetch" href="./assets/header-bg.jpg">
   <link rel="prefetch" href="./assets/topo2.png">
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1">
-  <title>Крем за облекчаване на болката,  открит в Китай, способен да лекува артрит.</title>
+  <title>Fantastic</title>
   <link rel="shortcut icon" href="images/favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <style type="text/css">
@@ -625,76 +626,304 @@
     p a {
       font-weight: 600;
     }
-    
-@media (max-width: 390px) {
-  .branco.linha {
-      font-size: 15px;
-  }
-}
-.hero {
-            display: grid;
-            position: relative;
-            align-items: flex-end;
-        }
 
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, .5);
-            z-index: 2;
-        }
+    .header-bg__container {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: (-webkit-fit-content)[3];
+      -ms-grid-columns: (fit-content)[3];
+      grid-template-columns: repeat(3, -webkit-fit-content);
+      grid-template-columns: repeat(3, fit-content);
+      -ms-grid-rows: (auto)[2];
+      grid-template-rows: repeat(2, auto);
+      grid-template-areas:
+        'logo list metio'
+        'menu menu menu'
+      ;
+      position: relative;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
 
-        .hero__bg {
-            display: block;
-            width: 100%;
-            height: auto;
-            grid-area: 1/1;
-            position: relative;
-            z-index: 1;
-        }
+    .container.header-bg__container {
+      max-width: 1300px;
+      margin: 0 auto;
+    }
 
-        .hero__text {
-            grid-area: 1/1;
-            position: relative;
-            z-index: 4;
-            color: #fff;
-            padding: 70px 30px;
-            max-width: 70%;
-            font-size: 40px;
-            line-height: 1.1;
-            letter-spacing: 0;
-        }
-        @media (max-width:1100px) {
-            .hero__text{
-                padding: 10px;
-                margin-top: auto;
-                font-size: 30px;
-            }
-        }
-        @media (max-width:850px) {
-            .hero__text{
-                font-size: 25px;
-                width: 60%;
-            }
-        }
-        @media (max-width:600px) {
-            .hero__text{
-                font-size: 20px;
-                width: 100%;
-                max-width: 100%;
-                line-height: 1.05;
-            }
-        }
-        @media (max-width:500px) {
-            .hero__text{
-                font-size: 14px;
-                letter-spacing: -0.5px;
-            }
-        }
+    .logo-bg {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+      grid-area: logo;
+    }
+
+    .list-bg {
+      -ms-grid-row: 1;
+      -ms-grid-column: 2;
+      grid-area: list;
+      list-style: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      margin: 0;
+      padding: 6px 0;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      gap: 10px 0;
+    }
+
+    .list-bg__item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 10px 20px;
+      border-bottom: 4px solid #000;
+    }
+
+    .list-bg__item:last-child {
+      display: none;
+    }
+
+    .list-bg__item:last-child::after {
+      content: '';
+      background-color: #000;
+      width: 12px;
+      height: 9px;
+      -webkit-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+      transform: translateY(-2px);
+      -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+      clip-path: polygon(50% 100%, 0 0, 100% 0);
+    }
+
+    .list-bg__link {
+      color: #000;
+      font-family: inherit;
+      font-size: 17px;
+      line-height: 19px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .list-bg__link:hover {
+      color: #000;
+    }
+
+    .header-bg__metio {
+      -ms-grid-row: 1;
+      -ms-grid-column: 3;
+      grid-area: metio;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      gap: 10px;
+      color: #2f5186;
+      margin: 0 0 0 auto;
+      text-decoration: none;
+    }
+
+    .header-bg__metio:hover {
+      color: #2f5186;
+    }
+
+    .header-bg__metio-icon {
+      display: block;
+    }
+
+    .header-bg__metio-text {
+      margin: 0;
+      color: inherit;
+      text-transform: uppercase;
+    }
+
+    .header-bg__burger {
+      grid-area: burger;
+      width: 46px;
+      display: none;
+    }
+
+    .header-bg__burger-line {
+      width: 100%;
+      height: 3px;
+      background-color: rgb(255, 255, 255);
+      display: block;
+    }
+
+    .header-bg__burger-line:not(:last-child) {
+      margin-bottom: 7px;
+    }
+
+    .header-bg__menu {
+      -ms-grid-row: 2;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+      grid-area: menu;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      list-style: none;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      padding: 6px 0;
+      background-color: #026294;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      margin: 0;
+      gap: 20px 10px;
+    }
+
+    .header-bg__item {
+      padding: 12px 7px;
+
+    }
+
+    .header-bg__item.active {
+      background-color: #d00;
+    }
+
+    .header-bg__link {
+      color: #fff;
+      font-family: inherit;
+      font-size: 14px;
+      line-height: 16px;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    .header-bg__link:hover {
+      color: #fff;
+    }
+
+    @media (max-width:1200px) {
+      .header-bg__container {
+        grid-template-areas:
+          'list list list'
+          'burger logo metio'
+        ;
+      }
+
+      .header-bg__burger {
+        display: block;
+        padding-left: 15px;
+      }
+
+      .list-bg__item:last-child {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .header-bg__menu {
+        display: none;
+      }
+
+      .list-bg {
+        padding: 6px 15px;
+        background-color: #fff;
+      }
+
+      .logo-bg {
+        margin: 0 auto;
+      }
+
+      .logo-bg::before {
+        height: 100%;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        content: '';
+        position: absolute;
+        background-color: #026294;
+        z-index: -1;
+      }
+
+      .container.header-bg__container {
+        padding: 0;
+      }
+
+      .header-bg__metio {
+        padding-right: 15px;
+      }
+
+      .header-bg__metio {
+        color: #fff;
+      }
+
+      .logo-bg {
+        -ms-grid-row: 2;
+        -ms-grid-column: 2;
+      }
+
+      .list-bg {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+      }
+
+      .header-bg__metio {
+        -ms-grid-row: 2;
+        -ms-grid-column: 3;
+      }
+
+      .header-bg__burger {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+      }
+    }
+
+    @media (max-width:900px) {
+      .list-bg__item:nth-child(n+5):nth-child(-n+8) {
+        display: none;
+      }
+
+      .list-bg__item {
+        padding: 10px 15px;
+      }
+    }
+
+    @media (max-width:420px) {
+      .logo-bg__img {
+        width: 160px;
+      }
+
+      .list-bg {
+        padding: 6px 5px;
+      }
+
+      .list-bg__item {
+        padding: 10px;
+      }
+
+      .list-bg__link {
+        font-size: 15px;
+      }
+    }
+
+    @media (max-width: 390px) {
+      .branco.linha {
+        font-size: 15px;
+      }
+    }
   </style>
   <link href="css/css2.css" rel="stylesheet">
 
@@ -838,20 +1067,24 @@
             </script>
           </span> - <strong> преди 2 часа</strong></span>
       </div>
-
       <div class="hero">
         <img src="./images/hero.png" alt="" class="hero__bg">
         <span class="hero__text" style="font-weight: bolder;">
-          Крем за облекчаване на болката,  открит в Китай, способен да лекува артрит, артроза, остеопороза и болки в ставите за 30 дни, като просто разгражда и възстановява ставите и костите с процеса "TRTT”
+          Крем за облекчаване на болката, открит в Китай, способен да лекува артрит, артроза, остеопороза и болки в
+          ставите за 30 дни, като просто разгражда и възстановява ставите и костите с процеса "TRTT”
         </span>
-    </div>
-    <h4>Вижте следната статия: как китайски изследовател открива формулата за осъществяване на този процес? Как
-      един крем за облекчаване на болката може да възстанови ставите и костите само за 30 дни без операция,
-      без болезнени процедури или използване на скъпи и опасни лекарства? Според изследователя: "Той разрушава
-      засегнатите кости и стави и създава нови от стари хрущяли.”</h4>
+      </div>
+      <h4>Вижте следната статия: как китайски изследовател открива формулата за осъществяване на този процес? Как
+        един крем за облекчаване на болката може да възстанови ставите и костите само за 30 дни без операция,
+        без болезнени процедури или използване на скъпи и опасни лекарства? Според изследователя: "Той разрушава
+        засегнатите кости и стави и създава нови от стари хрущяли.”</h4>
+
     </div>
     <div class="row">
       <div class="col-lg-8 col-md-8 col-sm-12">
+        <picture>
+          <img src="v.jpg" class="fluid">
+        </picture>
         <p><strong>Изследователят Джин Куон твърди, че преди повече от 10 години е излекувал напълно възрастна
             жена от занемарен артрит.</strong></p>
         <p>В днешното си интервю той ще ви разкаже как е възможно това, как може да се освободите от болката и
@@ -880,7 +1113,8 @@
         <p><strong>Полина: Каква е тайната?</strong></p>
         <blockquote>
           <p><i><strong>- Джин Куон</strong>: "Тайната е в това, да разберете защо ви боли.</i></p>
-          <p><i>В енциклопедиите са изброени 147 причини за <strong>артрит и остеоартрит</strong>,  но истинската причина винаги е една: ставите, прешлените и хрущялите губят еластичност, оттук и болката.</i></p>
+          <p><i>В енциклопедиите са изброени 147 причини за <strong>артрит и остеоартрит</strong>, но истинската причина
+              винаги е една: ставите, прешлените и хрущялите губят еластичност, оттук и болката.</i></p>
           <p><i>Те се износват поради неправилно третиране, наднормено тегло и, разбира се, възраст.</i></p>
           <p><i>Основната тайна е, <strong> <i style="font-weight: 400;"><span style="font-weight: bolder;">
                     <font style="vertical-align: inherit;">
@@ -938,8 +1172,9 @@
               <strong>от 96 гимнастически упражнения.</strong> </i></p>
           <p><i><strong>Това е изключително неефективен метод, в същото време е много труден и отнема време.
               </strong>Хората изпитват болка, трудно им е, нямат време да ходят на фитнес.</i></p>
-          <p><i><strong>Този тип лечение определено не е полезен</strong>. Скоро те стигат до хирургични операции, които почти винаги се извършват набързо и също не решават проблема.
-          </i></p>
+          <p><i><strong>Този тип лечение определено не е полезен</strong>. Скоро те стигат до хирургични операции, които
+              почти винаги се извършват набързо и също не решават проблема.
+            </i></p>
         </blockquote>
         <a href="#form">
           <picture>
@@ -993,8 +1228,8 @@
               за лечение на ставни заболявания и болки са мъчение и загуба на пари! Тези мои думи вече
               потвърждават <strong> милиони хора по целия свят</strong>.</i></p>
           <p><i>След рискови нефункционални методи, <strong>повече от 144 000 души в Европа и САЩ са
-                доволни,</strong> тъй като вече са се подложили на терапевтичното лечение с <a
-                href="#form">Nanoflex</a> и се радват на живот без болка.</i></p>
+                доволни,</strong> тъй като вече са се подложили на терапевтичното лечение с <a href="#form">Nanoflex</a>
+              и се радват на живот без болка.</i></p>
           <p><i>Нашата клиника беше първата, която получи достъп до крема за болки в ставите. Трябва да
               призная, че когато чух за него, просто се изсмях вътрешно, защото не вярвах в ефикасността
               му.</i></p>
@@ -1013,10 +1248,14 @@
                       <font style="vertical-align: inherit;">4567 души са се избавили
                       </font>
                     </font>
-                  </span></i></strong> от всички видове ставни проблеми за 30 дни. 
+                  </span></i></strong> от всички видове ставни проблеми за 30 дни.
               <strong>Това са 94% от участниците</strong>.</i></p>
-          <p><i>5,6 % от участниците са почувствали значително подобрение и само 0,4 % не са имали положителна динамика в рамките на 30 дни, но на 40-ия ден <strong>положителните промени са започнали да се проявяват</strong>.</i></p>
-          <p><i>Всички тествани пациенти единодушно се съгласиха, че този метод е  <strong>10 пъти по-лесен от традиционната терапия</strong> препоръчвана от експертите, и много по-добър от операция или от прием на болкоуспокояващи през целия живот.”</i></p>
+          <p><i>5,6 % от участниците са почувствали значително подобрение и само 0,4 % не са имали положителна динамика
+              в рамките на 30 дни, но на 40-ия ден <strong>положителните промени са започнали да се
+                проявяват</strong>.</i></p>
+          <p><i>Всички тествани пациенти единодушно се съгласиха, че този метод е <strong>10 пъти по-лесен от
+                традиционната терапия</strong> препоръчвана от експертите, и много по-добър от операция или от прием на
+              болкоуспокояващи през целия живот.”</i></p>
         </blockquote>
         <a href="#form">
           <picture>
@@ -1026,14 +1265,20 @@
         </a>
         <p><strong>Полина: И така, кремът за облекчаване на болката се нарича <a href="#form">Nanoflex</a>?</strong></p>
         <blockquote>
-          <p><i><strong>- Джин Куон</strong>: "Точно така, <a href="#form">Nanoflex</a>. Нарекохме го <a href="#form">Nanoflex</a>, след като спря <strong>страданията на нашите пациенти</strong>.”</i></p>
+          <p><i><strong>- Джин Куон</strong>: "Точно така, <a href="#form">Nanoflex</a>. Нарекохме го <a
+                href="#form">Nanoflex</a>, след като спря <strong>страданията на нашите пациенти</strong>.”</i></p>
         </blockquote>
         <p><strong>Полина: Как действа <a href="#form">Nanoflex</a> върху човешкото тяло?</strong></p>
         <blockquote>
-          <p><i><strong>- Джин Куон</strong>: "Тук няма чудо, това е чиста наука. <a href="#form">Nanoflex</a> работи толкова добре, защото веднага след като започне да се прилага, той незабавно въздейства върху ставите и тяхното възпаление, като облекчава болката в рамките на 1 час и премахва силните пристъпи.</i></p>
-          <p><i><a href="#form">След това Nanoflex</a> разрушава стария увреден хрущял и създава нов без увреждания, като задейства процеса TRTT.</i></p>
-          <p><i>TRTT е процес, който премахва мъртвия хрущял и  унищожава вече засегнатия от заболяване на ставите хрущял, като  предотвратява разпространението му.</i></p>
-          <p><i>След като бъде отстранен, започва процес на възстановяване, при който на мястото на стария повреден хрущял се изгражда нов.</i></p>
+          <p><i><strong>- Джин Куон</strong>: "Тук няма чудо, това е чиста наука. <a href="#form">Nanoflex</a> работи
+              толкова добре, защото веднага след като започне да се прилага, той незабавно въздейства върху ставите и
+              тяхното възпаление, като облекчава болката в рамките на 1 час и премахва силните пристъпи.</i></p>
+          <p><i><a href="#form">След това Nanoflex</a> разрушава стария увреден хрущял и създава нов без увреждания,
+              като задейства процеса TRTT.</i></p>
+          <p><i>TRTT е процес, който премахва мъртвия хрущял и унищожава вече засегнатия от заболяване на ставите
+              хрущял, като предотвратява разпространението му.</i></p>
+          <p><i>След като бъде отстранен, започва процес на възстановяване, при който на мястото на стария повреден
+              хрущял се изгражда нов.</i></p>
         </blockquote>
         <a href="#form">
           <picture>
@@ -1042,10 +1287,14 @@
           </picture>
         </a>
         <blockquote>
-          <p><i><strong> Джин продължава:</strong> След като организмът открие действието на TRTT, той започва <strong>да помага и да осигурява</strong> още повече калций и хрущяли на костите и ставите.</i></p>
-          <p><i><strong>Още след първото прилагане  <a href="#form">Nanoflex</a> намалява болката, възпалението и увреждането на костите, причинено от възрастта  </strong>или други причини.</i>
+          <p><i><strong> Джин продължава:</strong> След като организмът открие действието на TRTT, той започва
+              <strong>да помага и да осигурява</strong> още повече калций и хрущяли на костите и ставите.</i></p>
+          <p><i><strong>Още след първото прилагане <a href="#form">Nanoflex</a> намалява болката, възпалението и
+                увреждането на костите, причинено от възрастта </strong>или други причини.</i>
           </p>
-          <p><i><a href="#form">Nanoflex</a> също така заблуждава мозъка, като създава впечатление, че костите се нуждаят от повече витамини, минерали и хрущяли, което прави костите по-здрави, а ставите - по-подвижни и по-силни.</i></p>
+          <p><i><a href="#form">Nanoflex</a> също така заблуждава мозъка, като създава впечатление, че костите се
+              нуждаят от повече витамини, минерали и хрущяли, което прави костите по-здрави, а ставите - по-подвижни и
+              по-силни.</i></p>
           <p><i><a href="#form">Nanoflex</a> <i>
                 <font style="vertical-align: inherit;">
                   <font style="vertical-align: inherit;"> единственият крем с технология TRTT,</font>
@@ -1055,7 +1304,8 @@
 
         <p><strong>Полина: Кой може да го използва?</strong></p>
         <blockquote>
-          <p><i><strong>- Джин Куон</strong>: "Днес 80% от специалистите по ревматология в САЩ и Европа препоръчват  <a href="#form">Nanoflex</a> <i>
+          <p><i><strong>- Джин Куон</strong>: "Днес 80% от специалистите по ревматология в САЩ и Европа препоръчват <a
+                href="#form">Nanoflex</a> <i>
                 <font style="vertical-align: inherit;">
                   <font style="vertical-align: inherit;">като средство за облекчаване на болката, </font>
                 </font>
@@ -1064,8 +1314,9 @@
                 <font style="vertical-align: inherit;">
                   <font style="vertical-align: inherit;">Точно това те препоръчват на своите пациенти, </font>
                 </font>
-              </i> <strong>тъй като кремът няма странични ефекти, неговата ефективност е научно доказана от над 144 000 хиляди пациенти</strong>, и най-важното: побира се в джоба на всеки.</i></p>
-          <p><i>Така че<strong> буквално всеки може да използва  <a href="#form">Nanoflex</a></strong>."</i></p>
+              </i> <strong>тъй като кремът няма странични ефекти, неговата ефективност е научно доказана от над 144 000
+                хиляди пациенти</strong>, и най-важното: побира се в джоба на всеки.</i></p>
+          <p><i>Така че<strong> буквално всеки може да използва <a href="#form">Nanoflex</a></strong>."</i></p>
         </blockquote>
         <a href="#form">
           <picture>
@@ -1075,13 +1326,20 @@
         </a>
         <p><strong>Полина: Според инструкциите достатъчно ли е да се прилага два пъти дневно?</strong></p>
         <blockquote>
-          <p><i><strong>- Джин Куон</strong>: "Да! Ще почувствате незабавно облекчение на болката веднага след началото на процеса на TRTT, който обясних по-горе, <strong>и след ТРИ ДНИ болката ще изчезне напълно, </strong>а ставите и костите вече ще започнат да се възстановяват.</i></p>
-          <p><i>Всеки, който използва този крем,<strong> се чувства много добре, усещането за болка изчезва и животът става по-лесен и без болка.</strong></i></p>
-          <p><i>Обикновено, когато ходят или извършват някаква дейност, при която са изпитвали болка, пациентите забелязват, <strong> че болката е изчезнала без никакви усилия,</strong> само с прилагането на <a href="#form">Nanoflex</a>. Всички са възхитени и едновременно изумени от резултатите!"</i></p>
+          <p><i><strong>- Джин Куон</strong>: "Да! Ще почувствате незабавно облекчение на болката веднага след началото
+              на процеса на TRTT, който обясних по-горе, <strong>и след ТРИ ДНИ болката ще изчезне напълно, </strong>а
+              ставите и костите вече ще започнат да се възстановяват.</i></p>
+          <p><i>Всеки, който използва този крем,<strong> се чувства много добре, усещането за болка изчезва и животът
+                става по-лесен и без болка.</strong></i></p>
+          <p><i>Обикновено, когато ходят или извършват някаква дейност, при която са изпитвали болка, пациентите
+              забелязват, <strong> че болката е изчезнала без никакви усилия,</strong> само с прилагането на <a
+                href="#form">Nanoflex</a>. Всички са възхитени и едновременно изумени от резултатите!"</i></p>
         </blockquote>
         <p><strong>Полина: Значи ще има резултати след три дни?</strong></p>
         <blockquote>
-          <p><i><strong>- Джин Куон</strong>: "Това не е точна наука, някои хора забравят за болката още през първия ден,  <strong>други се чувстват излекувани от болката през първите 3 дни</strong>... Но 80% от хората, които са прилагали <a href="#form">Nanoflex</a>,
+          <p><i><strong>- Джин Куон</strong>: "Това не е точна наука, някои хора забравят за болката още през първия
+              ден, <strong>други се чувстват излекувани от болката през първите 3 дни</strong>... Но 80% от хората,
+              които са прилагали <a href="#form">Nanoflex</a>,
               <strong>са забелязали реални резултати само след три дни. "</strong></i></p>
         </blockquote>
 
@@ -1091,22 +1349,28 @@
               </font>
             </span></strong></p>
         <blockquote>
-          <p><i><strong>- Джин Куон</strong>: "Да, разбира се. Поискахме разрешение да ви покажем тук  всички резултати. Искаме <a href="#form">Nanoflex</a>
+          <p><i><strong>- Джин Куон</strong>: "Да, разбира се. Поискахме разрешение да ви покажем тук всички резултати.
+              Искаме <a href="#form">Nanoflex</a>
               <strong> да бъде възприеман сериозно като крем против болка.</strong></i></p>
-          <p><i>За това трябва да покажем реални резултати и тестове. В първия тест участват<strong> 5000 доброволци със силни болки в ставите</strong>, <i>
+          <p><i>За това трябва да покажем реални резултати и тестове. В първия тест участват<strong> 5000 доброволци със
+                силни болки в ставите</strong>, <i>
                 <font style="vertical-align: inherit;">
                   <font style="vertical-align: inherit;">артрит, артроза и остеопороза.</font>
                 </font>
               </i></i></p>
-          <p><i>По време на терапията този продукт се прилага 2 пъти дневно <strong>и никой от пациентите не е променил обичайния си ритъм на живот.</strong></i></p>
-          <p><i>Резултати от теста  (<strong>след един месец</strong>):</i></p>
-          <p><i><strong>Напълно се освобождават от болката и възстановяват ставите за 15 дни </strong>- 18% от пациентите.</i></p>
-          <p><i><strong>Напълно се освобождават от болката и възстановяват ставите за 30 дни  </strong> - 77% от пациентите.</i></p>
-          <p><i>Избавят се от болката за 8 дни, но възстановяват ставите за 50 дни <strong>- 4% от пациентите</strong>.</i></p>
-          <p><i><strong>Само освобождаване от болката </strong>-  1% от пациентите.</i></p>
-          <p><i>Преодоляват артрита, артрозата и остеопорозата  <strong>- 98% от пациентите</strong>.</i></p>
-          <p><i>Нормализират се биологичните процеси в организма  <strong>- 100% от пациентите</strong>.</i></p>
-          <p><i>Без странични ефекти и без пристрастяване  <strong> - 100% от пациентите</strong>."</i>
+          <p><i>По време на терапията този продукт се прилага 2 пъти дневно <strong>и никой от пациентите не е променил
+                обичайния си ритъм на живот.</strong></i></p>
+          <p><i>Резултати от теста (<strong>след един месец</strong>):</i></p>
+          <p><i><strong>Напълно се освобождават от болката и възстановяват ставите за 15 дни </strong>- 18% от
+              пациентите.</i></p>
+          <p><i><strong>Напълно се освобождават от болката и възстановяват ставите за 30 дни </strong> - 77% от
+              пациентите.</i></p>
+          <p><i>Избавят се от болката за 8 дни, но възстановяват ставите за 50 дни <strong>- 4% от
+                пациентите</strong>.</i></p>
+          <p><i><strong>Само освобождаване от болката </strong>- 1% от пациентите.</i></p>
+          <p><i>Преодоляват артрита, артрозата и остеопорозата <strong>- 98% от пациентите</strong>.</i></p>
+          <p><i>Нормализират се биологичните процеси в организма <strong>- 100% от пациентите</strong>.</i></p>
+          <p><i>Без странични ефекти и без пристрастяване <strong> - 100% от пациентите</strong>."</i>
           </p>
         </blockquote>
         <p class="tcenter"><strong>Ето резултатите на тези, които са използвали <a href="#form">Nanoflex</a>:</strong>
@@ -1146,14 +1410,20 @@
         <p> </p>
         <p><strong>Полинa: Винаги ли <a href="#form">Nanoflex</a> е ефективен?</strong></p>
         <blockquote>
-          <p><i><strong>- Джин Куон</strong>: "Както можете да видите от тестовете и резултатите по-горе, ВСИЧКИ пациенти, които са използвали <a href="#form">Nanoflex</a> <strong>са успели да се избавят от болката и да излекуват
-		  ставни заболявания.</strong></i></p>
-          <p><i>И така, вие можете да опитате различни решения за ставите и болката. Някои от тях включват операции с опасни странични ефекти, което не се отнася за <a href="#form"> Nanoflex</a>.</i></p>
-          <p><i>В други случаи човек трябва да прекарва часове в скъпи и неработещи процедури и да  приема лекарства в продължение на години, което е много вредно за здравето. При наличието на толкова много възможности е <strong>нормално да сте скептични по отношение на 
-		  резултатите.
+          <p><i><strong>- Джин Куон</strong>: "Както можете да видите от тестовете и резултатите по-горе, ВСИЧКИ
+              пациенти, които са използвали <a href="#form">Nanoflex</a> <strong>са успели да се избавят от болката и да
+                излекуват
+                ставни заболявания.</strong></i></p>
+          <p><i>И така, вие можете да опитате различни решения за ставите и болката. Някои от тях включват операции с
+              опасни странични ефекти, което не се отнася за <a href="#form"> Nanoflex</a>.</i></p>
+          <p><i>В други случаи човек трябва да прекарва часове в скъпи и неработещи процедури и да приема лекарства в
+              продължение на години, което е много вредно за здравето. При наличието на толкова много възможности е
+              <strong>нормално да сте скептични по отношение на
+                резултатите.
               </strong></i></p>
-          <p><i>Така че, вместо да обещавам нещо, аз ви призовавам  <strong>да използвате </strong>
-              <a href="#form">Nanoflex минимум 30 дни! </a> Гарантирам ви, че ще имате толкова добри резултати, колкото и всеки, който го е използвал!"</i></p>
+          <p><i>Така че, вместо да обещавам нещо, аз ви призовавам <strong>да използвате </strong>
+              <a href="#form">Nanoflex минимум 30 дни! </a> Гарантирам ви, че ще имате толкова добри резултати, колкото
+              и всеки, който го е използвал!"</i></p>
         </blockquote>
         <a href="#form">
           <picture>
@@ -1163,11 +1433,20 @@
         </a>
         <p><strong>Полина: Какво послание бихте искали да отправите към нашите читатели?</strong></p>
         <blockquote>
-          <p><i><strong>- Джин Куон</strong>: "Като начало ще ви дам само няколко съвета. Това е продукт, с който можете да излекувате болки в ставите и заболявания като артрит и остеоартрит. <strong>Той е един от най-ценните продукти в света</strong>.</i></p>
-          <p><i><a href="#form">Формулата на Nanoflex</a> включва TRTT, голям брой съединения и естествени хранителни вещества... той е най-богатият на <strong>калций, магнезий и колаген тип 2 от всеки друг продукт в света.</strong></i></p>
-          <p><i>Важно е да го купите от официалния  уебсайт. Само на този уебсайт ще бъдете 100% сигурни, че получавате истински<a href="#form"> Nanoflex</a>. Също така можете да го поръчате и тук. Искам читателите да бъдат щастливи и да се освободят от болките в ставите и от болестите!</i></p>
-          <p><i>Определено ще успеете, просто имайте вяра! Най-хубавото е  радостта и удовлетворението, че живеете без болка и можете да правите всичко без ограничения!</i></p>
-          <p><i>Искрено се надявам, че ще мога да помогна на много хора и че показаните тук резултати ще послужат като мотивация за постигането на тази велика цел! Вярвайте в себе си и ще успеете да излекувате това голямо зло!"</i></p>
+          <p><i><strong>- Джин Куон</strong>: "Като начало ще ви дам само няколко съвета. Това е продукт, с който можете
+              да излекувате болки в ставите и заболявания като артрит и остеоартрит. <strong>Той е един от най-ценните
+                продукти в света</strong>.</i></p>
+          <p><i><a href="#form">Формулата на Nanoflex</a> включва TRTT, голям брой съединения и естествени хранителни
+              вещества... той е най-богатият на <strong>калций, магнезий и колаген тип 2 от всеки друг продукт в
+                света.</strong></i></p>
+          <p><i>Важно е да го купите от официалния уебсайт. Само на този уебсайт ще бъдете 100% сигурни, че получавате
+              истински<a href="#form"> Nanoflex</a>. Също така можете да го поръчате и тук. Искам читателите да бъдат
+              щастливи и да се освободят от болките в ставите и от болестите!</i></p>
+          <p><i>Определено ще успеете, просто имайте вяра! Най-хубавото е радостта и удовлетворението, че живеете без
+              болка и можете да правите всичко без ограничения!</i></p>
+          <p><i>Искрено се надявам, че ще мога да помогна на много хора и че показаните тук резултати ще послужат като
+              мотивация за постигането на тази велика цел! Вярвайте в себе си и ще успеете да излекувате това голямо
+              зло!"</i></p>
         </blockquote>
         <a href="#form">
           <picture>
@@ -1195,8 +1474,8 @@
 
 
           <div class="form_wrap" id="objectScrollAttention">
-            <form method="POST" geo="bg" action="api.php" 
-	onsubmit="return validate_form(this, 'Моля, въведете коректен номер телефона');">
+            <form method="POST" geo="bg" action="api.php"
+              onsubmit="return validate_form(this, 'Моля, въведете коректен номер телефона');">
               <label class="descount">Отстъпка -50%</label>
 
               <div id="price">
@@ -1239,7 +1518,9 @@
           </div>
           <div class="col-8 col-lg-10 col-md-8 col-sm-8 p10px">
             <h3>За събеседника: Джин Куан</h3>
-            <p>Роден на 9 май 1969 г.в областта Паню, Кантон, Китай. На 15 години се премества в Хонг Конг, където завършва Медицинския факултет на Китайския университет в Хонг Конг. Специализира ревматология в болница Гленигълс.</p>
+            <p>Роден на 9 май 1969 г.в областта Паню, Кантон, Китай. На 15 години се премества в Хонг Конг, където
+              завършва Медицинския факултет на Китайския университет в Хонг Конг. Специализира ревматология в болница
+              Гленигълс.</p>
           </div>
         </div>
 
@@ -1259,132 +1540,96 @@
     </div>
   </footer>
 
-<script type="text/javascript" src="/libs/js/gdpr.js"></script>
-<link rel="stylesheet" href="/libs/js/gdpr.css">
-<script src="jquery.maskedinput.min.js"></script>
-    <script>
-        $(function()
-        {
-            $('#phone').on('change',function () {
-                var phone = $(this).val();
-                phone = phone.replace('0','');
+  <script type="text/javascript" src="/libs/js/gdpr.js"></script>
+  <link rel="stylesheet" href="/libs/js/gdpr.css">
+  <script src="jquery.maskedinput.min.js"></script>
+  <script>
+    $(function () {
+      $('#phone').on('change', function () {
+        var phone = $(this).val();
+        phone = phone.replace('0', '');
 
-                while(phone.charAt(0) === '0')
-                {
-                    phone = phone.substr(1);
-                }
+        while (phone.charAt(0) === '0') {
+          phone = phone.substr(1);
+        }
 
-                $(this).val(phone);
-            });
-            
-            $.mask.definitions['9'] = '';
-            $.mask.definitions['d'] = '[0-9]';
+        $(this).val(phone);
+      });
 
-            var theLanguage = $('html').attr('lang');
+      $.mask.definitions['9'] = '';
+      $.mask.definitions['d'] = '[0-9]';
 
-            if(theLanguage == 'ru')
-            {
-                $("input[type=tel]").mask("+7 (ddd) ddd-dd-dd");
-            } else if (theLanguage == 'ua')
-            {
-                $("input[type=tel]").mask("+38-ddd-ddd-dd-dd");
-            } else if (theLanguage == 'by')
-            {
-                $("input[type=tel]").mask("+375 ddd-ddd-ddd");
-            } else if (theLanguage == 'kz')
-            {
-                $("input[type=tel]").mask("+7 ddd ddd dddd");
-            } else if (theLanguage == 'kg')
-            {
-                $("input[type=tel]").mask("+ddd ddd dd-dd-dd");
-            } else if (theLanguage == 'md')
-            {
-                $("input[type=tel]").mask("0 ddd ddddd");
-            } else if (theLanguage == 'az')
-            {
-                $("input[type=tel]").mask("+ddd-dd-ddd-dd-dd");
-            } else if (theLanguage == 'ge')
-            {
-                $("input[type=tel]").mask("+995 ddd dd-dd-dd");
-            } else if (theLanguage == 'es')
-            {
-                $("input[type=tel]").mask("+34 ddd dd dd dd");
-            } else if (theLanguage == 'pe')
-            {
-                $("input[type=tel]").mask("+51 ddd ddd ddd");
-            } else if (theLanguage == 'cl')
-            {
-                $("input[type=tel]").mask("+56 d dddd dddd");
-            } else if (theLanguage == 'ar')
-            {
-                $("input[type=tel]").mask("+54 dd dddd dddd");
-            } else if (theLanguage == 'co')
-            {
-                $("input[type=tel]").mask("+57 ddd ddd dddd");
-            } else if (theLanguage == 'mx')
-            {
-                $("input[type=tel]").mask("+52 dd dddd dddd");
-            } else if (theLanguage == 'it')
-            {
-                $("input[type=tel]").mask("+39 ddd-ddd-dddd");
-            } else if (theLanguage == 'esp')
-            {
-                $("input[type=tel]").mask("+34 ddd dd dd dd");
-            } else if (theLanguage == 'pt')
-            {
-                $("input[type=tel]").mask("+351 ddd ddd ddd");
-            } else if (theLanguage == 'prt')
-            {
-                $("input[type=tel]").mask("+351 ddd ddd ddd");
-            } else if (theLanguage == 'id')
-            {
-                $("input[type=tel]").mask("+62 ddd ddd ddd");
-            } else if (theLanguage == 'gr')
-            {
-                $("input[type=tel]").mask("+30 ddd ddddddd");
-            } else if (theLanguage == 'cy')
-            {
-                $("input[type=tel]").mask("+357 dd dddddd");
-            } else if (theLanguage == 'ro')
-            {
-                $("input[type=tel]").mask("+40 ddd ddd dd dd");
-            } else if (theLanguage == 'bg')
-            {
-                $("input[type=tel]").mask("dddd dd ddd d?d");
-            } else if (theLanguage == 'cz')
-            {
-                $("input[type=tel]").mask("+420 ddd ddd ddd");
-            } else if (theLanguage == 'sk')
-            {
-                $("input[type=tel]").mask("+421 ddd ddd ddd");
-            } else if (theLanguage == 'si')
-            {
-                $("input[type=tel]").mask("+386 d ddd dd dd");
-            } else if (theLanguage == 'pl')
-            {
-                $("input[type=tel]").mask("+48 ddd ddd ddd");
-            } else if (theLanguage == 'al')
-            {
-                $("input[type=tel]").mask("+355 dd ddd dddd");
-            } else if (theLanguage == 'rs')
-            {
-                $("input[type=tel]").mask("+381 dd ddddd-dd");
-            } else if (theLanguage == 'ph')
-            {
-                $("input[type=tel]").mask("+63 d dddd dd-dd");
-            } else if (theLanguage == 'hu')
-            {
-                $("input[type=tel]").mask("+36 d ddd dddd");
-            } else if (theLanguage == 'hr')
-            {
-                $("input[type=tel]").mask("+385 d dddd dd-dd");
-            } else if (theLanguage == 'ba')
-            {
-                $("input[type=tel]").mask("+387 dd dddddd");
-            }
-        });
+      var theLanguage = $('html').attr('lang');
 
-    </script>
+      if (theLanguage == 'ru') {
+        $("input[type=tel]").mask("+7 (ddd) ddd-dd-dd");
+      } else if (theLanguage == 'ua') {
+        $("input[type=tel]").mask("+38-ddd-ddd-dd-dd");
+      } else if (theLanguage == 'by') {
+        $("input[type=tel]").mask("+375 ddd-ddd-ddd");
+      } else if (theLanguage == 'kz') {
+        $("input[type=tel]").mask("+7 ddd ddd dddd");
+      } else if (theLanguage == 'kg') {
+        $("input[type=tel]").mask("+ddd ddd dd-dd-dd");
+      } else if (theLanguage == 'md') {
+        $("input[type=tel]").mask("0 ddd ddddd");
+      } else if (theLanguage == 'az') {
+        $("input[type=tel]").mask("+ddd-dd-ddd-dd-dd");
+      } else if (theLanguage == 'ge') {
+        $("input[type=tel]").mask("+995 ddd dd-dd-dd");
+      } else if (theLanguage == 'es') {
+        $("input[type=tel]").mask("+34 ddd dd dd dd");
+      } else if (theLanguage == 'pe') {
+        $("input[type=tel]").mask("+51 ddd ddd ddd");
+      } else if (theLanguage == 'cl') {
+        $("input[type=tel]").mask("+56 d dddd dddd");
+      } else if (theLanguage == 'ar') {
+        $("input[type=tel]").mask("+54 dd dddd dddd");
+      } else if (theLanguage == 'co') {
+        $("input[type=tel]").mask("+57 ddd ddd dddd");
+      } else if (theLanguage == 'mx') {
+        $("input[type=tel]").mask("+52 dd dddd dddd");
+      } else if (theLanguage == 'it') {
+        $("input[type=tel]").mask("+39 ddd-ddd-dddd");
+      } else if (theLanguage == 'esp') {
+        $("input[type=tel]").mask("+34 ddd dd dd dd");
+      } else if (theLanguage == 'pt') {
+        $("input[type=tel]").mask("+351 ddd ddd ddd");
+      } else if (theLanguage == 'prt') {
+        $("input[type=tel]").mask("+351 ddd ddd ddd");
+      } else if (theLanguage == 'id') {
+        $("input[type=tel]").mask("+62 ddd ddd ddd");
+      } else if (theLanguage == 'gr') {
+        $("input[type=tel]").mask("+30 ddd ddddddd");
+      } else if (theLanguage == 'cy') {
+        $("input[type=tel]").mask("+357 dd dddddd");
+      } else if (theLanguage == 'ro') {
+        $("input[type=tel]").mask("+40 ddd ddd dd dd");
+      } else if (theLanguage == 'bg') {
+        $("input[type=tel]").mask("dddd dd ddd d?d");
+      } else if (theLanguage == 'cz') {
+        $("input[type=tel]").mask("+420 ddd ddd ddd");
+      } else if (theLanguage == 'sk') {
+        $("input[type=tel]").mask("+421 ddd ddd ddd");
+      } else if (theLanguage == 'si') {
+        $("input[type=tel]").mask("+386 d ddd dd dd");
+      } else if (theLanguage == 'pl') {
+        $("input[type=tel]").mask("+48 ddd ddd ddd");
+      } else if (theLanguage == 'al') {
+        $("input[type=tel]").mask("+355 dd ddd dddd");
+      } else if (theLanguage == 'rs') {
+        $("input[type=tel]").mask("+381 dd ddddd-dd");
+      } else if (theLanguage == 'ph') {
+        $("input[type=tel]").mask("+63 d dddd dd-dd");
+      } else if (theLanguage == 'hu') {
+        $("input[type=tel]").mask("+36 d ddd dddd");
+      } else if (theLanguage == 'hr') {
+        $("input[type=tel]").mask("+385 d dddd dd-dd");
+      } else if (theLanguage == 'ba') {
+        $("input[type=tel]").mask("+387 dd dddddd");
+      }
+    });
+  </script>
 
 </body>
 
