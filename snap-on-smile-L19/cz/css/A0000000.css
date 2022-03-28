@@ -545,8 +545,9 @@ h2 {
     font-family: 'Bebas Neue Bold';
     font-weight: 700;
     color: #222;
-    font-size: 52px;
-    line-height: 78px
+    font-size:38px;
+    line-height: 78px;
+    white-space: nowrap;
 }
 
 .video-container {
