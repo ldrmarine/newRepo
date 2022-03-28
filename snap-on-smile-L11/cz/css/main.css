@@ -3264,7 +3264,7 @@ section {
 
 .price-title {
   font-size: 13px;
-  color: #929771;
+  color: #bdbdbd;
   font-weight: 600; }
 
 .price-value {
@@ -3320,7 +3320,7 @@ section {
 
 .remainder {
   font-size: 16px;
-  color: #929771;
+  color: #bfbfbf;
   font-family: "Roboto";
   margin-top: 0.7rem;
   margin-bottom: 4.4rem; }
