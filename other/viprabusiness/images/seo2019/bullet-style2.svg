@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20.5" height="20.5" viewBox="0 0 36 38">
+    <defs>
+        <style>
+            .cls-1,.cls-2{fill:#f79220}.cls-1{opacity:.241}
+        </style>
+    </defs>
+    <g id="Group_37" data-name="Group 37" transform="translate(-.381 .473)">
+        <ellipse id="Ellipse_27" cx="18" cy="19" class="cls-1" data-name="Ellipse 27" rx="18" ry="19" transform="translate(.381 -.473)"/>
+        <circle id="Ellipse_28" cx="12" cy="12" r="12" class="cls-2" data-name="Ellipse 28" transform="translate(6.381 6.527)"/>
+    </g>
+</svg>

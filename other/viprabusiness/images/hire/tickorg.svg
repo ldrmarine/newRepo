@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="tick_9_" width="58" height="58" data-name="tick (9)" viewBox="0 0 58 58">
+    <defs>
+        <style>
+            .cls-1{fill:#f79220}
+        </style>
+    </defs>
+    <g id="Group_41" data-name="Group 41" transform="translate(13.771 7.287)">
+        <g id="Group_40" data-name="Group 40">
+            <path id="Path_1017" d="M164.138 64.969a2.185 2.185 0 0 0-3.091 0L134.823 91.12l-9.461-10.276a2.186 2.186 0 1 0-3.216 2.961l11 11.949a2.183 2.183 0 0 0 1.561.7h.047a2.188 2.188 0 0 0 1.543-.638l27.834-27.761a2.186 2.186 0 0 0 .007-3.086z" class="cls-1" data-name="Path 1017" transform="translate(-121.568 -64.327)"/>
+        </g>
+    </g>
+    <g id="Group_43" data-name="Group 43">
+        <g id="Group_42" data-name="Group 42">
+            <path id="Path_1018" d="M55.814 26.814A2.186 2.186 0 0 0 53.628 29 24.628 24.628 0 1 1 29 4.372 2.186 2.186 0 1 0 29 0a29 29 0 1 0 29 29 2.186 2.186 0 0 0-2.186-2.186z" class="cls-1" data-name="Path 1018"/>
+        </g>
+    </g>
+</svg>
