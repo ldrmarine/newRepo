@@ -32,17 +32,7 @@
 	
     
 	<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5ecb625ac75cbf1769ef052e/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
+
 <!--End of Tawk.to Script-->
 	
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -68,6 +58,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TWZ7BDC"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+<style>.mail-info{line-height: 46px;
+  font-weight: 600;
+  font-size: 25px;
+  font-family: inherit;}</style>
   </head>
   <body>
   <!--<div id="loading"></div>-->
@@ -102,15 +96,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">          
 	      <ul class="nav navbar-nav navbar-right">
 	        <li class=""><a href="#main-form">Home</a></li>
-          <li><a href="#main-form">About</a></li>
-	        <li class="dropdown "><a href="#main-form" >Developers</a>
-        	</li>
-        	<li><a href="#main-form">Technologies</a></li> 
+          <li><a href="#services">Our Services</a></li>
 	        <li class="dropdown "><a href="#main-form" class="dropdown-toggle" >Marketing </a>
         	</li>
-	        <li><a href="#main-form">Our work</a></li>
-	        <li><a href="#main-form">Our Office</a></li>
-	        <li><a href="#main-form">Blog</a></li>
+	        <li><a href="#work">Our work</a></li>
+	        <li><a href="#collaboration">Collaboration</a></li>
+	        <li><a href="#model">Partnership Models</a></li>
 	      </ul>
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
@@ -156,9 +147,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <img class="mobile-2  lazyload" data-aos="fade-up" data-aos-duration="400" data-src="./images/homepage1/mobile-2.jpg " alt="mobile-2">
 
       </div>
-
     </div>
-
   </div>
 
 </section>
@@ -747,7 +736,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
           </ul>
 
-          <button class="btn btn-primary"><a href="contact-us/index.html">Speak to the Developer </a></button>
+          <button class="btn btn-primary"><a href="#main-form">Speak to the Developer </a></button>
 
         </div>
 
@@ -810,6 +799,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     box-shadow: 10px 3px 6px 0 rgb(0 0 0 / 7%);
     border-radius: 10px;
     height: 423px;
+    display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .main-form .lead-frms span.errormsg {
@@ -1311,52 +1303,39 @@ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = 
  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
  
   <script>
-
-$("#submit_btn").click(function(){
-    
-    
-    
-    
+var mainForm = document.querySelector('.main-form');
+$("#submit_btn").click(function(e){
+  e.preventDefault();
     var name = document.forms["consultant-form"]["name"].value;
 	
 	var email = document.forms["consultant-form"]["email"].value;
 	var phone = document.forms["consultant-form"]["phone"].value;
 	var description = document.forms["consultant-form"]["description"].value;
 	var nda = $("#defaultCheck1:checked").val();
-//	alert(nda);
-	 
     if (name == "") {
         document.getElementById('errorname').innerHTML = "Name must be filled out";
 		document.getElementById("errorname").style.color = "red";
 		return false;
     }
-	
 	if (email == "") {
         document.getElementById('erroremail').innerHTML = "Email must be filled out";
 		document.getElementById("erroremail").style.color = "red";
         return false;
-        
     }
     if (phone == "") {
         document.getElementById('errorphone').innerHTML = "Phone must be filled out";
 		document.getElementById("errorphone").style.color = "red";
         return false;
-        
     }
     if (description == "") {
         document.getElementById('errordescription').innerHTML = "Description must be filled out";
 		document.getElementById("errordescription").style.color = "red";
         return false;
-        
     }
-    
-	
-
-   
-   
-   
-	
-	 
+    mainForm.innerHTML = `<div class="loading-gif"><img src="./images/Loading_icon.gif" /></div>`
+    setTimeout(()=>{
+      mainForm.innerHTML = `<p class="mail-info">Message sent</p>`
+    }, 1000)
 }  );
  
  
@@ -1617,7 +1596,24 @@ $("#submit_btn").click(function(){
   });
 
 </script>
+<script>
 
+window.addEventListener('DOMContentLoaded', () => {
+	const links = document.querySelectorAll('a[href*="#"]');
+	for (let anchor of links) {
+		anchor.addEventListener('click', (event) => {
+			event.preventDefault();
+			let blockId = anchor.getAttribute('href');
+			if (document.querySelector('' + blockId)) {
+				document.querySelector('' + blockId).scrollIntoView({
+					behavior: 'smooth',
+					block: 'start',
+				});
+			}
+		});
+	}
+})
+</script>
 <script>
 
   var vid = document.getElementById("gossVideo");
