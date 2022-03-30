@@ -1,0 +1,203 @@
+@font-face {
+    font-family: 'Open-Sans';
+    src: url('../fonts/OpenSans.eot');
+    src: url('../fonts/OpenSansd41d.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans.woff2') format('woff2'),
+        url('../fonts/OpenSans.woff') format('woff'),
+        url('../fonts/OpenSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+      font-display: swap;
+}
+@font-face {
+    font-family: 'Open-Sans-bold';
+    src: url('../fonts/OpenSans-Bold.eot');
+    src: url('../fonts/OpenSans-Boldd41d.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+        url('../fonts/OpenSans-Bold.woff') format('woff'),
+        url('../fonts/OpenSans-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+      font-display: swap;
+}
+
+@font-face {
+    font-family: 'arvobold';
+    src: url('../fonts/arvo-bold.woff2') format('woff2'), url('../fonts/arvo-bold.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+      font-display: swap;
+}
+@font-face {
+    font-family: 'arvobold-italic';
+    src: url('../fonts/arvo-bolditalic.woff2') format('woff2'), url('../fonts/arvo-bolditalic.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+      font-display: swap;
+}
+@font-face {
+    font-family: 'arvo-italic';
+    src: url('../fonts/arvo-italic.woff2') format('woff2'), url('../fonts/arvo-italic.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+      font-display: swap;
+}
+@font-face {
+    font-family: 'arvo-regular';
+    src: url('../fonts/arvo-regular.woff2') format('woff2'), url('../fonts/arvo-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+      font-display: swap;
+}
+@font-face {
+    font-family: 'geomanist';
+    src: url('../fonts/geomanist-regular-webfont.eot');
+    src: url('../fonts/geomanist-regular-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/geomanist-regular-webfont.woff2') format('woff2'), 
+         url('../fonts/geomanist-regular-webfont.woff') format('woff'), 
+         url('../fonts/geomanist-regular-webfont.ttf') format('truetype'), 
+         url('../fonts/geomanist-regular-webfont.html#geomanist_regularregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+      font-display: swap;
+}
+@font-face {
+    font-family: 'montserrat-italic';
+    src: url('../fonts/Montserrat-Italic.eot');
+    src: url('../fonts/Montserrat-Italicd41d.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat-Italic.woff2') format('woff2'),
+        url('../fonts/Montserrat-Italic.woff') format('woff'),
+        url('../fonts/Montserrat-Italic.ttf') format('truetype'),
+        url('../fonts/Montserrat-Italic.svg#Montserrat-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+      font-display: swap;
+}
+
+@font-face {
+    font-family: 'montserrat-reg';
+    src: url('../fonts/Montserrat-Regular.eot');
+    src: url('../fonts/Montserrat-Regulard41d.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('../fonts/Montserrat-Regular.woff') format('woff'),
+        url('../fonts/Montserrat-Regular.ttf') format('truetype'),
+        url('../fonts/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+      font-display: swap;
+}
+
+@font-face {
+    font-family: 'montserrat-bold';
+    src: url('../fonts/Montserrat-Bold.eot');
+    src: url('../fonts/Montserrat-Boldd41d.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+        url('../fonts/Montserrat-Bold.woff') format('woff'),
+        url('../fonts/Montserrat-Bold.ttf') format('truetype'),
+        url('../fonts/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+      font-display: swap;
+}
+
+@font-face {
+    font-family: 'montserrat-semi';
+    src: url('../fonts/Montserrat-SemiBold.eot');
+    src: url('../fonts/Montserrat-SemiBoldd41d.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+        url('../fonts/Montserrat-SemiBold.woff') format('woff'),
+        url('../fonts/Montserrat-SemiBold.ttf') format('truetype'),
+        url('../fonts/Montserrat-SemiBold.svg#Montserrat-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+      font-display: swap;
+}
+@font-face {
+    font-family: 'bryant-reg';
+    src: url('../fonts/Bryant-Regular.eot');
+    src: url('../fonts/Bryant-Regulard41d.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Bryant-Regular.woff2') format('woff2'),
+        url('../fonts/Bryant-Regular.woff') format('woff'),
+        url('../fonts/Bryant-Regular.ttf') format('truetype'),
+        url('../fonts/Bryant-Regular.svg#Bryant-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+      font-display: swap;
+}
+
+@font-face {
+    font-family: 'poppins-semi';
+    src: url('../fonts/Poppins-SemiBold.eot');
+    src: url('../fonts/Poppins-SemiBoldd41d.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Poppins-SemiBold.woff2') format('woff2'),
+        url('../fonts/Poppins-SemiBold.woff') format('woff'),
+        url('../fonts/Poppins-SemiBold.ttf') format('truetype'),
+        url('../fonts/Poppins-SemiBold.svg#Poppins-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+      font-display: swap;
+}
+
+@font-face {
+    font-family: 'poppins-medium';
+    src: url('../fonts/Poppins-Medium.eot');
+    src: url('../fonts/Poppins-Mediumd41d.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Poppins-Medium.woff2') format('woff2'),
+        url('../fonts/Poppins-Medium.woff') format('woff'),
+        url('../fonts/Poppins-Medium.ttf') format('truetype'),
+        url('../fonts/Poppins-Medium.svg#Poppins-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+      font-display: swap;
+}
+
+@font-face {
+    font-family: 'poppins-reg';
+    src: url('../fonts/Poppins-Regular.eot');
+    src: url('../fonts/Poppins-Regulard41d.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Poppins-Regular.woff2') format('woff2'),
+        url('../fonts/Poppins-Regular.woff') format('woff'),
+        url('../fonts/Poppins-Regular.ttf') format('truetype'),
+        url('../fonts/Poppins-Regular.svg#Poppins-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+      font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url('../fonts/Gilroy-Regular.eot');
+    src: url('../fonts/Gilroy-Regulard41d.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+        url('../fonts/Gilroy-Regular.woff') format('woff'),
+        url('../fonts/Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+      font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('../fonts/Gilroy-Bold.eot');
+    src: url('../fonts/Gilroy-Boldd41d.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Bold.woff2') format('woff2'),
+        url('../fonts/Gilroy-Bold.woff') format('woff'),
+        url('../fonts/Gilroy-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+      font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('../fonts/Gilroy-Medium.eot');
+    src: url('../fonts/Gilroy-Mediumd41d.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Medium.woff2') format('woff2'),
+        url('../fonts/Gilroy-Medium.woff') format('woff'),
+        url('../fonts/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+      font-display: swap;
+}
+
+
