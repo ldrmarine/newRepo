@@ -1839,7 +1839,7 @@ img.guarnteen-icon {
 
     
       <div class="col-md-4">
-        <img src="blog/wp-content/uploads/2021/07/website-India-1.png" class="img-responsive" alt="vipra">
+        <img src="images/website-India-1.png" class="img-responsive" alt="vipra">
         <div class="text-block active" data-aos="zoom-in-down">
           <button class="btn btn-primary"><a href="blog/vipra-business-is-all-set-to-thrive-with-a-bunch-of-fine-skilled-engineers-taking-over-clients-digital-needs-goodfirms/index.html">Jul 28 2021</a></button>
           <p><a href="blog/vipra-business-is-all-set-to-thrive-with-a-bunch-of-fine-skilled-engineers-taking-over-clients-digital-needs-goodfirms/index.html">Vipra Business Is All Set to Thrive With a Bunch of Fine-Skilled Engineers Taking Over Clients' Digital Needs: GoodFirms</a></p>
@@ -1848,7 +1848,7 @@ img.guarnteen-icon {
       </div>
     
       <div class="col-md-4">
-        <img src="blog/wp-content/uploads/2021/03/In-house-Vs-Off-shore-development-1.jpg" class="img-responsive" alt="vipra">
+        <img src="images/In-house-Vs-Off-shore-development-1.jpg" class="img-responsive" alt="vipra">
         <div class="text-block active" data-aos="zoom-in-down">
           <button class="btn btn-primary"><a href="blog/offshore-software-development-vs-in-house-which-is-better/index.html">Mar 26 2021</a></button>
           <p><a href="blog/offshore-software-development-vs-in-house-which-is-better/index.html">In house Vs offshore software development: Which works best for your project?</a></p>
@@ -1857,7 +1857,7 @@ img.guarnteen-icon {
       </div>
     
       <div class="col-md-4">
-        <img src="blog/wp-content/uploads/2021/03/food-delivery-app-Faetured-Image.jpg" class="img-responsive" alt="vipra">
+        <img src="images/food-delivery-app-Faetured-Image.jpg" class="img-responsive" alt="vipra">
         <div class="text-block active" data-aos="zoom-in-down">
           <button class="btn btn-primary"><a href="blog/food-delivery-app-a-complete-guide/index.html">Mar 22 2021</a></button>
           <p><a href="blog/food-delivery-app-a-complete-guide/index.html">A Complete Guide on developing a Food Delivery App</a></p>
@@ -2484,14 +2484,16 @@ $("#submit_btn").click(function(){
 <script>
 
   var vid = document.getElementById("gossVideo");
-
+  var modal = document.querySelector('#homeVideo');
   function playVid() {
-
+    modal.classList.add('show');
+    modal.classList.remove('fade')
     vid.play();
 
   }
   function pauseVid() {
-    
+    modal.classList.remove('show');
+    modal.classList.add('fade')
     vid.pause();
 
   }
