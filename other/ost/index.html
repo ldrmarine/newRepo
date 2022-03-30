@@ -201,7 +201,37 @@
 		</script>
 
 
+		<style>
+			.projects_masonry_holders{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-wrap: wrap;
+			}
+			.image_holder .image{
+				display: block;
+				width: 100%;
+			}
+			.image_holder .image img{
+				display: block;
+				width: 100%;
+			}
+			.portfolio_masonry_item{
+				flex: 1 1 33%;
+			}
+			@media (max-width: 768px) {
+				.portfolio_masonry_item{
+				flex: 1 1 50%;
+			}
 
+			}
+			@media (max-width: 568px) {
+				.portfolio_masonry_item{
+				flex: 1 1 100%;
+			}
+
+			}
+		</style>
 
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
@@ -746,8 +776,8 @@
 														</div>
 													</div>
 													<div class="separator  small center  " style="margin-top: 7px;margin-bottom: 45px;"></div>
-													<div class="projects_masonry_wrapper ">
-														<div class="projects_masonry_holder portfolio_main_holder portfolio_one_by_one gs3">
+													<div class="projects_masonry_wrappers ">
+														<div class="projects_masonry_holders portfolio_main_holder portfolio_one_by_one gs3">
 															<div class="qode-portfolio-masonry-gallery-grid-sizer"></div>
 															<div class="qode-portfolio-masonry-gallery-grid-gutter"></div>
 															<article
@@ -756,8 +786,7 @@
 																	<div class="text_holder">
 																		<div class="text_holder_outer">
 																			<div class="text_holder_inner">
-																				<h5 itemprop="name" class="portfolio_title entry_title"><a itemprop="url"
-																						href="https://ost.agency/kipp.html">KIPP Public Schools</a></h5>
+																				<h5 itemprop="name" class="portfolio_title entry_title"><a>KIPP Public Schools</a></h5>
 																				<div class="project_category"></div>
 																			</div>
 																		</div>
@@ -772,7 +801,6 @@
 																				src="wp-content/uploads/2021/10/portfolio-new-kipp-500x500.jpg"
 																				class="attachment-portfolio_masonry_regular size-portfolio_masonry_regular wp-post-image"
 																				alt=""
-																				srcset="https://www.ost.agency/wp-content/uploads/2021/10/portfolio-new-kipp-500x500.jpg 500w, https://www.ost.agency/wp-content/uploads/2021/10/portfolio-new-kipp-150x150.jpg 150w, https://www.ost.agency/wp-content/uploads/2021/10/portfolio-new-kipp-300x300.jpg 300w, https://www.ost.agency/wp-content/uploads/2021/10/portfolio-new-kipp-768x768.jpg 768w, https://www.ost.agency/wp-content/uploads/2021/10/portfolio-new-kipp-80x80.jpg 80w, https://www.ost.agency/wp-content/uploads/2021/10/portfolio-new-kipp-198x198.jpg 198w, https://www.ost.agency/wp-content/uploads/2021/10/portfolio-new-kipp-396x396.jpg 396w, https://www.ost.agency/wp-content/uploads/2021/10/portfolio-new-kipp-570x570.jpg 570w, https://www.ost.agency/wp-content/uploads/2021/10/portfolio-new-kipp-700x700.jpg 700w, https://www.ost.agency/wp-content/uploads/2021/10/portfolio-new-kipp.jpg 800w"
 																				sizes="(max-width: 500px) 100vw, 500px" /></span></div>
 																</div>
 															</article>
@@ -782,8 +810,7 @@
 																	<div class="text_holder">
 																		<div class="text_holder_outer">
 																			<div class="text_holder_inner">
-																				<h5 itemprop="name" class="portfolio_title entry_title"><a itemprop="url"
-																						href="wesleyan-college.html">Wesleyan</a></h5>
+																				<h5 itemprop="name" class="portfolio_title entry_title"><a>Wesleyan</a></h5>
 																				<div class="project_category">User Interface Design</div>
 																			</div>
 																		</div>
@@ -797,7 +824,6 @@
 																				src="wp-content/uploads/2012/09/opt-weslyn-college.png"
 																				class="attachment-portfolio_masonry_regular size-portfolio_masonry_regular wp-post-image"
 																				alt=""
-																				srcset="https://www.ost.agency/wp-content/uploads/2012/09/opt-weslyn-college.png 500w, https://www.ost.agency/wp-content/uploads/2012/09/opt-weslyn-college-150x150.png 150w, https://www.ost.agency/wp-content/uploads/2012/09/opt-weslyn-college-300x300.png 300w, https://www.ost.agency/wp-content/uploads/2012/09/opt-weslyn-college-80x80.png 80w, https://www.ost.agency/wp-content/uploads/2012/09/opt-weslyn-college-198x198.png 198w, https://www.ost.agency/wp-content/uploads/2012/09/opt-weslyn-college-396x396.png 396w"
 																				sizes="(max-width: 500px) 100vw, 500px" /></span></div>
 																</div>
 															</article>
@@ -807,8 +833,7 @@
 																	<div class="text_holder">
 																		<div class="text_holder_outer">
 																			<div class="text_holder_inner">
-																				<h5 itemprop="name" class="portfolio_title entry_title"><a itemprop="url"
-																						href="fluehr.html">Fluehr</a></h5>
+																				<h5 itemprop="name" class="portfolio_title entry_title"><a >Fluehr</a></h5>
 																				<div class="project_category"></div>
 																			</div>
 																		</div>
@@ -822,7 +847,6 @@
 																				src="wp-content/uploads/2012/09/opt-fluehr.png"
 																				class="attachment-portfolio_masonry_regular size-portfolio_masonry_regular wp-post-image"
 																				alt=""
-																				srcset="https://www.ost.agency/wp-content/uploads/2012/09/opt-fluehr.png 500w, https://www.ost.agency/wp-content/uploads/2012/09/opt-fluehr-150x150.png 150w, https://www.ost.agency/wp-content/uploads/2012/09/opt-fluehr-300x300.png 300w, https://www.ost.agency/wp-content/uploads/2012/09/opt-fluehr-80x80.png 80w, https://www.ost.agency/wp-content/uploads/2012/09/opt-fluehr-198x198.png 198w, https://www.ost.agency/wp-content/uploads/2012/09/opt-fluehr-396x396.png 396w"
 																				sizes="(max-width: 500px) 100vw, 500px" /></span></div>
 																</div>
 															</article>
@@ -832,8 +856,7 @@
 																	<div class="text_holder">
 																		<div class="text_holder_outer">
 																			<div class="text_holder_inner">
-																				<h5 itemprop="name" class="portfolio_title entry_title"><a itemprop="url"
-																						href="kdd.html">KDD</a></h5>
+																				<h5 itemprop="name" class="portfolio_title entry_title"><a>KDD</a></h5>
 																				<div class="project_category">Mobile App Development</div>
 																			</div>
 																		</div>
@@ -853,7 +876,6 @@
 																				src="wp-content/uploads/2012/09/opt-kdd.png"
 																				class="attachment-portfolio_masonry_regular size-portfolio_masonry_regular wp-post-image"
 																				alt=""
-																				srcset="https://www.ost.agency/wp-content/uploads/2012/09/opt-kdd.png 500w, https://www.ost.agency/wp-content/uploads/2012/09/opt-kdd-150x150.png 150w, https://www.ost.agency/wp-content/uploads/2012/09/opt-kdd-300x300.png 300w, https://www.ost.agency/wp-content/uploads/2012/09/opt-kdd-80x80.png 80w, https://www.ost.agency/wp-content/uploads/2012/09/opt-kdd-198x198.png 198w, https://www.ost.agency/wp-content/uploads/2012/09/opt-kdd-396x396.png 396w"
 																				sizes="(max-width: 500px) 100vw, 500px" /></span></div>
 																</div>
 															</article>
@@ -863,8 +885,7 @@
 																	<div class="text_holder">
 																		<div class="text_holder_outer">
 																			<div class="text_holder_inner">
-																				<h5 itemprop="name" class="portfolio_title entry_title"><a itemprop="url"
-																						href="https://ost.agency/teampex.html">Teampex</a></h5>
+																				<h5 itemprop="name" class="portfolio_title entry_title"><a>Teampex</a></h5>
 																				<div class="project_category"></div>
 																			</div>
 																		</div>
@@ -879,7 +900,6 @@
 																				src="wp-content/uploads/2012/09/opt-teampex.png"
 																				class="attachment-portfolio_masonry_regular size-portfolio_masonry_regular wp-post-image"
 																				alt=""
-																				srcset="https://www.ost.agency/wp-content/uploads/2012/09/opt-teampex.png 500w, https://www.ost.agency/wp-content/uploads/2012/09/opt-teampex-150x150.png 150w, https://www.ost.agency/wp-content/uploads/2012/09/opt-teampex-300x300.png 300w, https://www.ost.agency/wp-content/uploads/2012/09/opt-teampex-80x80.png 80w, https://www.ost.agency/wp-content/uploads/2012/09/opt-teampex-198x198.png 198w, https://www.ost.agency/wp-content/uploads/2012/09/opt-teampex-396x396.png 396w"
 																				sizes="(max-width: 500px) 100vw, 500px" /></span></div>
 																</div>
 															</article>
@@ -889,8 +909,7 @@
 																	<div class="text_holder">
 																		<div class="text_holder_outer">
 																			<div class="text_holder_inner">
-																				<h5 itemprop="name" class="portfolio_title entry_title"><a itemprop="url"
-																						href="https://www.alumni.hku.hk/">The University of Hong Kong</a></h5>
+																				<h5 itemprop="name" class="portfolio_title entry_title"><a>The University of Hong Kong</a></h5>
 																				<div class="project_category"></div>
 																			</div>
 																		</div>
@@ -905,7 +924,6 @@
 																				src="wp-content/uploads/2021/10/hku-500x500.jpg"
 																				class="attachment-portfolio_masonry_regular size-portfolio_masonry_regular wp-post-image"
 																				alt=""
-																				srcset="https://www.ost.agency/wp-content/uploads/2021/10/hku-500x500.jpg 500w, https://www.ost.agency/wp-content/uploads/2021/10/hku-150x150.jpg 150w, https://www.ost.agency/wp-content/uploads/2021/10/hku-300x300.jpg 300w, https://www.ost.agency/wp-content/uploads/2021/10/hku-768x768.jpg 768w, https://www.ost.agency/wp-content/uploads/2021/10/hku-80x80.jpg 80w, https://www.ost.agency/wp-content/uploads/2021/10/hku-198x198.jpg 198w, https://www.ost.agency/wp-content/uploads/2021/10/hku-396x396.jpg 396w, https://www.ost.agency/wp-content/uploads/2021/10/hku-570x570.jpg 570w, https://www.ost.agency/wp-content/uploads/2021/10/hku-700x700.jpg 700w, https://www.ost.agency/wp-content/uploads/2021/10/hku.jpg 800w"
 																				sizes="(max-width: 500px) 100vw, 500px" /></span></div>
 																</div>
 															</article>
@@ -915,8 +933,7 @@
 																	<div class="text_holder">
 																		<div class="text_holder_outer">
 																			<div class="text_holder_inner">
-																				<h5 itemprop="name" class="portfolio_title entry_title"><a itemprop="url"
-																						href="https://ost.agency/gpu.html">GPU Hackathons</a></h5>
+																				<h5 itemprop="name" class="portfolio_title entry_title"><a>GPU Hackathons</a></h5>
 																				<div class="project_category"></div>
 																			</div>
 																		</div>
@@ -931,7 +948,6 @@
 																				src="wp-content/uploads/2021/04/gpu-img-1.jpg"
 																				class="attachment-portfolio_masonry_regular size-portfolio_masonry_regular wp-post-image"
 																				alt=""
-																				srcset="https://www.ost.agency/wp-content/uploads/2021/04/gpu-img-1.jpg 500w, https://www.ost.agency/wp-content/uploads/2021/04/gpu-img-1-150x150.jpg 150w, https://www.ost.agency/wp-content/uploads/2021/04/gpu-img-1-300x300.jpg 300w, https://www.ost.agency/wp-content/uploads/2021/04/gpu-img-1-80x80.jpg 80w, https://www.ost.agency/wp-content/uploads/2021/04/gpu-img-1-198x198.jpg 198w, https://www.ost.agency/wp-content/uploads/2021/04/gpu-img-1-396x396.jpg 396w"
 																				sizes="(max-width: 500px) 100vw, 500px" /></span></div>
 																</div>
 															</article>
