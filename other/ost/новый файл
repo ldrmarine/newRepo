@@ -1,0 +1,4 @@
+function initPortfolioMasonry(){"use strict";var a=$j(".projects_masonry_holder, .masonry_with_space .projects_holder");a.length&&a.each(function(){var b=$j(this),c=b.find(".qode-portfolio-masonry-gallery-grid-sizer").width();a.hasClass("projects_masonry_holder")&&resizeMasonry(c,b),qodeInitMasonry(b),qodeInitPortFilterCounter(a.parent()),$j(window).resize(function(){setPortfolioMasZIndex(),a.hasClass("projects_masonry_holder")&&resizeMasonry(c,b),qodeInitMasonry(b)})})}
+
+
+,initPortfolioMasonry(),initPortfolioMasonryFilter(),initPortfolioMasonry(),

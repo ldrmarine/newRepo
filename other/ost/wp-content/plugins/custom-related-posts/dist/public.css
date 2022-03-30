@@ -1,0 +1,90 @@
+.crp-list-item{text-align: center;
+margin: 1%;
+min-height: 25em;
+border: 1px solid #ccc;
+margin: 5px;
+display: flex;
+margin: 7px 1%;
+float: left;
+width: 31%;}.crp-list-item.crp-list-item-has-image.crp-list-item-image-left .crp-list-item-image{padding: 10px;margin-right:10px}.crp-list-item.crp-list-item-has-image.crp-list-item-image-right{justify-content:space-between}.crp-list-item.crp-list-item-has-image.crp-list-item-image-right .crp-list-item-image{margin-left:10px}.crp-list-item.crp-list-item-has-image.crp-list-item-image-left,.crp-list-item.crp-list-item-has-image.crp-list-item-image-right{align-items:center}.crp-list-item.crp-list-item-has-image.crp-list-item-image-above,.crp-list-item.crp-list-item-has-image.crp-list-item-image-below{flex-direction:column}
+.crp-list-item .crp-list-item-image{font-size:0; padding-top:0; max-height: 300px; overflow: hidden;}
+.crp-list-item .crp-list-item-image img{ width: 100% !important; height: 300px !important;}
+.crp-list{width: 100%;
+float: left;}.crp-list-title {text-align:center; margin-top: 50px;}
+
+.crp-list-item-title {
+	padding: 15px;
+	min-height: 70px;
+}
+
+@media (max-width:767px) {	
+.crp-list .crp-list-item {
+	width: 100%;
+	max-width: 100%;
+}	
+.crp-list .crp-list-item-image img {
+	max-width: 100% !important;
+}
+.crp-list-item .crp-list-item-image {
+	padding-top: 0;
+}
+.crp-list-item-title {
+	padding: 15px;
+}
+}
+@media (max-width:414px) {
+.post_text img {
+	margin: 0 auto;
+	width: 100%;
+}
+}
+
+.multi-item-carousel{
+  .carousel-inner{
+    > .item{
+      transition: 500ms ease-in-out left;
+    }
+    .active{
+      &.left{
+        left:-33%;
+      }
+      &.right{
+        left:33%;
+      }
+    }
+    .next{
+      left: 33%;
+    }
+    .prev{
+      left: -33%;
+    }
+    @media all and (transform-3d), (-webkit-transform-3d) {
+      > .item{
+        // use your favourite prefixer here
+        transition: 500ms ease-in-out left;
+        transition: 500ms ease-in-out all;
+        backface-visibility: visible;
+        transform: none!important;
+      }
+    }
+  }
+  .carouse-control{
+    &.left, &.right{
+      background-image: none;
+    }
+  }
+}
+
+// non-related styling:
+body{
+  background: #333;
+  color: #ddd;
+}
+h1{
+  color: white;
+  font-size: 2.25em;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  text-shadow: 0px 2px 0px rgba(0, 0, 0, 1);
+}
