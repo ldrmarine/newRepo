@@ -1,3 +1,10 @@
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 .Know-More,
 .today {
     vertical-align: middle;
@@ -14083,76 +14090,96 @@ section#vblog {
     height: 25px
 }
 
-.footer-nav{
+.footer-nav {
     background: #fff;
     padding: 10px 0;
 }
-.footer-nav__container{
+
+.footer-nav__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
 }
-.footer-nav__container::before,.footer-nav__container::after{
+
+.footer-nav__container::before,
+.footer-nav__container::after {
     display: none;
 }
-.footer-nav__logo{
+
+.footer-nav__logo {
     width: fit-content;
 }
-.footer-nav__image{
+
+.footer-nav__image {
     width: 100%;
     height: auto;
 }
-.footer-nav__list{
-    display: flex; 
+
+.footer-nav__list {
+    display: flex;
     align-items: center;
     justify-content: center;
-    gap:10px 20px;
+    gap: 10px 20px;
 }
-.footer-nav__list li a{
+
+.footer-nav__list li a {
     font-size: 18px;
     font-family: inherit;
     color: #000;
     padding-bottom: 5px;
     transition: all .3s ease-in-out;
 }
-.form-inner{
+
+.form-inner {
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 10px 3px 6px 0 rgb(0 0 0 / 7%);
     border-radius: 15px;
 }
-.form-left, .form-right{
+
+.form-left,
+.form-right {
     float: none;
-    margin:0;
+    margin: 0;
     padding: 0;
 }
-.form-left{
+
+.form-left {
     overflow: hidden;
 }
+
 @media (max-width: 1000px) {
-    .footer-nav__list{
+    .footer-nav__list {
         flex-direction: column;
     }
-    .form-inner{
+
+    .form-inner {
         flex-direction: column-reverse;
         box-shadow: none;
     }
-    .form-left, .form-right{
+
+    .form-left,
+    .form-right {
         width: 100%;
     }
-    .form-left{
+
+    .form-left {
         border-radius: 0 0 15px 15px;
         overflow: hidden;
     }
-    .hvr-bounce-in, .hvr-bounce-in, .hvr-bounce-in{
+
+    .hvr-bounce-in,
+    .hvr-bounce-in,
+    .hvr-bounce-in {
         pointer-events: none;
     }
-    
+
 }
+
 @media (max-width: 600px) {
-    .footer-nav__logo{
+    .footer-nav__logo {
         width: 45%;
     }
 }
