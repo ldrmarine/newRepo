@@ -895,7 +895,12 @@ section {
   color: #222;
   display: block;
 }
-
+@media screen and (max-width:480px) {
+  .offer_content{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
 
 /*# sourceMappingURL=styles.css.map */
