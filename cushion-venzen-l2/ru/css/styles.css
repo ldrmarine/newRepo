@@ -134,6 +134,7 @@ section {
   position: relative;
   min-height: 515px;
   background: url(../images/offer.png) 50% 120px no-repeat #f0deab;
+  background-size: contain;
 }
 
 .main_title {
@@ -159,16 +160,6 @@ section {
   text-align: center;
   margin-bottom: 420px;
   font-family: Montserrat, sans-serif;
-}
-
-.offer_section .box:before {
-  content: "";
-  width: 121px;
-  height: 121px;
-  background: url(../images/stick.png) 50% 50% no-repeat;
-  position: absolute;
-  top: 380px;
-  left: 10px;
 }
 
 .offer_section .product {
