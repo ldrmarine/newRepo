@@ -133,8 +133,7 @@ section {
   align-items: center;
   position: relative;
   min-height: 515px;
-  background: url(../images/offer.png) 50% 120px no-repeat #f0deab;
-  background-size: contain;
+  background: url(../images/offer.png) 50% 170px no-repeat #f0deab;
 }
 
 .main_title {
@@ -595,7 +594,7 @@ section {
 
 .price_block {
   padding-top: 380px;
-  background: url("../images/pb_bg.png") top center no-repeat #f0deac;
+  background: url("../images/pb_bg.png") 50% 10% no-repeat #f0deac;
 }
 
 .price_block.dark {
