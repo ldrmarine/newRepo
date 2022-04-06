@@ -2,7 +2,7 @@
     --powder-color: #d1b192;
 }
 
-* {
+*, *::after, *::before {
     box-sizing: border-box;
 }
 
@@ -45,7 +45,7 @@ a {
 
 body {
     max-width: 480px;
-    min-width: 375px;
+    min-width: 360px;
     margin: 0 auto;
 }
 
@@ -548,7 +548,6 @@ section {
   }
   
   .rev_item {
-    width: 420px;
     margin: 0 auto;
     padding: 30px;
     background: #fff;
@@ -577,7 +576,7 @@ section {
     display: block;
   }
   
-  .reviews .owl-prev, .reviews .owl-next {
+  .reviews button.owl-prev, .reviews button.owl-next {
     width: 39px;
     height: 36px;
     background: url(../images/rev_arrow.png) 0% 50% no-repeat;
@@ -589,10 +588,12 @@ section {
     left: 0;
   }
   
-  .reviews .owl-next {
+  .reviews button.owl-next {
     right: 0;
     background-position: 100% 50%;
   }
-  .owl-carousel .owl-stage-outer{
-      min-height: 560px;
+  @media (max-width:375px) {
+    .reviews .owl-prev, .reviews .owl-next {
+        top: 170px;
+      }
   }
