@@ -569,6 +569,7 @@ section {
     margin-top: 30px;
     font-weight: 700;
     background: url(../images/rev_q2.png) 100% 50% no-repeat;
+    background-size: contain;
   }
   
   .rev_item .info > p > span {
@@ -592,4 +593,6 @@ section {
     right: 0;
     background-position: 100% 50%;
   }
-  
+  .owl-carousel .owl-stage-outer{
+      min-height: 560px;
+  }
