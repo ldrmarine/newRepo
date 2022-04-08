@@ -52653,7 +52653,7 @@ h5.title-main.service-title.text-flamingo {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 450px) {
   .bottom-header .container{
     flex-direction: column;
     align-items: center;
@@ -52673,6 +52673,10 @@ h5.title-main.service-title.text-flamingo {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.loading-gif img{
+  width: 100px;
+  margin: auto;
 }
 .mail-info{
   font-family: inherit;
