@@ -38794,7 +38794,9 @@ body i.fa {
 .footer-bottom .custom-row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px 30px;
 }
 
 .footer-menu {
@@ -51022,7 +51024,9 @@ h5.title-main.service-title.text-flamingo {
   .footer-bottom .custom-row {
     justify-content: center;
     flex-direction: column;
-    align-items: center
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
   .footer-menu {
