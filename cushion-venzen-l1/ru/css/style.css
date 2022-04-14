@@ -384,7 +384,7 @@ section {
 
 .links {
     margin-top: 30px;
-    font-weight: ;
+    font-weight: 400;
     line-height: 1.5;
 }
 
@@ -401,3 +401,193 @@ section {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.present{
+    padding: 10px 0 40px;
+}
+.present h2{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+.present h2 span{
+    color: #d49090;
+}
+.present img{
+    display: block;
+    margin: 0 auto 20px;
+}
+.present .result{
+    display: flex;
+    margin-bottom: 20px;
+}
+.present .result img{
+    border-radius: 10px;
+    margin: 0 10px;
+    width: 220px;
+}
+.present p{
+    font-size: 16px;
+    line-height: 1.4em;
+    margin-bottom: 20px;
+}
+.present p:last-child{
+    margin-bottom: 0;
+}
+/*sect5*/
+.exp_block {
+    width: 420px;
+    margin: 0 auto 30px;
+    background: #fff;
+    padding: 0 0 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .exp_block > img {
+    display: block;
+    margin: 0 auto 20px;
+  }
+  
+  .exp_block .info {
+    padding: 0 25px;
+    background: url(../images/spc_q.png) right 25px top no-repeat;
+    margin-bottom: 25px;
+  }
+  
+  .exp_block .info > img {
+    float: left;
+    border-radius: 50%;
+  }
+  
+  .exp_block .info > p {
+    overflow: hidden;
+    padding-top: 5px;
+    padding-left: 15px;
+    font-size: 13px;
+    line-height: 1.2em;
+  }
+  
+  .exp_block .info > p > span {
+    font-weight: 700;
+    display: block;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.2em;
+    margin-bottom: 3px;
+  }
+  
+  .exp_block .text {
+    padding: 0 25px;
+  }
+  
+  .exp_block .text > p:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
+  /*sect5*/
+  .sect5 h2 {
+    margin-bottom: 20px;
+  }
+  .sect5 h2 span {
+    color: black;
+  }
+  
+  .sect5 .result .benef1 li p {
+    color: black;
+    font-size: 15px;
+    font-weight: 100;
+  }
+  
+  .sect5 > p {
+    padding: 0 30px;
+    margin-bottom: 20px;
+  }
+  
+  .result > p {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .benef1 .img {
+    width: 100px;
+    height: 100px;
+    background: #25ae88;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    line-height: 100px;
+    font-size: 28px;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+  }
+  
+  .benef1 .img > small {
+    font-size: 19px;
+  }
+  
+  .rev_block {
+    padding-top: 15px;
+  }
+  
+  .rev_block .title {
+    padding-top: 70px;
+    text-align: center;
+    background: url(../images/rev_q.png) 50% 0% no-repeat;
+  }
+  
+  .rev_block .title > span {
+    display: block;
+  }
+  
+  .rev_item {
+    margin: 0 auto;
+    padding: 30px;
+    background: #fff;
+  }
+  
+  .rev_item > img {
+    display: block;
+    margin: 0 auto 25px;
+  }
+  
+  .rev_item > span {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .rev_item .info {
+    margin-top: 30px;
+    font-weight: 700;
+    background: url(../images/rev_q2.png) 100% 50% no-repeat;
+    background-size: contain;
+  }
+  
+  .rev_item .info > p > span {
+    font-weight: 700;
+    display: block;
+  }
+  
+  .reviews button.owl-prev, .reviews button.owl-next {
+    width: 39px;
+    height: 36px;
+    background: url(../images/rev_arrow.png) 0% 50% no-repeat;
+    position: absolute;
+    top: 140px;
+  }
+  
+  .reviews .owl-prev {
+    left: 0;
+  }
+  
+  .reviews button.owl-next {
+    right: 0;
+    background-position: 100% 50%;
+  }
+  @media (max-width:375px) {
+    .reviews .owl-prev, .reviews .owl-next {
+        top: 170px;
+      }
+  }
