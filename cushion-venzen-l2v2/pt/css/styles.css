@@ -323,9 +323,10 @@ section {
   width: 100px;
   color: #fff;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.3em;
   padding-top: 17px;
+  transform: translateX(5px);
 }
 
 .price .discont > span {
