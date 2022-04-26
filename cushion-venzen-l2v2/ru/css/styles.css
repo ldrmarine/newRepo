@@ -110,7 +110,7 @@ section {
   text-decoration: none;
   text-align: center;
   background: linear-gradient(to bottom, #ff3e4f, #fa7a85);
-  font-size: 27px;
+  font-size: 24px;
   letter-spacing: 1px;
   margin: 0px auto;
   color: #fff;
@@ -323,9 +323,10 @@ section {
   width: 100px;
   color: #fff;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.3em;
   padding-top: 17px;
+  transform: translateX(5px);
 }
 
 .price .discont > span {
@@ -739,7 +740,9 @@ section {
   background: #fff;
 }
 
-.rev_item > img {
+.rev_item > img.rev_item-img {
+  width: 180px;
+  height: auto;
   display: block;
   margin: 0 auto 25px;
 }
@@ -805,6 +808,7 @@ section {
   margin: 0 5px 10px;
   display: inline-block;
   vertical-align: top;
+  min-height: 227px;
 }
 
 .order_list > li > img {
