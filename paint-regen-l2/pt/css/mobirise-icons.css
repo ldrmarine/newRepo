@@ -49,7 +49,7 @@
 .mbri-apple:before {
   content: "\e907";
 }
-.mbri-arrow-down:before {
+.arrow-tab-down:before {
   content: "\e908";
 }
 .mbri-arrow-next:before {
@@ -58,7 +58,7 @@
 .mbri-arrow-prev:before {
   content: "\e90a";
 }
-.mbri-arrow-up:before {
+.arrow-tab-up:before {
   content: "\e90b";
 }
 .mbri-bold:before {
