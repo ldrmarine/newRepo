@@ -135,6 +135,9 @@ background-repeat: no-repeat;
 .thanks_popup .popup_bg .popup .thanks-pack{margin-top:-50px}
 .thanks_popup .popup_bg .popup .popup_text{font-size:20px;max-width:480px}
 .thanks_popup .popup_bg .popup .thanks-pack{max-width:100%}
+@media (min-width:1350px ) {
+	.proplem .problem_desc{max-width:500px}
+}
 @media screen and (max-width:1350px){
 	.main_content .woman{width:470px;right:-100px;top:-65px}
 	.main_content .woman img{width:100%}
