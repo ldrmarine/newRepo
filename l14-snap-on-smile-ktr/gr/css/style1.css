@@ -197,7 +197,7 @@ background-repeat: no-repeat;
 	.about .about_wrap{display:block !important}
 	.about .about_img-wrap{display:-moz-flex;display:-ms-flex;display:-o-flex;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;margin:40px 0}
 	.about .about_img-2,.about .about_img-3,.about .about_img{position:static;width:220px;height:220px;background-color:#fff;border-radius:100%;padding:10px;background-size:cover;border:10px solid #fff}
-	.about .about_img{background:url("../images/about-1-mobile.png") no-repeat;background-size:cover}
+	.about .about_img{background:url("../images/about-2-mobile.png") no-repeat;background-size:cover}
 	.about .about_img-2{background:url("../images/about-2-mobile.png") no-repeat;background-size:cover}
 	.about .about_img-2 img{display:none}
 	.about .about_img img{display:none}
@@ -239,6 +239,9 @@ background-repeat: no-repeat;
 	.thanks_popup .popup_bg .popup .thanks-pack{display:none}
 }
 @media screen and (max-width:576px){
+	body{
+		overflow-x: hidden;
+	}
 	.container{width:90%}
 	.section_header{font-size:30px}
 	.btn{font-size:19px;padding:20px 20px}
