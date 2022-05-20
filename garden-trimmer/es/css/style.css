@@ -1675,6 +1675,9 @@ ul.deliv_v2_3 {
 	.list-v2 .txt p{
 		font-size: 12px;
 	}
+	.rev-list{
+		padding: 0px 10px 15px;
+	}
 }
 @media (max-width:390px) {
 	.m1-form{
