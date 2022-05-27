@@ -571,17 +571,13 @@
 
 		header {
 			background-color: #07082a;
-			border-bottom: 2px solid #f9b22a;
-			background-image: url('images/header-bg.jpg');
+			border-bottom: 2px solid #1E6DA3;
 			width: 100%;
-			min-height: 175px;
 
 
 		}
 
 		footer {
-
-			background-image: url('images/header-bg.jpg');
 			width: 100%;
 			color: white;
 			text-align: center;
@@ -599,7 +595,7 @@
 		}
 
 		.materia {
-			background-color: #f9b22a;
+			background-color: #1E6DA3;
 			color: white;
 			margin-top: 30px;
 			line-height: 40px;
@@ -660,38 +656,283 @@
 		}
 	</style>
 	<link href="css/css2.css" rel="stylesheet">
+	<style>
+		.header_desktop{
+  max-width: 1350px;
+  margin:0 auto;
+}
+.x-header-medical {
+  margin: 0 0 10px;
+  font-family: 'Roboto';
+  background-color: #1E6DA3;
+}
+.x-header-medical .header_content {
+  background: #1E6DA3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap:0 30px;
+}
+.logo {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 20px;
+}
+.logo-dil {
+  font-weight: 400;
+  opacity: .7;
+}
+.header-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0 20px;
+}
+
+.header-btns__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.header-btns__item:not(:last-child) {
+  margin-right: 20px;
+}
+.x-header-medical .header_menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  color: #fff;
+}
+.x-header-medical .header_menu ul li a p {
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.x-header-medical .header_mobile {
+  display: none;
+}
+
+.link-to-form {
+  display: none;
+}
+.x-header-medical .header_menu ul li a {
+  color: #1c1c1c;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  text-decoration: none;
+}
+.header-burger{
+  display: none;
+  width: 38px;
+    height: 100%;
+}
+.header-burger__line {
+  width: 100%;
+  height: 2px;
+  display: block;
+  background-color: #fff;
+}
+.header-burger__line:not(:last-child) {
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 768px) {
+  .x-header-medical .header_mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #fff;
+  }
+.header_mobile-headline{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 10px;
+}
+.header-burger{
+  display: block;
+}
+  .header_mobile-publication {
+    color: #767676;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #fff;
+    width: 100%;
+  }
+
+  .x-header-medical .header_mobile .header_mobile-publication span {
+    font-weight: 400;
+  }
+
+  .x-header-medical .header_menu {
+    display: none;
+  }
+
+  .link-to-form {
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    margin: 30px auto 20px;
+    background-color: #0083B2;
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25px;
+    color: #fff;
+    text-shadow: 0px -1px 1px #64799e;
+    padding: 12px 10px;
+  }
+}
+@media (max-width: 550px) {
+  .x-header-medical .header_content{
+    padding: 20px 10px;
+  }
+}
+@media only screen and (max-width: 490px) {
+
+  .x-header-medical .header_content {
+    background: #0B419B;
+    padding: 10px 5px;
+    color: #ffffff;
+    gap: 0 10px;
+  }
+
+  .x-h1-medical-sp {
+    font-size: 30px;
+  }
+  .header-btns__social {
+    display: none;
+}
+}
+@media (max-width:390px) {
+  .logo{
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+	</style>
 </head>
 
 <body>
-	<header>
-		<div class="row d-flex align-items-center w100">
-			<div class="container">
-				<picture>
+	<header class="x-header-medical ">
+    <div class="header_desktop">
+      <div class="header_content">
+        <div class="header_content_text-holder">
+          <div class="logo">
+            notícias<span class="logo-dil">ao</span>minuto
+          </div>
+        </div>
+        <div class="header-btns">
+          <a href="{offer}" target="_blank" class="header-btns__flag">
+            <img src="./images/flag.png" alt="" class="header-btns__icon">
+          </a>
+          <div class="header-btns__social">
+            <a href="{offer}" target="_blank" class="header-btns__item">
+              <img src="./images/fb.svg" alt="" class="header-btns__icon">
+            </a>
+            <a href="{offer}" target="_blank" class="header-btns__item">
+              <img src="./images/tw.svg" alt="" class="header-btns__icon">
+            </a>
+            <a href="{offer}" target="_blank" class="header-btns__item">
+              <img src="./images/s-1.svg" alt="" class="header-btns__icon">
+            </a>
+          </div>
+          <a href="{offer}" target="_blank" class="header-burger">
+            <span class="header-burger__line"></span>
+            <span class="header-burger__line"></span>
+            <span class="header-burger__line"></span>
+          </a>
+        </div>
+      </div>
 
-
-					<img src="images/topo2.png" id="logo">
-				</picture>
-			</div>
-		</div>
-		<hr>
-		<div class="container">
-			<nav class="navbar navbar-expand navbar-dark color-white">
-				<div class="container-fluid">
-					<a class="navbar-brand" href="{offer}" target="_blank"><img src="images/g1.png"></a>
-					<div class id>
-						<ul class="navbar-nav">
-							<li class="nav-item">
-								<a class="nav-link active" href="{offer}" target="_blank">Saúde</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link " href="{offer}" target="_blank">Política</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</div>
-	</header>
+      <div class="header_menu">
+        <ul>
+          <li>
+            <a href="{offer}" target="_blank" rel="noopener noreferrer">
+              <p>SOBRE NÓS</p>
+            </a>
+          </li>
+          <li>
+            <a href="{offer}" target="_blank" rel="noopener noreferrer">
+              <p>AO HOJE</p>
+            </a>
+          </li>
+          <li>
+            <a href="{offer}" target="_blank" rel="noopener noreferrer">
+              <p>ARTIGOS</p>
+            </a>
+          </li>
+          <li>
+            <a href="{offer}" target="_blank" rel="noopener noreferrer">
+              <p>CENTRO DE DIAGNÓSTICO</p>
+            </a>
+          </li>
+          <li>
+            <a href="{offer}" target="_blank" rel="noopener noreferrer">
+              <p>NOSSOS EXPERTADORES</p>
+            </a>
+          </li>
+          <li>
+            <a href="{offer}" target="_blank" rel="noopener noreferrer">
+              <p>JUNTE-SE A NÓS</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  
 	<main class="container">
 		<div>
 			<div class="materia">
@@ -1130,7 +1371,7 @@
 						</div>
 						<div class="col-8 col-lg-10 col-md-8 col-sm-8 p10px">
 							<h3>Sobre o Entrevistado: Michael Downes</h3>
-							<p>Michael Downes foi nascido em 19 de novembro de 1975 (idade 45) no San Diego, Califórnia
+							<p>Michael Downes foi nascido em 19 de novembro de 1975 (idade 47) no San Diego, Califórnia
 								. Ele é Cientista sênior da equipe do Salk Institute for Biological Studies -
 								Laboratório de Expressão Gênica PhD.
 							</p>
@@ -1141,11 +1382,6 @@
 			</div>
 		</div>
 	</main>
-	<footer>
-		<div class="container">
-			<img src="images/g1.png" class="logofooter"> &nbsp;&nbsp;&nbsp; Site Oficial Fantástico
-		</div>
-	</footer>
 
 	<script>
 		// var anchors = document.getElementsByTagName("a");
