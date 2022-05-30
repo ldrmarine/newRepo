@@ -773,3 +773,7 @@
         width: 100%
     }
 }
+.like{
+    display: inline-block;
+    margin: 0 7px;
+}
