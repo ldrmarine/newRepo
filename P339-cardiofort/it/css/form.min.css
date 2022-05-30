@@ -1,0 +1,87 @@
+.formularz-walidacja {
+    max-width: 400px;
+    background-color: #c01e14;
+    padding: 25px;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 25px;
+    margin: 20px auto
+}
+
+@media (max-width:1366px) {
+    .formularz-walidacja {
+        margin: 6px auto
+    }
+}
+
+.formularz-walidacja__form input,
+.formularz-walidacja__form--input {
+    width: 100%;
+    padding: 10px 6px;
+    margin-bottom: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.formularz-walidacja__form .tel_container {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.formularz-walidacja__form .tel_container__prefix {
+    width: 20%
+}
+
+.formularz-walidacja__form .tel_container__prefix--input {
+    width: 126%;
+    opacity: 1;
+    text-align: right;
+}
+
+.formularz-walidacja__form .tel_container__tel {
+    width: 75%
+}
+
+.formularz-walidacja__form .tel_container__tel--input {
+    width: 100%
+}
+
+.formularz-walidacja__form--select {
+    width: 100%;
+    padding: 10px 20px
+}
+
+.formularz-walidacja__form .submit-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 20px
+}
+
+.formularz-walidacja__form .submit-container--btn {
+    padding: 10px 80px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #c01e14;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 15px 5px -4px rgba(192, 30, 20, .75);
+    box-shadow: 0 15px 5px -4px rgba(192, 30, 20, .75)
+}
+
+.formularz-walidacja__form .submit-container--btn:hover {
+    cursor: pointer;
+    background-color: #7d7;
+    color: #fff
+}
+
+/*# sourceMappingURL=form.min.css.map */
