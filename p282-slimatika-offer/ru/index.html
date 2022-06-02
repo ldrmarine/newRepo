@@ -286,48 +286,7 @@
 					<img src="images/simoneantes.png" class="img-responsive" style="width: 100%">
 					<p class="m-t-25">
 						<strong>
-							(<script language="javascript">
-								var dayNames = new Array(
-									"Domingo",
-									"Segunda-feira",
-									"Terça-feira",
-									"Quarta-feira",
-									"Quinta-feira",
-									"Sexta-feira",
-									"Sábado"
-								);
-
-								// Array of month Names
-								var monthNames = new Array(
-									"Janeiro",
-									"Favereiro",
-									"Março",
-									"Abril",
-									"Maio",
-									"Junho",
-									"Julho",
-									"Agosto",
-									"Setembro",
-									"Outubro",
-									"Novembro",
-									"Dezembro"
-								);
-
-								var now = new Date();
-								var dayOfTheWeek = now.getDay();
-								now.setTime(now.getTime() - 0 * 24 * 60 * 60 * 1000);
-
-								document.write(
-									dayNames[now.getDay()] +
-									", " +
-									now.getDate() +
-									" de " +
-									monthNames[now.getMonth()] +
-									" de " +
-
-									now.getFullYear()
-								);
-							</script>) -
+							(<span class="date-day"></span>.<span class="date-mont"></span>.<span class="date-year"></span>) -
 							Как и около 1,5 миллиона португальцев, Меган страдала от ожирения и проблем с лишним весом. Сегодня Меган говорит, что ее жизнь так же хороша, а тело такое же стройно, как в ее 18 лет.
 						</strong>
 					</p>
@@ -691,48 +650,7 @@
 						<div class="warning">
 							Мега Скидка<br>
 							Окончание в
-							<script language="javascript">
-								var dayNames = new Array(
-									"Domingo",
-									"Segunda-feira",
-									"Terça-feira",
-									"Quarta-feira",
-									"Quinta-feira",
-									"Sexta-feira",
-									"Sábado"
-								);
-
-								// Array of month Names
-								var monthNames = new Array(
-									"Janeiro",
-									"Favereiro",
-									"Março",
-									"Abril",
-									"Maio",
-									"Junho",
-									"Julho",
-									"Agosto",
-									"Setembro",
-									"Outubro",
-									"Novembro",
-									"Dezembro"
-								);
-
-								var now = new Date();
-								var dayOfTheWeek = now.getDay();
-								now.setTime(now.getTime() - 0 * 24 * 60 * 60 * 1000);
-
-								document.write(
-									dayNames[now.getDay()] +
-									", " +
-									now.getDate() +
-									" de " +
-									monthNames[now.getMonth()] +
-									" de " +
-
-									now.getFullYear()
-								);
-							</script>
+							<span class="date-day"></span>.<span class="date-mont"></span>.<span class="date-year"></span>
 						</div>
 						<a href="{offer}"  target="_blank">
 							<img src="images/botao.png" class="img-responsive button">
@@ -2112,7 +2030,29 @@
 			});
 		});
 	</script>
+<script type="text/javascript">
+	window.addEventListener('DOMContentLoaded', () => {
+  const day = document.querySelectorAll('.date-day');
+  const mont = document.querySelectorAll('.date-mont');
+  const year = document.querySelectorAll('.date-year');
 
+
+  for ( let i = 0; i < day.length; i++){
+    currentDate(day[i], mont[i], year[i]);
+  }
+
+
+  function currentDate(day,mont, year){
+    let currentDay = new Date().getDate();
+    let currentMonth = new Date().getMonth() + 1;
+    let currentYear = new Date().getFullYear();
+
+    day.textContent = currentDay < 10 ? "0" + currentDay: currentDay;
+    mont.textContent = currentMonth < 10 ? "0" + currentMonth: currentMonth;
+    year.textContent = currentYear < 10 ? "0" + currentYear: currentYear;
+  }
+})
+</script>
 </body>
 
 </html>
