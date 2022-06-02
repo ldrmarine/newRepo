@@ -1,10 +1,10 @@
 header {
 	background: #111111;
 }
-
+/* 
 .container {
 	width: 100%;
-}
+} */
 .container .wrapper {
 	width: 100%;
 	display: -webkit-box;
