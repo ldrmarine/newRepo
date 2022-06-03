@@ -306,5 +306,6 @@
 	.container .wrapper-menu .social .social__link:last-child {
 			max-width: 145px;
 			margin: 0 5px;
+			font-size: 14px;
 	}
 }
