@@ -1,1 +1,0 @@
-let getParams=function(e){let t={},n=[],o=window.location.search.substring(1);if(o){let i=o.split("&");for(let e=0;e<i.length;e++){let n=i[e].split("=");t[n[0]]=decodeURIComponent(n[1])}for(let e in t)n.push(`<input type="hidden" name="${e}" value="${t[e]}">`);e&&(n=n.join(" "),e.append(`${n}`))}};getParams($(".x_order_form"));
