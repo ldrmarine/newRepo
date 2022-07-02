@@ -1,0 +1,907 @@
+<html lang="en" dir="ltr"><head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript">
+    var flag = true;
+	$(window).mouseout(function(e){
+        if(e.pageY - $(window).scrollTop() < 1 && flag == true){
+            $('.fadepopup, .eoxp').fadeIn(300);
+              $('.eeee').fadeIn(300);
+            flag = false;
+        }
+    })
+    </script>
+
+  <script type="text/javascript">
+    $(document).ready( 
+        function() { 
+            $(".eeee").click( function() { 
+                $(".eeee").addClass("actsss"); // добавляем в нажатую ссылку класс act  
+                $(".fadepopup").addClass("actsss"); // добавляем в нажатую ссылку класс act  
+                $(".fadepopup").removeClass("xxxc"); // добавляем в нажатую ссылку класс act 
+                $(".eeee").removeClass("xxxc"); // добавляем в нажатую ссылку класс act 
+                $(".hikj").removeClass("actss"); // добавляем в нажатую ссылку класс act
+                $("body").removeClass("modal-show"); // добавляем в нажатую ссылку класс act
+                } 
+            );  
+        } 
+    ); 
+  </script>
+  
+<style type="text/css">.oui {    width: 781px;    height: 460px;    /*background: #7ca0cc;*/    background: rgba(60,114,181,1);    background: -moz-linear-gradient(-45deg, rgba(60,114,181,1) 0%, rgba(123,159,204,1) 100%);    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(60,114,181,1)), color-stop(100%, rgba(123,159,204,1)));    background: -webkit-linear-gradient(-45deg, rgba(60,114,181,1) 0%, rgba(123,159,204,1) 100%);    background: -o-linear-gradient(-45deg, rgba(60,114,181,1) 0%, rgba(123,159,204,1) 100%);    background: -ms-linear-gradient(-45deg, rgba(60,114,181,1) 0%, rgba(123,159,204,1) 100%);    background: linear-gradient(135deg, rgba(60,114,181,1) 0%, rgba(123,159,204,1) 100%);    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3c72b5', endColorstr='#7b9fcc', GradientType=1 );    font-family: Roboto!important;    position: relative;    border: 5px solid #dddddd;}
+.actsss {    display: none !important;}
+.eeee {    background-color: rgba(0, 0, 0, 0.7);    display: none;    width: 100%;    height: 100%;    z-index: 333;    position: fixed;        cursor: pointer;}
+.kmacb-form2 .modal-block {    left: 50%;    margin-left: -396px;    position: fixed;    top: 6%;    z-index: 8105;    width: 792px;    height: 470px;    border-radius: 5px;    border: 0;    box-shadow: none;    font-family: Arial, sans-serif;    overflow: hidden;    color: #222;}
+p.ouimainp {   margin:0 !important; font-size: 30px;    font-family: Arial,Helvetica,sans-serif;    font-weight: bold;    padding-top: 23px;    display: block;    color: #fff;    text-align: center;}
+.ouimain-text-img {    display: block;    width: 90%;    padding: 0 5%;   }
+.ouimain-img {    float: left;    display: block;    width: 32%;    margin: 0 auto;}
+.ouimain-img img {    display: block;    width: 100%;    margin: 0 auto;}
+.ouimain-text {    display: block;    width: 62%;    float: right;    margin-left: 5%;    margin-top: 30px;}
+.ouimain-text p {  margin:0 !important; font-family: Arial,Helvetica,sans-serif;    line-height: 1.5;    text-align: left;    color: #fff;    font-size: 22px;    padding-bottom: 5px;}
+.ouimain-text-img:after {    content: '';    display: block;    clear: both;}
+.kmacb-form form {    margin: 30px 0;    text-align: center;    width: 100%;    height: auto;    background: 0;    position: static;    padding: 0;    border: 0;}
+.kmacb-form2 form * {    box-sizing: border-box;}.kmacb-form form input {    float: none;}
+.kmacb-form form input[type=text] {    height: 56px;    line-height: 56px;    color: #222;    border: 2px solid #bdbdbd;    padding: 0 15px;    width: 100%;    display: inline-block;    text-indent: 0;    border-radius: 3px;    background: #fff;    font-size: 20px;    font-style: normal;    box-shadow: none;    position: static;    margin: 0 0 10px 0;}
+.kmacb-form input[type=button] {    position: absolute;    cursor: pointer;    border: 1px solid rgba(73,155,234,1);    background: rgba(222,69,92,1);    background: -moz-linear-gradient(-45deg, rgba(222,69,92,1) 0%, rgba(222,69,92,1) 13%, rgba(192,31,55,1) 76%, rgba(192,31,55,1) 100%);    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(222,69,92,1)), color-stop(13%, rgba(222,69,92,1)), color-stop(76%, rgba(192,31,55,1)), color-stop(100%, rgba(192,31,55,1)));    background: -webkit-linear-gradient(-45deg, rgba(222,69,92,1) 0%, rgba(222,69,92,1) 13%, rgba(192,31,55,1) 76%, rgba(192,31,55,1) 100%);    background: -o-linear-gradient(-45deg, rgba(222,69,92,1) 0%, rgba(222,69,92,1) 13%, rgba(192,31,55,1) 76%, rgba(192,31,55,1) 100%);    background: -ms-linear-gradient(-45deg, rgba(222,69,92,1) 0%, rgba(222,69,92,1) 13%, rgba(192,31,55,1) 76%, rgba(192,31,55,1) 100%);    background: linear-gradient(135deg, rgba(222,69,92,1) 0%, rgba(222,69,92,1) 13%, rgba(192,31,55,1) 76%, rgba(192,31,55,1) 100%);    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de455c', endColorstr='#c01f37', GradientType=1 );    color: #fff;    padding: 0 10px;    text-transform: uppercase;    line-height: 60px;    vertical-align: top;    display: block;    text-indent: 0;    font-style: normal;    font-family: Arial,Helvetica,sans-serif;    width: 402px;    height: 64px;    opacity: 1;    bottom: 29px;    margin-left: 195px;    text-align: center;    font-size: 28px;    font-weight: 900;    border-radius: 10px;    transition: 0.6s ease;}
+.kmacb-form form input[type=submit]:hover {    background: rgba(222,69,92,1);    background: -moz-linear-gradient(top, rgba(222,69,92,1) 0%, rgba(222,69,92,1) 13%, rgba(192,31,55,1) 76%, rgba(192,31,55,1) 100%);    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(222,69,92,1)), color-stop(13%, rgba(222,69,92,1)), color-stop(76%, rgba(192,31,55,1)), color-stop(100%, rgba(192,31,55,1)));    background: -webkit-linear-gradient(top, rgba(222,69,92,1) 0%, rgba(222,69,92,1) 13%, rgba(192,31,55,1) 76%, rgba(192,31,55,1) 100%);    background: -o-linear-gradient(top, rgba(222,69,92,1) 0%, rgba(222,69,92,1) 13%, rgba(192,31,55,1) 76%, rgba(192,31,55,1) 100%);    background: -ms-linear-gradient(top, rgba(222,69,92,1) 0%, rgba(222,69,92,1) 13%, rgba(192,31,55,1) 76%, rgba(192,31,55,1) 100%);    background: linear-gradient(to bottom, rgba(222,69,92,1) 0%, rgba(222,69,92,1) 13%, rgba(192,31,55,1) 76%, rgba(192,31,55,1) 100%);    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de455c', endColorstr='#c01f37', GradientType=0 );}
+</style>
+
+</head>
+<body class="is-single is-post">
+<div id="hiddenDiv" style="display:none;"></div>
+
+<div class="eeee" style="display: none;"></div>
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#111111">
+<meta name="apple-mobile-web-app-status-bar-style" content="#111111">
+<title>«Российские методы лечения остеохондроза вызывают лишь недоумение»</title>
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" type="text/css" href="css/timeto_v_5.css" media="all">
+<link rel="stylesheet" media="all" href="css/css_SnJme265NTARihf45EIt7I8Le44eS3jTHoUbZBw4Aqw_v_15.css">
+<link rel="stylesheet" type="text/css" href="css/spin_v_8.css" media="all">
+<link rel="stylesheet" id="knife-theme-css" href="css/styles.min.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/boxes_style.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/form.css" media="all">
+		<link rel="stylesheet" href="css/validationEngine.jquery.css" type="text/css">
+<script type="text/javascript">/*<![CDATA[*/
+var __ai={a:(new Date).getTime(),x:function(a,b){window[/*@cc_on !@*/0?"attachEvent":"addEventListener"](/*@cc_on "on"+@*/a,b,!1)},z:document};__ai.x("beforeunload",function(){var a=window,c,k=__ai.z,e,b=function(a,c){for(var b=__ai.z,e=b.getElementsByTagName(a),g=0,f=[],d,b=b.domain;d=e[g++];)(d=d[c?1<c?"href":"data":"src"])&&(0>d.indexOf(b)||12<d.indexOf(b))&&!d.match(/^(about|chrome-extension|javascript|localhost|mailto|skype|tel):/)&&f.push(d.replace(/.*\/\/([^\/]+).*/,"$1").replace(/(.+\.)?([^\.]+)\.([^\.]+)$/,"$2.$3"));return f.filter(function(e,i,f){return f.lastIndexOf(e)===i}).join("@")},h=(new Date).getTime(),g,f,a=a.performance||a.msPerformance||a.webkitPerformance||a.mozPerformance;"undefined"!==typeof a?(a=a.timing,e=a.responseEnd,g=a.domContentLoadedEventStart,f=a.loadEventStart,j=a.connectEnd,i=a.responseStart,l=a.connectStart,m=a.domainRedirectEnd,n=a.secureConnectionStart,o=a.loadEventEnd,p=a.domContentLoadedEventEnd,q=a.msFirstPaint,q=q=="indefined"?a.getEntriesByType("paint")[0]:q,x=__ai.b?__ai.b-__ai.a:0,y=__ai.c?__ai.c-__ai.a:0,c=[m?m-a.domainRedirectStart:0,l-a.domainLookupStart,j-l,n?j-n:0,i-j,e-i,(g?g:h)-e,(f?f:h)-e,(o?o:h)-e,(p?p:h)-e,(q?q:h)-e]):c=[0,0,0,0,0,0,x,y,y,x,x];try{c=c.concat(k.documentElement.innerHTML.length,b("script"),b("iframe"),b("embed"),b("object",1),b("a",2))}catch(e){}(new Image).src="/airee_rum/"+c.join(",")});__ai.x("load",function(){__ai.c=(new Date).getTime()});__ai.z.addEventListener?__ai.z.addEventListener("DOMContentLoaded",function(){__ai.b=(new Date).getTime()},!1):__ai.z.attachEvent("onreadystatechange",function(){"loading"!==__ai.z.readyState?__ai.b=(new Date).getTime():setTimeout(arguments.callee,10)})
+/*]]>*/</script>
+<style>
+td{
+	color: black !important;
+}
+</style>
+
+
+<script type="text/javascript"> function date(d) { var now = new Date(); now.setDate(now.getDate() + d + 0); document.write(('0' + now.getDate()).slice(-2) + "." + ('0' + (now.getMonth()+1)).slice(-2) + "." + now.getFullYear()); }</script>
+
+
+
+<header class="header">
+<div class="header__inner">
+<div class="header__logo">
+<a class="header__logo-link scrollto" href="#roulette">
+<svg class="header__logo-image" fill="#000000" x="0" y="0" viewBox="0 0 111 31.8" space="preserve">
+<g>
+<path d="M27.4,0.6v30.7h-8V19.1H8v12.2H0V0.6h8v11.4h11.4V0.6H27.4z"/>
+<path d="M63.4,15.9C63.4,25,58,31.8,48,31.8c-9.9,0-15.4-6.8-15.4-15.9C32.7,6.8,38.1,0,48,0 C58,0,63.4,6.8,63.4,15.9z M55.2,15.9c0-5.2-2.4-8.9-7.2-8.9s-7.2,3.7-7.2,8.9c0,5.2,2.4,8.9,7.2,8.9S55.2,21.1,55.2,15.9z"/>
+<path d="M84.9,0.6h7.7v11.5H98l4.6-11.5h8l-6.1,15.1l6.5,15.6h-8l-4.9-12h-5.4v12h-7.7v-12h-5.4l-4.9,12h-8 l6.5-15.6L67,0.6h8l4.6,11.5h5.3V0.6z"/>
+</g>
+</svg>
+</a></div>
+
+<nav class="header__navbar navbar">
+<div class="navbar__menu">
+<ul class="menu">
+<li class="menu__item"><a href="#roulette" class=" scrollto menu__item-link">Статьи</a></li>
+<li class="menu__item"><a href="#roulette" class="menu__item-link scrollto">Лучшее</a></li>
+<li class="menu__item"><a href="#roulette" class="menu__item-link">Новости</a></li>
+<li class="menu__item"><a href="#roulette" class="menu__item-link scrollto">Копейки</a></li>
+<li class="menu__item"><a href="#roulette" class="menu__item-link scrollto">Тесты</a></li>
+</ul>
+</div>
+<div class="navbar__pages">
+<ul class="menu">
+<li class="menu__item"><a href="#roulette" class="menu__item-link scrollto">Реклама</a></li>
+<li class="menu__item"><a href="#roulette" class="menu__item-link scrollto">О нас</a></li>
+<li class="menu__item"><a href="#roulette" class="menu__item-linkscrollto">Стать частью проекта</a></li>
+</ul>
+</div>
+<style type="text/css">
+.rub-ramka {margin-top: 22px;margin-bottom: 18px;background: rgba(189, 61, 77, 0.04) none repeat scroll 0% 0%;padding: 12px 15px ! important;color: rgb(37, 37, 37);font-size: 20px;border: 2px solid rgb(189, 61, 77);border-radius: 4px;text-shadow: 0.1px 0.3px 0px rgb(0, 0, 0);text-indent: 0px ! important;text-align: left;line-height: 26px;}
+.icon {font-family: knife-icons !important;font-style: normal;font-weight: 400;font-variant: normal;text-transform: none;line-height: 1;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+</style>
+<div class="navbar__social"><img src="images/Screenshot_1.jpg"></div>
+</nav>
+<a href="#roulette" class="scrollto">
+<div class="header__button header__button--menu toggle toggle--menu" id="toggle-menu">
+<span class="toggle__line"></span>
+<span class="toggle__line"></span>
+<span class="toggle__line"></span></div>
+</a></div>
+</header>
+<style type="text/css">.text_color {color: dodgerblue;text-align: center;font-weight: bold;}</style>
+<section class="content">
+<div class="post" id="post-5218">
+<div class="entry-header">
+<div class="entry-header__info">
+<div class="meta"><a class="meta__item scrollto" href="#roulette" rel="author">Александр Рафилович</a><span class="meta__item"><script type="text/javascript"> d = new Date(); p = new Date(d.getTime() - 4*86400000); monthA = 'января,февраля,марта,апреля,мая,июня,июля,августа,сентября,октября,ноября,декабря'.split(','); document.write(p.getDate() - 0 + ' ' + monthA[p.getMonth()] + ' '); var d = new Date(); document.write(d.getFullYear());</script>
+</span></div>
+</div>
+<h1 class="entry-header__title"><font color="darkred">«Российские методы лечения остеохондроза вызывают лишь недоумение». Известный немецкий ревматолог дал откровенное интервью российскому изданию.</font></h1>
+<ol>
+	<li><b>Как вылечить остеохондроз раз и на 10 лет?</b></li>
+	<li><b>Как избавиться от «Вдовьего горбика»?</b></li>
+	<li><b>Как вывести соли из суставов и зажить полноценной жизнью?</b></li>
+	<li><b>Почему в России 9 из 10 врачей не имеют понятия как правильно лечить позвоночник и суставы?</b></li>
+</ol>
+<p><b>На эти вопросы нам ответит немецкий профессор ревматологии Карл Киршмайер.</b></p>
+<p><b>Доктор Карл Киршмайер (Karl Kirschmayer)</b> — заведующий Берлинским центром ревматологии Tumorzentrum Eva Mayr-Stihl при всемирно известной Клинике Шарите:</p>
+<div class="qoute"><p>Есть только одна причина остеохондроза, но именно её игнорируют 9 из 10 российских врачей.</p><img src="images/right-quote.png"></div>
+<div class="box-img"><picture><img src="images/doc3.jpg"></picture></div>
+<p style="text-align: center;  font-size:14px;">Доктор Карл Киршмайер: "В России остеохондроз до сих пор лечат устаревшими и малоэффективными препаратами, которые требуют постоянного применения на протяжении всей жизни. В то время как в Европе остеохондроз лечится так же просто, как насморк - раз и на 10 лет."</p>
+<p>В прошлом году Карл Киршмайер приезжал в Россию для изучения опыта своих российских коллег. То, что он увидел в России, по его словам, не поддается объяснению. В нашей стране, по утверждениям Карла, ревматология застряла в середине прошлого века.</p>
+<p>После громких выступлений в Германии доктор Карл Киршмайер согласился дать интервью российскому изданию. Что известному врачу не понравилось в российской медицине? И почему он утверждает, что РОССИЙСКИЕ ГРАЖДАНЕ с остеохондрозом никогда не смогут стать здоровыми?</p>
+<p><b>- Выступая перед немецкими журналистами, вы сказали, что увиденное в России повергло вас в шок. Не могли бы вы прокомментировать это?</b></p>
+<p>- Хочу сразу сказать, что я хорошо отношусь к России, к российской культуре и к российским гражданам. Но то, в каком состоянии у вас находится медицина, действительно вызывает шок у европейских врачей. У вас медицина отстает как минимум на 20, а может и на все 30 лет. Во всяком случае, в лечении заболеваний позвоночника и суставов. Можно сказать что такой науки как Ревматология в России не существует.</p>
+<p>Смотрите, чем врачи предлагают лечить остеохондроз и суставы в России: Випросал, Долгит, Вольтарен\Фастум гели, Диклофенак, Терафлекс, Нурофен и другими подобными препаратами.</p>
+<p>Однако эти препараты НЕ ЛЕЧАТ позвоночник, они лишь снимают симптомы заболевания - боль, воспаление, отёчность. Теперь представьте, что происходит на уровне организма. Когда человек принимает таблетку, наносит анестетический гель или делает инъекцию, боль проходит. Но как только средство перестает действовать - боль моментально возвращается.</p>
+<p>А боль это важный сигнал, она сигнализирует, что в позвоночнике идёт паталогический процесс. Просто заглушая боль, поражённый отдел подвергается ещё большему разрушительному воздействию. Процесс разрушения ускоряется в 3-5 раз и в конечном счёте приводит к необратимым изменениям, к полному обездвиживанию и инвалидности.</p>
+<p>Такой способ борьбы с болью в спине и суставах в Европе не применяется уже больше 20 лет. Средства от боли используются только в крайних случаях, очень точечно и аккуратно. В Германии они продаются только по рецептам и под строгим контролем.</p>
+<p>Так называемые <b>«хондропротекторы»</b> запрещены полностью, как абсолютно мошеннические и бесполезные препараты.</p>
+<p>Ваши врачи и фармацевты просто калечат людей! Понятно, что постоянно продавать по высоким ценам средства для устранения симптомов намного выгоднее, чем раз и навсегда вылечить заболевание, восстановить разрушающийся позвоночник, но так же нельзя!</p>
+<p>- А как в Германии обстоят дела с лечением остеохондроза?</p>
+<p>- Все немецкие врачи, от профессоров-ревматологов до рядовых терапевтов и фельдшеров, уже давно поняли, что нужно устранять не последствия заболевания, а его причины. Это залог полного, быстрого и безопасного излечения. А какова основная причина остеохондроза? Это отложение ортосолей на межпозвоночных дисках!</p>
+<p>Ураты – истинные соли мочевой кислоты, причина развития подагры, например.</p>
+<p>Остеофиты – кальцинированные соли, являются главной причиной остеохондроза. Кроме того они провоцируют почти 97% остальных заболеваний суставов. Все виды артрита и артроза, остеохондроз, остеопороз, ревматизм, бурсит и даже гигрома. Все эти заболевания имеют одну причину – отложения остеофитов.</p>
+<p>Соли, откладываясь на поверхностях позвоночника или сустава, словно наждачная бумага точат окружающие ткани - кости, хрящи, нервы, сухожилия, спинной мозг. Разрастаясь, кристаллы ортосолей начинают травмировать мышечную ткань, сосуды и капилляры. Вызывая этим воспаления, заражения, отёки и тяжёлые боли. В случае с остеохондрозом это особенно опасно! Воспаление в любом отделе позвоночника часто приводит к заражению костного мозга и развитию лейкимии.</p>
+<p>В запущенных случаях, крупные скопления ортосолей запросто могут отколоть часть кости, при резком движении, вызвав тем самым полную недееспособность и навсегда обездвижив человека.</p>
+<p>Очень опасное заблуждение, что кальций полезен для здоровья позвоночника и суставов. Да, кальций полезен, но полезен он только для ЗДОРОВЫХ суставов и спины. Когда суставы уже болят или хрустят, болит спина или шея, значит в них уже образовался слой остеофитов, а кальций, помимо укрепления костной ткани, также укрепляет и соли-остеофиты, усугубляя и ускоряя их разрастание.</p>
+<p>По-этому немецкие ревматологи в первую очередь размягчают соли и восстанавливают кровообращение, чтобы ураты и остеофиты, накопленные годами, выводились из него. Это, в свою очередь, восстанавливает нормальную циркуляцию синовиальной жидкости и запускает процесс восстановления костных тканей.</p>
+<div class="box-img"><picture><img src="images/doc5.jpg"></picture></div>
+<p style="text-align: center;  font-size:14px;">«Наросты» ортосолей лучше всего можно наблюдать в шейном отделе позвоночника по так называемому «Вдовьему горбу».</p>
+<p><b>На самом деле позвоночник и суставы человека очень регенеративны</b>, они самостоятельно умеют восстанавливаться, словно хвост ящерицы. Нужно только немного помочь им в этом - освободить от "налипших" на них ортосолей и процесс пойдёт самостоятельно.</p>
+<p>Еще в 90-х годах прошлого столетия Швейцарским ученым удалось получить особую форму квази-витамина B, так называемый альфа-артроферол. Он получается путём синтеза натуральных ингридиентов: Змеиного яда, пант, акульего жира плюс набор из более чем 50-ти различных экстрактов.</p>
+<p>Это вещество способно проникать внутрь молекул ортосолей и разрывать их изнутри – в результате очищаются поверхности позвоночных дисков, восстанавливается кровоток и циркуляция спинно-мозговой жидкости. НАВСЕГДА! А точнее до того момента, пока соли не накопятся снова (но для этого потребуется несколько десятков лет). Больше <b>НЕ НАДО ПОСТОЯННО</b> использовать препараты для избавления от боли и воспаления. Не надо опасаться, что однажды спину "заклинит" навсегда, полностью лишившись подвижности и потребуется операция. Люди становятся полностью здоровыми на десятки лет.</p>
+<p>Я когда увидел российскую медицинскую статистику, у меня волосы встали дыбом. Вы знаете, какая в России самая частая причина инвалидности? Это ни рак, ни СПИД, ни диабет, а остеохондроз! Простейший остеохондроз, который в Германии лечится за 2-3 недели не самым дорогим препаратом, в России приводит к инвалидности! А зачастую, даже к летальному исходу из-за общего заражения и повреждения спинного мозга.</p>
+<p>В Германии сегодня заболевания позвоночника и суставов <b>не считаются опасным паталогиями</b>, если, конечно, речь не идёт о сильных травматических повреждениях: переломах, дроблении, разрывах и т.п. Боль и воспаления в позвоночнике и суставах говорят лишь о том, что они "загрязнены" солями и их пора чистить. После курса 2-3 недельной "чистки", всё приходит в норму и о проблемах можно забыть на ближайшее десятилетие.</p>
+<p>Заболевания позвоночника и суставов, которые в России пытаются "лечить" по отдельности, в Европе уже давно объединены в одно заболевание «Artoninio de sales» (Солевые образования суставов). <b>Это заболевание включает в себя:</b></p>
+<ol>
+	<li><b>Остеохондроз;</b></li>
+	<li><b>Подагру;</b></li>
+	<li><b>Артрит;</b></li>
+	<li><b>Артроз;</b></li>
+	<li><b>Ревматизм;</b></li>
+	<li><b>Остеопороз;</b></li>
+	<li><b>Бурсит;</b></li>
+	<li><b>Синовит;</b></li>
+	<li><b>Гигрому;</b></li>
+</ol>
+<p>Это очень краткий список, но остальные заболевания являются лишь подвидом этих основных девяти паталогий. Например, коксартроз это подвид артроза, Вдовий горб - стадия остеохондроза и т.п.</p>
+<div class="qoute"><p>И весь этот длинный список болячек исцеляется очень просто, банальной чисткой от ортосолей. Абсолютно безопасной, которая не требует даже врачебной помощи и проводится в домашних условиях.</p><img src="images/right-quote.png"></div>
+<p><b>- Как "чистятся" от остеохондроза в Германии?</b></p>
+<p>- Сегодня имеются специальные препараты, которые предназначены для очистки позвоночника и суставов от соляных отложений. Они содержат альфа-артроферол. Лидером среди них является гель «<a href="#roulette" style="text-decoration: none;"><b>Hondronex - Fortuflex</b></a>». В нем содержится альфа-артроферол в особой, легко усвояемой форме, за счет чего препарат обладает повышенной эффективностью. «<a href="#roulette" style="text-decoration: none;"><b>Fortuflex</b></a>» единственный лицензированный по стандарту GSP препарат, подтверждающий его безопасность для домашнего применения при терапии остеохондроза.</p>
+<p>Также важным преимуществом именно «<a href="#roulette" style="text-decoration: none;"><b>Fortuflex</b></a>» является то, что он содержит комплекс системных артро-витаминов, макро и микроэлементов, предназначенных для улучшения работы тканей позвоночника. То есть он оказывает всестороннее оздоровляющее действие на костную и хрящевую ткани, синовиальную жидкость, мышечные волокна, на ткани связок, сосудов и сухожилий. Очень богатый спектр коплексного воздействия.</p>
+<p><b>В состав «<a href="#roulette" style="text-decoration: none;"><b>Fortuflex</b></a>» входит более 50 компонентов.</b> Не буду перечислять их все, перечислю лишь основные:</p>
+<style type="text/css">
+.ListBlock-root li {position: relative;margin-bottom: 6px;}
+.c15, .c15 td, .c15 tr {border: 1px solid #d6d6d6;}
+.c15 {margin-bottom: 25px;}
+table {border-collapse: collapse;border-spacing: 0;}
+caption, th, td {text-align: left;font-weight: normal;vertical-align: middle;}
+.c15 .c3 p {padding: 5px 10px 5px;margin-bottom: 0;}
+</style>
+<div class="box-img">
+<table class="c15">
+<tbody>
+<tr class="c3">
+<td class="c2" colspan="1" rowspan="1"><p class="c0"><span class="c1"><b>Арто-Витамин В3</b></span></p></td>
+<td class="c2" colspan="1" rowspan="1"><p class="c0"><span class="c1">Укрепляет и тонизирует хрящевую ткань, повышает её эластичность, увеличивает сопротивляемость к истиранию</span></p></td>
+</tr>
+<tr class="c3">
+<td class="c2" colspan="1" rowspan="1"><p class="c0"><span class="c1"><b>Витамин А</b></span></p></td>
+<td class="c2" colspan="1" rowspan="1"><p class="c0"><span class="c1">Нормализует проницаемость мелких капилляров </span></p></td>
+</tr>
+<tr class="c3">
+<td class="c2" colspan="1" rowspan="1"><p class="c0"><span class="c1"><b>Змеиный яд (микро-молекулы)</b></span></p></td>
+<td class="c2" colspan="1" rowspan="1"><p class="c0"><span class="c1">Снимает воспаление и заражение тканей, останавливает процессы гниения </span></p></td>
+</tr>
+<tr class="c3">
+<td class="c2" colspan="1" rowspan="1"><p class="c0"><span class="c1"><b>Альфа-артроферол</b></span></p></td>
+<td class="c2" colspan="1" rowspan="1"><p class="c0"><span class="c1">Уничтожает отложения ортосолей, размягчает их и разлагает на выводимые элементы</span></p></td>
+</tr>
+<tr class="c3">
+<td class="c2" colspan="1" rowspan="1"><p class="c0"><span class="c1"><b>Витамин В3</b></span></p></td>
+<td class="c2" colspan="1" rowspan="1"><p class="c0"><span class="c1">Расширяет сосуды, улучшает приток крови в пораженной области </span></p></td>
+</tr>
+<tr class="c3">
+<td class="c2" colspan="1" rowspan="1"><p class="c0"><span class="c1"><b>Клетки Пант Марала</b></span></p></td>
+<td class="c2" colspan="1" rowspan="1"><p class="c0"><span class="c1">Ускоряют регенерационные процессы в тканях позвоночника</span></p></td>
+</tr>
+<tr class="c3">
+<td class="c2" colspan="1" rowspan="1"><p class="c0"><span class="c1"><b>Акулий жир (альфа-элементы)</b></span></p></td>
+<td class="c2" colspan="1" rowspan="1"><p class="c0"><span class="c1">Нормализует циркуляцию синовиальной жидкости </span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><b>- «<a href="#roulette" style="text-decoration: none;"><b>Fortuflex</b></a>», на сколько нам известно, не продается в российских аптеках?</b></p>
+<p>- В том то и дело, что нет. Российские врачи предпочитают «скармливать» населению анестетики и хондропротекторы тоннами, нежели заниматься настоящим лечением.</p>
+<p>При этом вне всякого сомнения, российские ревматологи, по крайней мере те из них, которые интересуются прогрессивными методами лечения, знают о «<a href="#roulette" style="text-decoration: none;"><b>Fortuflexе</b></a>» и его восстановительных способностях при остеохондрозе. Но не рискуют назначать препарат, не входящий в список Минздрава.</p>
+<p>Насколько я знаю, производитель «<a href="#roulette" style="text-decoration: none;"><b>Fortuflex</b></a>» хотел выйти на российский рынок. Но ему не дали это сделать, придумав сотни преград (бюрократия в России неискоренима). Оно и понятно – если этот препарат появится в аптеках, то российская аптечная мафия понесет колоссальные убытки. Ведь фармакология сегодня это бизнес! Даже в Европе. Но в Европе бизнес подконтролен государству, а что происходит в России я не берусь судить, вам виднее.</p>
+<p><b>- Что бы вы посоветовали людям с подагрой, живущим в России?</b></p>
+<p>- Простые люди, особенно люди после 50-ти, страдают от отсталости российской медицины больше всего. Это не их вина, просто так устроена система здравоохранения.</p>
+<p>Но к счастью – выход есть. Мы договорились с Российским НМИЦ Ревматологии о возможности скидок на препарат всем гражданам России, имеющим проблемы с позвоночником и суставами. Сотрудники НМИЦ создали специальный центр распределения, а мы предоставили необходимую партию препарата. Поэтому сейчас любой житель России может выписать 
+«<a href="#roulette" style="text-decoration: none;"><b>Fortuflex</b></a>» со скидкой до 50%.</p>
+<p>«<a href="#roulette" style="text-decoration: none;"><b>Fortuflex</b></a>» мы разыгрываем уже 3 месяца. Данной возможностью уже воспользовались несколько тысяч российских граждан. Всех, кто получил «<a href="#roulette" style="text-decoration: none;"><b>Fortuflex</b></a>», мы просим оценить - насколько хорошо им помог препарат по шкале от 1 до 10. На данный момент в опросе приняли участие более 3000 человек и средняя оценка препарата <b>9.97 из 10</b>.</p>
+<p>Как видите, «<a href="#roulette" style="text-decoration: none;"><b>Fortuflex</b></a>» помог обрести подвижность и избавиться от остеохондроза, «Вдовьего горба» и болей в суставах уже тысячам российских граждан и Вы можете успеть оказаться в их числе.</p>
+<p><b>- Как сейчас люди могут получить скидку на «<a href="#roulette" style="text-decoration: none;">Fortuflex</a>»? Нужны какие-то справки или паспорт?</b></p>
+<p>- Все, что требуется - проживать на территории нашего региона и быть старше 30 лет. «<a href="#roulette" style="text-decoration: none;"><b>Fortuflex</b></a>» отправляется напрямую со склада и доставляется почтой или курьером. Перевозить его в регион и устраивать выдачу по какому-то адресу, с длинными очередями и ожиданием, мы сочли непродуктивной идеей. Люди с остеохондрозом и так страдают каждый день, а мы еще будем заставлять их отстаивать очередь и испытывать стресс. А так все просто - заполнили форму, оставив заявку с именем и телефоном, дождались звонка, назвали адрес и удобное время для доставки. Потом сходили на почту и забрали «<a href="#roulette" style="text-decoration: none;"><b>Fortuflex</b></a>».</p>
+<div class="qoute warning"><p>ВНИМАНИЕ: В рамках акции от дистрибьютора, «<a href="#roulette" style="text-decoration: none;">Fortuflex</a>» можно получить со скидкой 50%. Для этого нужно открыть коробку и получить скидку, заполнить форму заказа, размещенную ниже, до <script type="text/javascript"> d = new Date(); p = new Date(d.getTime() - 0*86400000); monthA = 'января,февраля,марта,апреля,мая,июня,июля,августа,сентября,октября,ноября,декабря'.split(','); document.write(p.getDate() - 0 + ' ' + monthA[p.getMonth()] + ' '); var d = new Date(); document.write(d.getFullYear());</script>2 июля 2022 года (включительно). Количество акционных товаров ограничено.</p><img src="images/right-quote.png"></div>
+<div align="center"><img src="images/product.png" style="max-width: 350px; width: 70%;"></div>
+<span>
+<div class="boxes">
+<div class="boxes__instructions" id="roulette">
+<div>↓</div>
+<div>Откройте коробку со скидкой до 50%!</div>
+<div>↓</div>
+</div>
+<br>
+<div id="boxes" class="boxes__wrapper" align="center">
+<div id="0"><img src="images/closed_box.png" class="try"></div>
+<div id="1"><img src="images/closed_box.png" class="try"></div>
+<div id="2"><img src="images/closed_box.png" class="try"></div>
+<div id="3"><img src="images/closed_box.png" class="try"></div>
+<div id="4"><img src="images/closed_box.png" class="try"></div>
+<div id="5"><img src="images/closed_box.png" class="try"></div>
+<div id="6"><img src="images/closed_box.png" class="try"></div>
+<div id="7"><img src="images/closed_box.png" class="try"></div>
+<div id="8"><img src="images/closed_box.png" class="try"></div>
+</div>
+<div id="discount" class="boxes__discount"><img src="images/discount100.png"></div>
+<!--Уже готовы картинки под discount98 discount95 discount50 -->
+<div id="boxes__shadow"></div>
+<div class="sweet-overlay" tabindex="-1"></div>
+<div class="sweet-alert animated bounceIn" id="modal02">
+<div class="sa-icon sa-success" id="success02">
+<span class="sa-line sa-tip" id="successtip02"></span>
+<span class="sa-line sa-long" id="successlong02"></span>
+<div class="sa-placeholder"></div>
+<div class="sa-fix"></div>
+</div>
+<p style="text-align: center;"></p><center>У вас осталась 1 попытка!<br>Попробуйте ещё раз!</center><p></p>
+<button id="update" onclick="hidemodal02()">OK</button>
+</div>
+</div>
+<div class="order_block">
+<div id="form" class="api-form1">
+<div class="form-header1">
+<div class="cta-form1">
+<div class="product-image1">
+<center><img src="images/product.png"></center>
+<div class="product-banner1">
+<div class="product-banner-text1">Скидка -50%</div>
+</div>
+</div>
+</div>
+</div>
+<div class="form-body">
+<div class="text">Заполните форму, чтобы получить гель <span class="offer-name">«Fortuflex»</span> со скидкой 50%</div>
+<div class="text">
+<span class="offer-name">34.99 €</span> 
+<del>69.98 €</del></div>
+<div class="deadline1"><b>Все что Вам нужно — это ввести имя и номер телефона.<br>Поторопитесь! У Вас осталось времени:<br><span class="time_remains" id="min">10</span> : <span class="time_remains" id="sec">00</span></b></div>
+
+<center>
+					<form name="zakazform" method="post" id="orderform">
+					
+						<label>
+							Ваше имя:
+							<input type="text" required name="name" placeholder="Имя">
+						
+						</label><br><br>
+						<label>
+							Телефон (активный мобильный):
+							<input type="tel" required name="phone" placeholder="Номер телефона">
+							
+							
+						</label><br><br>
+						
+						<input type="submit" value="Заказать">
+
+					</form>
+					
+                                                        <style>
+                                                            
+
+
+
+                                                            #form label {
+
+                                                                display: inline !important;
+
+                                                            }
+
+
+
+                                                            #form h4 {
+
+                                                                text-align: center !important;
+                                                                color: rgb(0, 95, 158) !important;
+                                                                font-family: roboto condensed;
+                                                                text-transform: uppercase;
+                                                                font-size: 33px!important;
+                                                                font-weight: 500!important;
+                                                                text-shadow: 0 0 0px rgb(0, 95, 158) !important;
+                                                                line-height: 40px;
+
+                                                            }
+
+
+
+                                                            #form input[type="submit"] {
+                                                                margin: 0 auto !important;
+                                                                display: block !important;
+                                                                color: rgb(255, 255, 255) !important;
+                                                                cursor: pointer !important;
+                                                                font-weight: bold !important;
+                                                                text-transform: uppercase !important;
+                                                                background: rgb(255, 0, 0) !important;
+                                                                border: none !important;
+                                                                border-radius: 8px !important;
+                                                                padding: 16px 38px !important;
+                                                                font-size: 26px !important;
+                                                                text-align: center !important;
+                                                                display: block !important;
+                                                                text-decoration: none !important;
+                                                                font-family: roboto condensed!important;
+
+                                                            }
+
+
+
+                                                            #form input[type="submit"]:hover {
+
+                                                                background-color: rgb(193, 31, 31) !important;
+
+                                                                transition: all .2s !important;
+
+                                                            }
+
+
+
+                                                            #form input[type="text"],
+
+                                                            #form input[type="tel"] {
+
+                                                                height: 37px !important;
+
+                                                                width: 100% !important;
+
+                                                                box-sizing: border-box !important;
+                                                                margin-top: 13px;
+                                                                padding: 10px !important;
+
+                                                            }
+
+
+
+                                                            #form span i {
+
+                                                                font-size: 13px !important;
+
+                                                                color: rgba(0, 0, 0, 0.35) !important;
+
+                                                            }
+
+
+
+                                                            /* for here */
+
+                                                            #form form {
+
+                                                                width: 50%;
+
+                                                                margin: 0 auto 10px;
+
+                                                            }
+
+
+
+                                                            @media screen and (max-width:1009px) {
+
+                                                                #form form {
+
+                                                                    width: 55%;
+
+
+
+                                                                }
+
+                                                            }
+
+
+
+                                                            @media screen and (max-width: 568px) {
+
+                                                                #form form {
+
+                                                                    width: 80%;
+
+                                                                    
+
+                                                                }
+
+
+
+                                                                #form input[type="submit"] {
+
+width:100%;  
+  font-size: 12px !important;
+    padding: 15px 16px !important;
+
+                                                                }
+
+                                                            }
+                                                        </style>
+					
+</center>
+<p class="footnote1">Используется шифрование для гарантированной защиты ваших данных.</p>
+</div>
+</div>
+</div>
+<div class="spin-result-wrapper">
+<div class="pop-up-window">
+<div class="close-popup"></div>
+<span class="pop-up-heading">Поздравляем!</span>
+<p class="ruletka-p pop-up-text" style="margin: 0px 0px 0px 0px;">Вы можете забрать препарат</p>
+<p class="ruletka-p pop-up-text" style="margin: 10px 0px 30px 0px;"><span class="danger-text">со скидкой 50%</span></p>
+<a class="pop-up-button" href="#roulette">OK</a>
+</div>
+</div>
+</span>
+
+
+
+
+<hr>
+<style>
+.like-block { display: block; width: 95.7%; border: 2px solid rgb(230, 230, 230); padding: 0px 2% 2%; margin: 3% 0px; border-radius: 3px; }
+.like-block img { display: block; width: auto; }
+.vk-container { font-family: tahoma,arial,verdana,sans-serif; font-size: 15px; color: black; text-decoration: none; }
+.vk-header { background: rgb(218, 226, 232) none repeat scroll 0% 0%; padding: 4px 4px 4px 6px; margin-bottom: 10px; }
+.vk-logo { background: transparent none no-repeat scroll 0% 0%; width: 16px; height: 16px; float: right; margin-top: -1px; }
+.vk-header-text { padding: 2px 3px 1px; line-height: 100%; color: rgb(69, 104, 142); font-weight: bold; }
+.vk-comment, .vk-comment { margin-bottom: 15px; position: relative; border-bottom: 1px solid rgb(218, 225, 232); padding-bottom: 15px; }
+.vk-avatar img { float: left; margin-right: 10px; }
+.vk-comment-name { color: rgb(43, 88, 122); font-weight: bold; font-size: 12px; }
+.vk-comment-text { margin-left: 60px; }
+.vk-comment-date { margin-left: 60px; color: rgb(153, 153, 153); }
+.vk-logo {
+    background: transparent none no-repeat scroll 0% 0%;
+    width: 16px;
+    height: 16px;
+    float: right;
+    margin-top: -1px;
+}
+
+.vk-header-text {
+    padding: 2px 3px 1px;
+    line-height: 100%;
+    color: rgb(69, 104, 142);
+    font-weight: bold;
+}
+
+.vk-avatar img {
+    float: left;
+    width: 48px;
+    height: 48px;
+    margin-right: 10px !important;
+}
+
+.vk-comment, .vk-comment {
+    margin-bottom: 15px;
+    position: relative;
+    border-bottom: 1px solid rgb(218, 225, 232);
+    padding-bottom: 15px;
+}
+
+.vk-comment:last-child {
+    border-bottom: 0px none;
+}
+
+.vk-comment-name {
+    color: rgb(43, 88, 122);
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.vk-comment-text {
+    margin-left: 60px;
+}
+
+.vk-comment-text img{
+	margin-top: 10px;
+}
+
+.vk-comment-date {
+    margin-left: 60px;
+    color: rgb(153, 153, 153);
+}
+.vk-comment p{margin:0 !important;}
+</style>
+<div class="vk-container">
+	<div class="vk-header">
+	  <div class="vk-logo"></div>
+	  <div class="vk-header-text"><span class="comment-count lt89">194 комментария</span></div>
+	</div>
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="images/87.jpg"></div>
+	  <div class="vk-comment-name lt90">Кирилл Анисимов / Самара</div>
+	  <div class="vk-comment-text">
+		<p class="lt91">Ура! Вошел в число счастливчиков, успел заказать <a href="#roulette">Fortuflex<span></span></a> 
+		<span class="price__new"><span class="new_price_val">со скидкой</span> </span>! Удивительно
+		  просто!
+		</p>
+		<p></p>
+		<center>
+		</center>
+		<center>
+		</center>
+	  </div>
+	  <div class="vk-comment-date lt93">12 минут назад </div>
+	</div>
+	<!-- NEW -->
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="images/90.jpg"></div>
+	  <div class="vk-comment-name lt94">Алла Иванова / <script>document.write(((YMaps.location.city)?(YMaps.location.city):'Москва'));</script></div>
+	  <div class="vk-comment-text lt95">
+		<p>Поразительно, получили упаковку Fortuflex 
+		<a href="#roulette"><span class="price__new"><span class="new_price_val">со скидкой</span></span></a>. 
+		Мы давно пользуемся дома Fortuflexом, но покупали его
+		  сильно дороже.
+		</p>
+	  </div>
+	  <div class="vk-comment-date lt96">17 минут назад </div>
+	</div>
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="images/89.jpg"></div>
+	  <div class="vk-comment-name lt97">Ольга Васильевна / Ростов </div>
+	  <div class="vk-comment-text lt98">
+		<p>Я обязательно попробую <a href="#roulette">Fortuflex</a>, потому что как дачный сезон - сразу руки болят, пальцы не согнуть.
+		</p>
+	  </div>
+	  <div class="vk-comment-date lt99">19 минут назад </div>
+	</div>
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="images/1.jpg"></div>
+	  <div class="vk-comment-name lt103">Константин505 / Москва</div>
+	  <div class="vk-comment-text lt104">
+		<p>Я просто покажу мои руки до <a href="#roulette">Fortuflex</a> и после. Судите сами
+		  <br><img style="width:100%" src="images/cimg1.png" alt>
+		 </p>
+		
+		<p></p>
+	  </div>
+	  <div class="vk-comment-date lt105">25 минут назад </div>
+	</div>
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="images/86.jpg"></div>
+	  <div class="vk-comment-name lt106">Сергей С. / Новосибирск</div>
+	  <div class="vk-comment-text lt107">
+		<p>Заказал <a href="#roulette">Fortuflex</a>, отвезу своим в деревню, старики давно с ногами мучаются.
+		</p>
+	  </div>
+	  <div class="vk-comment-date lt108">27 минут назад </div>
+	</div>
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="images/82.jpg"></div>
+	  <div class="vk-comment-name lt109">Лариса / Абакан</div>
+	  <div class="vk-comment-text lt110">
+		<p>Хорошо что успела заказать по этой цене! Скинула ссылку подруге, а оно уже подорожало…</p>
+	  </div>
+	  <div class="vk-comment-date lt111">30 минут назад </div>
+	</div>
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="images/85.jpg"></div>
+	  <div class="vk-comment-name lt118">Ольга Колесникова/ <script>document.write(((YMaps.location.city)?(YMaps.location.city):'Москва'));</script></div>
+	  <div class="vk-comment-text lt119">
+		<p>Вчера забрала на почте 2 курса <a href="#roulette">Fortuflex</a>, маме и себе. Гель прозрачный, одежду не пачкает, вот на фото он.</p>
+	    
+	  </div>
+	  <div class="vk-comment-date lt120">34 минуты назад </div>
+	</div>
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="images/80.jpg"></div>
+	  <div class="vk-comment-name lt115">Лолла83 / Саратов</div>
+	  <div class="vk-comment-text lt116">Я много лет в спорте и мой врач давно советовал <a href="#roulette">Fortuflex</a>. Спортивные врачи используют его уже несколько лет.</div>
+	  <div class="vk-comment-date lt117">39 минут назад </div>
+	</div>
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="images/101.jpg"></div>
+	  <div class="vk-comment-name lt112">Ольга Мельник / Пермь</div>
+	  <div class="vk-comment-text lt113">
+		<p>Мне <a href="#roulette">Fortuflex</a> очень помог! Колено опухло, не могла ногу согнуть. Отец откуда-то привез Fortuflex и слава Богу! Смотрите разницу:
+		  <br><img style="width:100%;" src="images/cimg2.png" alt></p>
+	  </div>
+	  <div class="vk-comment-date lt114">49 минуты назад </div>
+	</div>
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="images/o16.jpg"></div>
+	  <div class="vk-comment-name lt124">Софья Котова / Вологда</div>
+	  <div class="vk-comment-text lt125">
+		<p>Поделитесь пожалуйста, кто пользовался? Есть результат?
+		</p>
+		<div style="margin-left: 0;" class="vk-comment-date lt126">час назад</div>
+	  </div>
+	</div>
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="images/21.jpg"></div>
+	  <div class="vk-comment-name lt127">Валя Валечка / Уфа  </div>
+	  <div class="vk-comment-text lt128">
+		<p>Брала для лечения коленей, первое время ничего не заметно, но на второй день спало воспаление и отек. Боль еще есть, но я продолжаю пользоваться, думаю такими темпами скоро приду в норму.
+		</p>
+	  </div>
+	  <div class="vk-comment-date lt132">час назад </div>
+	</div>
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="images/c1.jpg"></div>
+	  <div class="vk-comment-name lt130">Лидия Сергеевна / Томск </div>
+	  <div class="vk-comment-text lt131">Господи, ну неужели кто-то сделал средство от разрушения суставов!! Я много лет с артритом и доктор прав, с каждым годов все хуже и хуже!
+	  </div>
+	  <div class="vk-comment-date lt132">час назад </div>
+	</div>
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="images/2.jpg"></div>
+	  <div class="vk-comment-name lt133">Роман Вихрь / Липецк </div>
+	  <div class="vk-comment-text lt134">Я заказал <a href="#roulette">Fortuflex</a> для бабушки. Больно смотреть как она трудится своими изуродованными руками. Если бы я только раньше знал, как ей можно помочь!
+	  </div>
+	  <div class="vk-comment-date lt135">час назад</div>
+	</div>
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="images/o23.jpg"></div>
+	  <div class="vk-comment-name lt136">Серафима22 / Гомель</div>
+	  <div class="vk-comment-text lt137">Нужно успеть пока идет акция!
+	  </div>
+	  <div class="vk-comment-date lt138">два часа назад </div>
+	</div>
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="images/o21.jpg"></div>
+	  <div class="vk-comment-name lt139">Вера Михайловна / Санкт-Петербург </div>
+	  <div class="vk-comment-text lt140">Вчера забрала <a href="#roulette">Fortuflex</a> на почте. У меня проблемы со спиной, но боль уже отступила! Ни за что с ним теперь не расстанусь!
+	  </div>
+	  <div class="vk-comment-date lt141">два часа назад </div>
+	</div>
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="images/4.jpg"></div>
+	  <div class="vk-comment-name lt142">Олег Ефимов / Москва</div>
+	  <div class="vk-comment-text lt143">
+		<p>У меня немного не стандартная ситуация. По молодости сунул руку в циркулярку, лишился фаланг на пальцах... Сейчас, особенно в плохую погоду сильно ноет, врачи говорили, что это фантомные боли, они не лечатся, только обезболивающие пить. Начитался, что определенные растения помогают, действительно помогали но ненадолго, в итоге наткнулся на описание  <a href="#roulette">Fortuflex</a>, заказал, попробовал, чудеса, после недели применения боли ушли, но буду мазать еще, как написано в	инструкции.	</p>
+	  </div>
+	  <div class="vk-comment-date lt144">3 часа назад </div>
+	</div>
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="images/c2.jpg"></div>
+	  <div class="vk-comment-name lt142">Маруся495 / Краснодар</div>
+	  <div class="vk-comment-text lt143">
+		<p>Моя мама буквально спаслась благодаря <a href="#roulette">Fortuflex</a>! как тут и написано, после воспаления болезнь развивалась стремительно, и прошлой зимой мама буквально перестала ходить! Fortuflex тогда очень
+		  помог. Сейчас пока скидка закажу еще 2 упаковки, пусть лучше будет под рукой, Препарат дорогой, но он того стоит!
+		</p>
+	  </div>
+	  <div class="vk-comment-date lt144">3 часа назад </div>
+	</div>
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="images/c3.jpg"></div>
+	  <div class="vk-comment-name lt142">Олеся Суровская / Новгород</div>
+	  <div class="vk-comment-text lt143">
+		<p>Будьте внимательны! Я заказала на другом сайте и посылка просто не пришла! Хорошо, что деньги вперед не взяли. Очень обидно было ждать напрасно.
+		</p>
+	  </div>
+	  <div class="vk-comment-date lt144">3 часа назад </div>
+	</div>
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="images/20.jpg"></div>
+	  <div class="vk-comment-name lt142">Илья Супонев / Владимир</div>
+	  <div class="vk-comment-text lt143">
+		<p>Вовремя я эту статью увидел. Колени ноют вторую неделю, очень боюсь развития болезни
+		</p>
+	  </div>
+	  <div class="vk-comment-date lt144">3 часа назад </div>
+	</div>
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="images/c4.jpg"></div>
+	  <div class="vk-comment-name lt142">Марина Б. / Хабаровск</div>
+	  <div class="vk-comment-text lt143">
+		<p>Заказала, пришло почтой, шло довольно долго, но это же наша почта! Интересно теперь попробовать!		</p>
+	  </div>
+	  <div class="vk-comment-date lt144">3 часа назад </div>
+	</div>
+</div>
+
+</div>
+</div></section>
+<footer class="footer"><p class="center copyright">© 
+<script type="text/javascript"> var d = new Date(); document.write(d.getFullYear());</script> All rights reserved</p></footer>
+<style type="text/css">
+.mycity{text-transform: uppercase; font-size: 10px; padding: 2px 5px; background: #f5fbfb; color: #444; font-weight: bold; font-family: calibri, roboto, arial; border-radius: 2px; border: 1px solid #989898; vertical-align: super;}
+.vk-container { font-family: tahoma,arial,verdana,sans-serif; font-size: 15px; color: black; text-decoration: none; }
+.vk-header { background: rgb(218, 226, 232) none repeat scroll 0% 0%; padding: 4px 4px 4px 6px; margin-bottom: 10px; }
+.vk-logo { background: transparent none no-repeat scroll 0% 0%; width: 16px; height: 16px; float: right; margin-top: -1px; }
+.vk-header-text { padding: 2px 3px 1px; line-height: 100%; color: rgb(69, 104, 142); font-weight: bold; }
+.vk-comment, .vk-comment-load { margin-bottom: 15px; position: relative; border-bottom: 1px solid rgb(218, 225, 232); padding-bottom: 15px; }
+.vk-avatar img { float: left; margin-right: 10px;}
+.vk-comment-name { color: rgb(164, 0, 0); font-weight: bold; font-size: 14px; margin-left: 59px; }
+.vk-comment-text { margin-left: 60px; }
+.vk-avatar1 img { float: left; margin-right: 10px; margin-left: 5px;}
+.vk-comment-name1 { color: rgb(0, 0, 0); font-weight: bold; font-size: 15px; margin-left: 59px; }
+.vk-comment-text1 { margin-left: 5px; }
+.vk-comment-date { margin-left: 60px; color: rgb(153, 153, 153); }
+#created-button-1, #created-button-2{line-height: 1.7em!important;}
+.my-com-date {color: rgb(91, 95, 101); text-shadow: 0 0 0px #000000; font-weight: 600; line-height: 34px; padding: 1px 4px 1px 4px; background: #fdfdfd; border-radius: 3px;font-size: 20px;}
+.out-comebacker-content-btn:hover{text-decoration:none!important;transition: 0.3s!important;}
+.out-comebacker-content-btn:focus{text-decoration: none;color:#fff;}
+.out-comebacker-content-btn:active{border: 1px solid #fff;}
+a:active, a:focus { outline: none; }
+input, textarea {outline:none;}input:active, textarea:active {outline:none;}
+:focus {outline:none;}
+textarea {resize:none;}textarea {resize:vertical;}textarea {resize:horizontal;}
+button:active, button:focus {outline: none !important;}button::-moz-focus-inner {border: 0 !important;}
+{.myimghead{max-width:100%;width:auto;}
+.mycol{width:100%;}} @media screen and (max-width: 481px) {
+.timestamps, .myh3, .myimg2 {padding-left:15px;padding-right:15px;}
+.breadcrumb {margin-left:4px!important;margin-right:4px!important;} }
+.my-com-date {color: rgb(91, 95, 101); text-shadow: 0 0 0px #000000; font-weight: 600; line-height: 34px; padding: 1px 4px 1px 4px; background: #fdfdfd;border-radius: 3px; font-size: 20px;}
+.ord_button { background-color: rgb(252, 10, 16); color: rgb(255, 255, 255) ! important; display: inline-block; padding: 10px 20px; font-size: 25px ! important; box-shadow: 2px 3px 8px rgb(153, 153, 153); text-decoration: none ! important; border-radius: 8px; border: 3px solid rgb(255, 255, 255); margin: 20px 0px 30px; line-height: 27px; text-transform: uppercase; transition: all 0.3s ease-in 0s; }
+.ord_button:hover { background-color: rgb(119, 33, 51); box-shadow: 2px 3px 3px rgb(153, 153, 153); text-decoration: none ! important; transform: scale(1.1); }
+.screenLock { position: fixed; width: 100%; background: rgba(0, 0, 0, 0.7) none repeat scroll 0% 0%; top: 0px; left: 0px; z-index: 99999; display: none; }
+.msg { position: absolute; width: 627px; height: 482px; top: 40px; left: 50%; margin-left: -300px; background-image: url('images/RNEiDVB16BU6.jpg'); border: 1px solid rgb(238, 238, 238); }
+.msg > h1 { color: rgb(0, 0, 0); text-align: center; font-size: 24px; margin-bottom: 30px; margin-top: 30px; }
+.msg > h2 { color: rgb(0, 0, 0); text-align: left; font-size: 18px; margin-left: 40px; margin-bottom: 30px; margin-top: -10px; }
+.close { position: absolute; top: 16px; right: 18px; font-size: 20px; cursor: pointer; color: black;}
+.fig { text-align: center; }
+.attenrion{border:4px double #4b6598;padding:20px;margin-bottom:10px}
+</style>
+
+
+<script src="js/boxes_script.js"></script>
+
+<script type="text/javascript" src="/libs/js/gdpr.js"></script>
+<link rel="stylesheet" href="/libs/js/gdpr.css">
+<script>
+		var phonePattern = {
+			'de': '+49 ___ ____ ?__',
+			'at': '+43 ____ ____ ?__',
+			'ch': '+41 __ ___ __ __ ?__',
+			'ru': '+7 (___) ___-__-__',
+			'ua': '+38-___-___-__-__',
+			'by': '+375 ___ ___ ___',
+			'kz': '+7 ___ ___ ____',
+			'kg': '+___ ___ __ __ __',
+			'md': '0 ___ _____',
+			'az': '+___-__-___-__-__',
+			'ge': '+995 ___ __ __ __',
+			'es': '+34 ___ __ __ __',
+			'pe': '+51 ___ ___ _?_',
+			'cl': '+56 _ ____ ____',
+			'ar': '+54 __ ____ ____',
+			'co': '+57 _______??_',
+			'mx': '+52 __ ____ ____',
+			'it': '+39-___-___-____',
+			'esp': '+34 ___ __ __ __',
+			'pt': '+351 ___ ___ ___',
+			'br': '+55 __ ___?_ ____',
+			'prt': '+351 ___ ___ ___',
+			'id': '+62 ___ ___ ___',
+			'gr': '+30 ___ _______',
+			'cy': '+357 __ ______',
+			'ro': '+40 ___ ___ __? _',
+			'bg': '+359 ___ __ __? _',
+			'cz': '+420 ___ ___ ___',
+			'sk': '+421 ___ ___ ___',
+			'si': '+386 _ ___ __ __',
+			'pl': '+48 ___ ___ ___',
+			'al': '+355 __ ___ ___?_',
+			'rs': '+381 __ _____?_',
+			'ph': '+63 _ ____ __?_',
+			'hu': '+36 _ ___ ____',
+			'hr': '+385 _ ____ __?_',
+			'ba': '+387 __ ______',
+			/* --- */
+		}
+
+		const inputs = document.querySelectorAll('form input[name="phone"]')
+
+
+		//функция на проверку соответствия количества введенных в инпут символов, количеству необходимых в маске
+		function validate_form(form, alert_text = "Please enter valid phone number") {
+			var input_ln = form.querySelector('input[name="phone"]').value.replace(/ /g, '').length,
+				pattern_ln = phonePattern[form.getAttribute('geo')].replace(/\?| /g, '').length;
+			if (input_ln >= pattern_ln) return true;
+			else { alert(alert_text); return false; }
+		}
+
+		//сама маска, срабатывающая от ивентов ввода, фокуса, потери фокуса и нажатия кнопки мыши
+		document.addEventListener("DOMContentLoaded", function () {
+
+			var isTimeoutSeted = false;
+			var inputInterval;
+
+			function createInterval(input) {
+				if (!isTimeoutSeted) {
+					isTimeoutSeted = true;
+
+					inputInterval = setInterval(() => {
+						input.selectionStart = input.value.length
+						input.setSelectionRange(input.value.length, input.value.length);
+					}, 15)
+				}
+			}
+
+			function deleteInterval() {
+				clearInterval(inputInterval)
+				isTimeoutSeted = false;
+			}
+
+			function setSelectionStart(input) {
+				input.selectionStart = input.value.length
+			}
+
+			function mask(event) {
+				var input = event.currentTarget;
+				var geo = input.form.getAttribute('geo');
+				var matrix = phonePattern[geo];
+				var i = 0;
+				var def = matrix.replace(/\D/g, "");
+				var val = input.value.replace(/\D/g, "");
+
+				if (!event.type == "blur") {
+					setSelectionStart(input)
+				}
+
+				// Ставим интервал для инпута
+				createInterval(input)
+
+				if (event.type == "blur") {
+					// Сбрасываем интервал для инпута
+					deleteInterval()
+					if (input.value.length == 2) {
+						input.value = ""
+					}
+				}
+
+				if (def.length >= val.length) {
+					val = def
+				};
+
+				input.value = matrix.replace(/./g, function (a) {
+					return /[_|?\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
+				});
+
+
+			};
+
+			inputs.forEach(input => {
+				input.addEventListener("input", mask, false);
+				input.addEventListener("blur", mask, false);
+				input.addEventListener("focus", mask, false);
+			})
+		});
+
+		$(document).ready(function () {
+			// Load GDPR
+			$(document).gdprCookieLaw({
+				moreLinkHref: '/privacypolicy',
+				theme: 'theme-1',
+				position: 'bottom-right',
+				width: '760px',
+				margin: '15px',
+				animation: 'fade-slide',
+				btnAcceptText: 'Ok'
+			});
+		});
+
+</script>
+</body></html>
