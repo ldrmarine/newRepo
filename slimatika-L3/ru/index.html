@@ -7,13 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Slimatika</title>
   <meta property="og:title" content="Slimatika" />
-	<meta property="og:description" content="Всего 2 чайные ложки Slimatika в день поможет вам избавиться от лишних килограммов и забыть о проблеме лишнего веса раз и навсегда!" />
+	<meta property="og:description" content="Помогает вашему организму перевести жиры в чистую энергию" />
 	<meta property="og:image" content="https://i.imgur.com/ATcO67r.png" />
 	<meta property="og:type" content="website" />
   <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
   <link rel="stylesheet" href="./css/swiper.min.css?_v=20220701212219">
   <link rel="stylesheet" href="./css/main.min.css?_v=20220701212219">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js?_v=20220701212219"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -72,6 +72,14 @@
 						</div>
 					</div>
 					<form id="form-second" class="order__form form" method="post">
+					
+<input name="offer_id" type="hidden" value="{offer_id}">
+<input name="geo" type="hidden" value="">
+<input name="web_id" type="hidden" value="{web_id}">
+<input name="click_id" type="hidden" value="{click_id}">
+<input name="time_zone" type="hidden" value="+3">
+<input name="lang" type="hidden" value="RU">
+					
 						<input
 							class="form__input db"
 							type="text"
@@ -292,6 +300,14 @@
 						</div>
 					</div>
 					<form id="form" class="order__form form" method="post">
+					
+<input name="offer_id" type="hidden" value="{offer_id}">
+<input name="geo" type="hidden" value="">
+<input name="web_id" type="hidden" value="{web_id}">
+<input name="click_id" type="hidden" value="{click_id}">
+<input name="time_zone" type="hidden" value="+3">
+<input name="lang" type="hidden" value="RU">
+					
 						<input
 							class="form__input db"
 							type="text"
@@ -358,6 +374,26 @@
   </div>
 </footer>
   <script defer src="./js/main.min.js?_v=20220701212219"></script>
+  
+<script type="text/javascript" src="/libs/js/common.js"></script>
+<script>
+    $(document).ready(function() {
+        $.init({
+
+            priceSelector: ".new-cost",
+            oldPriceSelector: ".old-cost",
+            reportFormSelector: ".report-abuse__form",
+            reportCallback: function (data) {
+                console.log('ReportCallback:', data);
+            },
+            callback: function() {
+                console.log("Do something after prices changing");
+
+            }
+        });
+    });
+</script>
+  
 </body>
 
 </html>
