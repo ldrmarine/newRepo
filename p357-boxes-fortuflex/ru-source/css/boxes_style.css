@@ -1108,7 +1108,7 @@ input[placeholder="Ваше имя"], input[placeholder="Ваш телефон"]
   position: absolute;
   width: 30px;
   height: 30px;
-  background-image: url(../fonts/cross.svg);
+  background-image: url(../images/close-icon.png);
   background-size: 100%;
   top: -40px;
   border-radius: 50%;
@@ -1116,6 +1116,7 @@ input[placeholder="Ваше имя"], input[placeholder="Ваш телефон"]
   box-shadow: 0 0 10px #fff;
   right: -40px;
   cursor: pointer;
+  background-color: #fff;
 }
 .pop-up-heading {
   font-size: 40px;
