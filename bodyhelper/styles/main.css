@@ -313,7 +313,7 @@ table {
 	display: none
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,800;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,800;1,400&amp;display=swap');
 
 *,
 :after,
@@ -367,73 +367,73 @@ i {
 }
 
 .svg-body1 {
-	background: url(../fonts/sprite.css-37200930.svg) 55.1886792453% 0 no-repeat;
+	background: url(../images/css/svg/sprite.css-37200930.svg) 55.1886792453% 0 no-repeat;
 	width: 96px;
 	height: 100px
 }
 
 .svg-body2 {
-	background: url(../fonts/sprite.css-37200930.svg) 100% 0 no-repeat;
+	background: url(../images/css/svg/sprite.css-37200930.svg) 100% 0 no-repeat;
 	width: 95px;
 	height: 100px
 }
 
 .svg-body3 {
-	background: url(../fonts/sprite.css-37200930.svg) 0 24.8120300752% no-repeat;
+	background: url(../images/css/svg/sprite.css-37200930.svg) 0 24.8120300752% no-repeat;
 	width: 100px;
 	height: 105px
 }
 
 .svg-body4 {
-	background: url(../fonts/sprite.css-37200930.svg) 0 100% no-repeat;
+	background: url(../images/css/svg/sprite.css-37200930.svg) 0 100% no-repeat;
 	width: 95px;
 	height: 100px
 }
 
 .svg-child {
-	background: url(../fonts/sprite.css-37200930.svg) 42.238267148% 49.504950495% no-repeat;
+	background: url(../images/css/svg/sprite.css-37200930.svg) 42.238267148% 49.504950495% no-repeat;
 	width: 31px;
 	height: 36px
 }
 
 .svg-delivery {
-	background: url(../fonts/sprite.css-37200930.svg) 93.661971831% 46.7289719626% no-repeat;
+	background: url(../images/css/svg/sprite.css-37200930.svg) 93.661971831% 46.7289719626% no-repeat;
 	width: 24px;
 	height: 24px
 }
 
 .svg-logo {
-	background: url(../fonts/sprite.css-37200930.svg) 0 0 no-repeat;
+	background: url(../images/css/svg/sprite.css-37200930.svg) 0 0 no-repeat;
 	width: 117px;
 	height: 33px
 }
 
 .svg-office {
-	background: url(../fonts/sprite.css-37200930.svg) 84.4444444444% 48.5436893204% no-repeat;
+	background: url(../images/css/svg/sprite.css-37200930.svg) 84.4444444444% 48.5436893204% no-repeat;
 	width: 38px;
 	height: 32px
 }
 
 .svg-olds {
-	background: url(../fonts/sprite.css-37200930.svg) 52.8571428571% 49.504950495% no-repeat;
+	background: url(../images/css/svg/sprite.css-37200930.svg) 52.8571428571% 49.504950495% no-repeat;
 	width: 28px;
 	height: 36px
 }
 
 .svg-sad {
-	background: url(../fonts/sprite.css-37200930.svg) 64% 49.504950495% no-repeat;
+	background: url(../images/css/svg/sprite.css-37200930.svg) 64% 49.504950495% no-repeat;
 	width: 33px;
 	height: 36px
 }
 
 .svg-sport {
-	background: url(../fonts/sprite.css-37200930.svg) 79.7101449275% 67.6470588235% no-repeat;
+	background: url(../images/css/svg/sprite.css-37200930.svg) 79.7101449275% 67.6470588235% no-repeat;
 	width: 32px;
 	height: 34px
 }
 
 .svg-student {
-	background: url(../fonts/sprite.css-37200930.svg) 68.2310469314% 67.9802955665% no-repeat;
+	background: url(../images/css/svg/sprite.css-37200930.svg) 68.2310469314% 67.9802955665% no-repeat;
 	width: 31px;
 	height: 35px
 }
@@ -799,7 +799,7 @@ i {
 	position: absolute;
 	right: -7px;
 	top: calc(50% - 3px);
-	background: url(../fonts/sprite.css-37200930.svg) 72.6962457338% 50% no-repeat;
+	background: url(../images/css/svg/sprite.css-37200930.svg) 72.6962457338% 50% no-repeat;
 	width: 15px;
 	height: 30px
 }
@@ -1208,7 +1208,7 @@ p.cta__fancy {
 	position: absolute;
 	left: 0;
 	top: 0;
-	background: url(../fonts/sprite.css-37200930.svg) 44.3925233645% 75.8241758242% no-repeat;
+	background: url(../images/css/svg/sprite.css-37200930.svg) 44.3925233645% 75.8241758242% no-repeat;
 	width: 94px;
 	height: 56px
 }
