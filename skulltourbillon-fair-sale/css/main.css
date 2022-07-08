@@ -935,6 +935,13 @@ color: #fff;
     text-align: left;
     padding: 30px 40px;
 }
+.about-item img{
+    display: block;
+    margin: 0 auto 10px;
+}
+.about-item p{
+    text-align: center;
+}
 .about-text {
 text-align: left;
 background-color: #fff;
