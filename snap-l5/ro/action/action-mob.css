@@ -1,0 +1,91 @@
+.promoBlock .video-container {
+    position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;	
+}
+.promoBlock .video-container iframe,  
+.promoBlock .video-container object,  
+.promoBlock .video-container embed,
+.promoBlock .video-container .youtube {
+    background: #000;
+    border: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.bgPromo {
+    background: url(../action/img/bg-promo320.png) no-repeat;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    clear: both;
+    overflow: hidden;
+    background-size: cover;
+    color: #222;
+}
+
+.bgPromo .video-container {
+    width: 420px;
+}
+.bgPromo .left, .bgPromo .right {
+    float: none;
+    margin: 0 auto;
+    width: 420px;
+}
+.bgPromo h2 {
+    color: #222;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    font-family: 'Roboto';
+    line-height: 1.2;
+    font-size: 24px;
+    text-align: center;
+}
+.bgPromo h2 span {
+    color: #a44598;
+}
+.bgPromo .infoGift {
+    clear: both;
+    overflow: hidden;
+}
+.infoGift img {
+    float: left;
+    margin-right: 20px;
+}
+
+.infoGift h3 {
+    margin: 10px;
+    font-size: 30px;
+    font-family: 'Roboto';
+    padding: 0;
+}
+
+.infoGift p {
+	font-family: 'Roboto';
+}
+
+
+.bgPromo p {
+    padding: 0;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.bgPromo p.info {
+    margin-top: 20px;
+    color: #1d73ca;
+    position: relative;
+}
+
+.bgPromo p.info:after {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 5px;
+    background: url(../action/img/giftpromo.png) no-repeat;
+    top: 10px;
+    margin-left: 10px;
+}
