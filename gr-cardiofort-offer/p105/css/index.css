@@ -621,7 +621,7 @@ input {
     outline: none;
 }
 
-#order_form button, .obutton {
+#order_form a, .obutton {
     display: inline-block;
     padding: 20px;
     color: #fff;
