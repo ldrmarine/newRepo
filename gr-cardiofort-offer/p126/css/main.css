@@ -661,31 +661,20 @@ textarea {
 		margin: 0 auto;
 		position: relative;
 }
+.offer-graf__titles{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 5px;
+	width: 100%;
+}
 .content .offer .offer-img7 .offer-graf .offer-img__title {
 		font-family: "Montserrat";
 		font-weight: 400;
-		font-size: 15px;
+		font-size: 14px;
 		line-height: 18px;
-		position: absolute;
 		display: block;
-		max-width: 57px;
 		text-align: center;
-		bottom: -35px;
-}
-.content .offer .offer-img7 .offer-graf .offer-img__title:nth-child(2) {
-		left: 19.3%;
-}
-.content .offer .offer-img7 .offer-graf .offer-img__title:nth-child(3) {
-		left: 36%;
-}
-.content .offer .offer-img7 .offer-graf .offer-img__title:nth-child(4) {
-		left: 53%;
-}
-.content .offer .offer-img7 .offer-graf .offer-img__title:nth-child(5) {
-		left: 69%;
-}
-.content .offer .offer-img7 .offer-graf .offer-img__title:nth-child(6) {
-		left: 86%;
 }
 .content .offer .offer-img7 .offer-img7__title {
 		display: -webkit-box;
@@ -1348,7 +1337,7 @@ textarea {
 /* Extra small: 0px (320px) - 480px */
 @media (max-width: 479px) {
 		.content .offer .offer-img7 .offer-graf .offer-img__title {
-				font-size: 13px;
+				font-size: 11px;
 				line-height: 16px;
 		}
 
@@ -1394,7 +1383,7 @@ textarea {
 @media (max-width: 379px) {
 		.content .offer .offer-img7 .offer-graf .offer-img__title {
 				max-width: 42px;
-				font-size: 12px;
+				font-size: 10px;
 		}
 
 		.content .offer .offer-img7 .offer-graf .offer-img__title {
