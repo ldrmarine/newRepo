@@ -679,9 +679,9 @@ textarea {
 		display: block;
 		position: absolute;
 		z-index: 3;
-		top: -7%;
+		top: -5%;
 		left: 42%;
-		max-width: 160px;
+		max-width: 125px;
 }
 .content-box .content .text .desc {
 		color: #ACA9A9;
@@ -1121,7 +1121,7 @@ textarea {
 		        justify-content: center;
 		background: #DFDFDF;
 		min-height: 40px;
-		max-width: 150px;
+		text-align: center;
 		width: 100%;
 		border: 1px solid #FFFFFF;
 		border-bottom: 1px solid #0072AC;
@@ -1133,14 +1133,6 @@ textarea {
 		border-bottom: 1px solid #FFFFFF;
 		background: #FFFFFF;
 		position: relative;
-}
-.content-box .sidebar-news .sidebar-btns .sidebar-btn.active::before {
-		content: "";
-		width: 100%;
-		position: absolute;
-		height: 1px;
-		background: #0072AC;
-		top: -5px;
 }
 .content-box .sidebar-news .sidebar-content {
 		border: 1px solid #0072AC;
