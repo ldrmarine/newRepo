@@ -110,7 +110,7 @@
     font-size: 12px;
 }
 
-#order_form button,
+#order_form a,
 .obutton {
     display: inline-block;
     padding: 20px;
