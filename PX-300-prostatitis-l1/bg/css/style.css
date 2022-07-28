@@ -2677,6 +2677,7 @@ body[data-aos-easing='ease-in-out-quart'] [data-aos] {
 	display: block;
 	margin-top: -1px;
 	font-size: 10px;
+	max-width: 100px;
 }
 
 .form {
