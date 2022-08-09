@@ -110,6 +110,10 @@ a.btnn {
     align-items: center;
     justify-content: center;
 }
+a.btnn:hover{
+color:inherit
+
+}
 .sus {
     display: flex;}
 .sus_wrwp_img {width: 15px;margin-right: 5px}
