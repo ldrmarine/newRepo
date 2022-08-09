@@ -7,7 +7,8 @@
     max-width: 190px;
     position: relative;
 }
-.form_image_wrap_image img {width: 100%}
+.form_image_wrap_image img {width: 100%;display: block;
+    float: none;}
 
 
 
@@ -97,7 +98,18 @@ button.btnn {
     font-weight: bold;
     letter-spacing: 5px;
 }
-
+a.btnn {
+    height: 59px;
+    background: #3580ed;
+    margin: 10px 0;
+    border: 1px solid #3580ed;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .sus {
     display: flex;}
 .sus_wrwp_img {width: 15px;margin-right: 5px}
