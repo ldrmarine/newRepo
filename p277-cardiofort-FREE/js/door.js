@@ -84,7 +84,7 @@ function openDoor(e) {
         doors[j].removeEventListener("click", openDoor);
     }
 }
-let time = 600;
+let time = 3600;
 let intr;
 let count = 0;
 
@@ -109,7 +109,7 @@ function tick() {
     document.querySelector('#min').innerHTML = "" + mins;
     document.querySelector('#sec').innerHTML = secs
 }
-
+start_timer();
 // setInterval(function() {
 //     if (Boolean(document.querySelector('#order').style.display === "block")) {
 //         start_timer()
