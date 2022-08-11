@@ -995,7 +995,6 @@ a .content::after {
 @media (max-width: 1398px) {
     .countdown-time img.big-pic {
         display: block;
-        float: left;
     }
 }
 
@@ -2855,7 +2854,6 @@ td {
 
 .comment-block img {
     width: 60px;
-    float: left;
     margin: 0px 20px 0px 0px;
 }
 
