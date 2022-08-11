@@ -180,7 +180,8 @@ input[placeholder="Ваше имя"], input[placeholder="Ваш телефон"]
 }
 
 .order_block img {
-  width: 63% !important;
+  width: 100% !important;
+  margin: 0 auto;
 }
 
 .order_block h3 {
