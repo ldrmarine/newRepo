@@ -14,7 +14,7 @@
 
 	<link href="css/style.css" media="all" rel="stylesheet" type="text/css">
 	<link href="css/style2.css" media="all" rel="stylesheet" type="text/css">
-
+<link rel="stylesheet" href="./css/timer.css">
 
 </head>
 
@@ -164,6 +164,27 @@
 				<div class="form_wrap" id="objectScrollAttention">
 					<form method="POST" geo="es" action="api.php"
 						onsubmit="return validate_form(this, 'Por favor ingrese un número de teléfono válido');">
+						<div class="timer">
+							<div class="timer__inner df fit mr-a">
+								<div class="timer-box">
+									<p class="timer-hours timer-count" data-timer-hours='1'>
+										01
+									</p>
+								</div>
+								<span class="timer-delimeter db">:</span>
+								<div class="timer-box">
+									<p class="timer-minutes timer-count" data-timer-minutes='0'>
+										00
+									</p>
+								</div>
+								<span class="timer-delimeter db">:</span>
+								<div class="timer-box">
+									<p class="timer-seconds timer-count" data-timer-seconds='0'>
+										00
+									</p>
+								</div>
+							</div>
+						</div>
 						<label class="descount">Descuento -50%</label>
 
 						<div id="price">
@@ -241,12 +262,8 @@
 						<p>Un consejo único del dietista. Quema grasas al instante en las áreas problemáticas. ¡Los kgs no volverán!</p>
 					</div>
 				</div>
-			</div>
-
-
-
-		</div>
-		<h3>Comentarios</h3>
+				<div class="comentsBlock">
+					<h3>Comentarios</h3>
 
 		<div class="b-cmtItem">
 			<div class="holder">
@@ -469,11 +486,18 @@
 					me ayudes! Lo ordeno inmediatamente.</p>
 			</div>
 		</div>
+				</div>
+			</div>
 
 
-		<center>
-			<a class="ord_button" href="#form">¡Ordenar ahora!</a>
-		</center>
+			<center>
+				<a class="ord_button" href="#form">¡Ordenar ahora!</a>
+			</center>
+		</div>
+		
+
+
+		
 	</div>
 
 	</div>
@@ -488,7 +512,7 @@
 	</div>
 	</div>
 
-
+<script src="./js/timer.js"></script>
 	<script type="text/javascript">
 
 		function dtime(language, d) {
