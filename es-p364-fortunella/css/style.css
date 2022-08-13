@@ -97,6 +97,12 @@ center img{max-width:400px;}
     #aside_bot_bold_ul{list-style-type:none;}
     #tab1_span{text-align:center;}
 }
+@media(min-width:800px){
+.ord-button-for-mob{
+
+    display: none;
+}
+}
 @media screen and (max-width:700px){#nav a, .ya-site-form__input, .login_td, #m_m_right_item, #m_m_left_item{display:none;}
     #nav{width:96%;margin-left:1%;}
     #nav, #home{-webkit-border-top-left-radius:6px;-webkit-border-top-right-radius:6px;-moz-border-radius-topleft:6px;-moz-border-radius-topright:6px;border-top-left-radius:6px;border-top-right-radius:6px;}
