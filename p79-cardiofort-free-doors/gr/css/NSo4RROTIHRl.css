@@ -185,7 +185,7 @@ input[placeholder="Ваше имя"], input[placeholder="Ваш телефон"]
 }
 
 .order_block h3 {
-  font: bold 18px Arial !important;
+  font: bold 18px "Noto Sans" !important;
   background: transparent;
 }
 
