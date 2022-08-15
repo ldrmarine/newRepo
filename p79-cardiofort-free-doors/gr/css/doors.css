@@ -1,0 +1,167 @@
+.door__container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box {
+    perspective: 500px;
+    position: relative;
+}
+
+.box,
+.door {
+    width: 190px;
+    height: 400px;
+    box-shadow: inset -1px -1px 0px 1px #191919, inset 1px 1px 0px 1px #191919;
+}
+
+.door,
+.hi {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.door {
+    background-image: url(../img/door1.png);
+    background-repeat: no-repeat;
+    transform: rotateY(0deg);
+    display: inline-block;
+    transition: all 0.75s ease;
+    transform-origin: 0% 0%;
+    cursor: pointer;
+}
+
+#door__2 {
+    background-image: url(../img/door2.png);
+}
+
+#door__3 {
+    background-image: url(../img/door3.png);
+}
+
+.door:hover {
+    transform: rotateY(-30deg);
+}
+
+.door.open {
+    transform: rotateY(-85deg);
+}
+
+.door__sales {
+    position: relative;
+    top: 140px !important;
+    font-size: 55px !important;
+    font-weight: 700 !important;
+    color: red !important;
+    border-radius: 30px !important;
+    padding: 30px 5px !important;
+    box-shadow: 0px 1px 2px 2px #7F7878;
+    margin: 0 !important;
+}
+
+
+.door__title {
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 22px !important;
+    margin-bottom: 25px;
+    background-color: #3A4752;
+    padding: 10px 0;
+    border-radius: 0.5em;
+}
+
+@media (max-width: 840px) {
+    .door__sales {
+        font-size: 20px !important;
+        font-weight: 700 !important;
+        top: 50px !important;
+        left: 20px !important;
+        color: red !important;
+        border-radius: 30px !important;
+        padding: 30px 5px;
+    }
+
+    .box,
+    .door {
+        width: 95px;
+        height: 200px;
+    }
+
+    .door {
+        background-size: contain;
+    }
+
+    #door__2 {
+        background-size: contain;
+    }
+
+    #door__3 {
+        background-size: contain;
+    }
+}
+
+@media(max-width:360px) {
+    .box+.box {
+        margin-left: 15px;
+    }
+
+    .door__sales {
+        font-size: 22px !important;
+        font-weight: 700 !important;
+        top: 50px !important;
+        color: red !important;
+        left: 15px !important;
+        border-radius: 30px !important;
+        padding: 30px 5px;
+    }
+
+}
+#form-block>center>div.order_block>img {
+    width: 80% !important;
+}
+
+body * {
+    font-family:  sans-serif;
+}
+
+p,
+ul li,
+ol li {
+    font-size: 22px !important;
+    line-height: 26px !important;
+}
+
+
+@media (max-width: 768px) {
+
+    .card__item__sale .card__item__sale-100,
+    .card__item__sale .card__item__sale-50,
+    .card__item__sale .card__item__sale-30 {
+        font-size: 22px !important;
+    }
+}
+
+@media (max-width: 426px) {
+
+    .card__item__sale .card__item__sale-100,
+    .card__item__sale .card__item__sale-50,
+    .card__item__sale .card__item__sale-30 {
+        font-size: 15px !important;
+    }
+}
+
+@media (max-width: 371px) {
+
+    .card__item__sale .card__item__sale-100,
+    .card__item__sale .card__item__sale-50,
+    .card__item__sale .card__item__sale-30 {
+        font-size: 11px !important;
+    }
+}
+
+#form-block>center>div.order_block>h3 {
+    margin: 15px auto;
+}
