@@ -1,0 +1,623 @@
+<!DOCTYPE html><html><head lang="es">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta charset="UTF-8">
+
+    <title>
+        X-Leggins
+    </title>
+	
+    <meta property="og:title" content="X-Leggins"/>
+    <meta property="og:description" content="Usalos y pierde peso!"/>
+    <meta property="og:image" content="https://i.imgur.com/Ktv1a2A.png"/>
+    <meta property="og:type" content="website"/>
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="css/css.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="css/font-awesome.min.css"/><link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.0.13/css/all.css"/>
+<link rel="stylesheet" href="css/timer.css">
+<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/count.js"></script>
+    <style>
+    .alert{
+        margin:25px;
+    }
+    .preloader{
+      width: 100px;
+      height: 100px;
+      border-radius: 100%;
+      position: relative;
+      margin: 0 auto;
+    }
+
+    /* LOADER 1 */
+
+    .loader-1:before, .loader-1:after{
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+      border: 10px solid transparent;
+      border-top-color: #3498db;
+    }
+
+    .loader-1:before{
+      z-index: 100;
+      animation: spin 1s infinite;
+    }
+
+    .loader-1:after{
+      border: 10px solid #ccc;
+    }
+
+    @keyframes spin{
+      0%{
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+
+      100%{
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+    form .preloader{
+        display:none;
+    }
+    form .preloader.show{
+        float: left;
+        display: block;
+        width:35px;
+        margin: 10px 0px 0px 15px;
+        height: 35px;
+    }
+    form.loading{
+      opacity: 0.5;
+    }
+    form.loading .preloader{
+      display:block;
+      position: absolute;
+      left: calc(50% - 50px);
+      top: calc(50% - 50px);
+    }
+    #submit-button{
+        margin-top: 10px;
+    }
+
+    .new-sbm-btn{
+        font-weight: bold;
+        margin-left: -5px;
+        border-radius: 0px;
+        cursor:pointer;
+    }
+    button.new-sbm-btn:before {
+        top: 0.5px;
+        left: -17px;
+        position: relative;
+        content: "\f07a";
+        font-family: Font Awesome\ 5 Free;
+        color: white;
+        background-color: #343a40;
+        padding: 0.87rem 1rem;
+        font-size: 1.25rem;
+        line-height: 1.5;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="logo-section">
+                <img src="img/logo_new2.png" alt="logo" class="logo">
+                <img src="img/flame.png" alt="X-Leggins" title="X-Leggins" class="flame">
+            </div>
+        </div>
+    </div>
+
+    <div class="block-1">
+        <div class="container">
+            <div class="heading">
+                <h1>Breeches</h1>
+
+                <h1>X-Leggins</h1>
+
+                <img src="img/orange-triangle.png" alt="X-Leggins" title="X-Leggins">
+            </div>
+            <div class="red-lane">
+                <h2>Usalos y pierde peso!</h2>
+                <img src="img/corner-red-1.png" alt="X-Leggins" title="X-Leggins" class="corner">
+            </div>
+            <div class="tech">
+                <p>Tecnología de revolución!
+                </p>
+
+                <h1>NEOTEX</h1>
+
+                <p>Eficacia comprobada! 
+                </p>
+            </div>
+            <img src="img/package_new.png" alt="X-Leggins" title="X-Leggins" class="package">
+            <img src="img/girl_new.png" alt="X-Leggins" title="X-Leggins" class="girl">
+
+            <div class="sale">
+                <h1>Solo hoy el 50% de descuento</h1>
+
+
+                <div style="position: relative;">
+                    <img src="img/57.png" alt="el 50% de descuento" class="tag">
+                </div>
+                <div class="costs">
+                    <span class="old">Precio antiguo:
+                        <br>
+                        <span>
+                            <span class="js_old_price">98</span>
+                            <span class="js_curs">€</span>
+                        </span>
+                    </span>
+                    <span class="new">precio nuevo:
+                        <br>
+                        <span class="js_new_price">49</span>
+                        <span class="js_curs">€</span>
+                    </span>
+                    <img src="img/corner-orange-2.png" alt="X-Leggins" title="X-Leggins" class="corner">
+
+                    <!--<img src="images/.png" alt="X-Leggins" title="X-Leggins"  class="arrow"/>-->
+                </div>
+                <a class="green-btn show-form" href="#form-section">Ordenar con el descuento</a>
+
+            </div>
+
+            <!--<img src="images/triangle-transparent.png" alt="X-Leggins" title="X-Leggins"  class="big-triangle"/>-->
+        </div>
+    </div>
+
+    <div class="block-3">
+        <div class="container">
+            <h1>
+                ¿Todavía piensas?
+            </h1>
+
+            <div class="thought">
+                <img src="img/corner-right-top.png" alt="X-Leggins" title="X-Leggins" class="corner">
+                <img src="img/pregnant.png" alt="X-Leggins" title="X-Leggins" class="icon">
+
+                <p>¿Cómo reafirmar el vientre después del parto?
+
+                </p>
+            </div>
+            <div class="thought">
+                <img src="img/corner-right-top.png" alt="X-Leggins" title="X-Leggins" class="corner">
+                <img src="img/medicine.png" alt="X-Leggins" title="X-Leggins" class="icon">
+
+                <p>¿Cómo perder peso rápido sin dietas y pastillas?
+
+                </p>
+            </div>
+            <div class="thought sport-t">
+                <img src="img/corner-right-top.png" alt="X-Leggins" title="X-Leggins" class="corner">
+                <img src="img/sport.png" alt="X-Leggins" title="X-Leggins" class="icon sport">
+
+                <p>¿cuanto tiempo se debe practicar el deporte?
+
+                </p>
+            </div>
+            <div class="thought health-t">
+                <img src="img/corner-right-top.png" alt="X-Leggins" title="X-Leggins" class="corner">
+                <img src="img/health.png" alt="X-Leggins" title="X-Leggins" class="icon">
+
+                <p>¿Por qué la salud se deterioró después de la dieta?
+
+                </p>
+            </div>
+
+            <div class="thought">
+                <img src="img/corner-right-top.png" alt="X-Leggins" title="X-Leggins" class="corner">
+                <img src="img/question.png" alt="X-Leggins" title="X-Leggins" class="icon">
+
+                <p>Y otros 1000 ¿CÓMO? DONDE? ¿Por qué?
+
+                </p>
+            </div>
+            <!--<img src="images/triangle-transparent.png" alt="X-Leggins" title="X-Leggins"  class="big-triangle"/>-->
+        </div>
+
+    </div>
+    <div class="block-4">
+        <div class="container">
+            <h1>Basta pensar- actua!</h1>
+
+
+            <a class="green-btn show-form" href="#form-section">Ordenar con el descuento
+</a>
+
+            <div class="extender"></div>
+            <img src="img/triangle-transparent.png" alt="X-Leggins" title="X-Leggins" class="big-triangle">
+        </div>
+    </div>
+    <div class="block-5" id="adv">
+        <div class="container">
+            <h1>cintura de avispa y nalgas firmes sólo un mes
+</h1>
+
+            <div class="yellow-line">
+                Breeches X-Leggins:
+                <img src="img/corner-yellow-1.png" alt="X-Leggins" title="X-Leggins" class="corner-1">
+            </div>
+            <ul class="list">
+                <li>
+                    <img src="img/feature-1.png" alt="X-Leggins" title="X-Leggins">
+
+                    <p>
+                        Aumenta la sudoración
+                    <b>
+                        <span> 4 veces</span>
+                    </b>
+                    <br>  lo que ayuda a quemar grasa en lugares no deseados y los músculos se volverán más definidos.
+
+                    </p>
+                </li>
+                <li>
+                    <img src="img/feature-2.png" alt="X-Leggins" title="X-Leggins">
+
+                    <p>
+                        Tela  
+                    <b>
+                        <span>NEOTEX</span>
+                    </b>
+                    <br> Preparaciones en tejido NEOTEX Su lado interno aumenta el trabajo de las células sudoríferas, la parte externa absorbe el sudor y, por lo tanto, el tejido no se moja
+                    </p>
+                </li>
+                <li>
+                    <img src="img/feature-3.png" alt="X-Leggins" title="X-Leggins">
+
+                    <p>
+                        Cómodos
+                    <b>  en la vida cotidiana.</b>
+                    <br> invisible debajo de la ropa, absorbe el sudor y no dejan marcas en el cuerpo
+
+                    </p>
+                </li>
+
+            </ul>
+            <div class="block-img"><img src="img/leggings-guam-00.jpg" alt=""></div>
+        </div>
+
+    </div>
+    <div class="block-8">
+        <div class="container">
+
+
+
+        </div>
+    </div>
+    <div class="block-11" id="feedbacks">
+        <div class="container">
+            <h1>breeches
+                <b>X-Leggins
+                    <br>
+                </b>
+                Realmente eficaz!
+
+            </h1>
+
+            <h3>Esto es confirmado por los comentarios de nuestros clientes:</h3>
+
+            <!-- <div class="checkers">
+                <div class="active"></div>
+                <div></div>
+                <div></div>
+            </div> -->
+            <!-- <ul class="slider ">
+               
+                <li class="active">
+                    <img src="img/darya.png" alt="X-Leggins" title="X-Leggins" class="girl">
+
+                    <h3>
+                        <b>"Il mio risultato dopo un mese, meno 6 kg"</b>
+                    </h3>
+
+                    <p>Ho visto la pubblicità e ho deciso di provare. Un bell’effetto! Mi piace che sollevano i fianchi
+                        ma non si notano sotto i vestiti tipici. Già dopo una settimana ho iniziato a ricevere complimenti su
+                        quanto ero dimagrita. Il mio risultato in un mese è di что похудела. Мой результат meno 6 kg. Li raccomando!</p>
+
+                    <p class="name">Valeria Sole, 25 anni</p>
+
+                </li>
+        
+                
+                <li>
+                    <img src="img/sergey.png" alt="X-Leggins" title="X-Leggins" class="girl">
+
+                    <h3>
+                        <b>"Bel risultato. Mia moglie è dimagrita di 11 kg. Lei è felice e io contento"</b>
+                    </h3>
+
+                    <p>Ho comprato i breeches a mia moglie. Ho visto come li voleva e glieli ho regalati. Sono fortunata di
+                        essere riuscita a comprarli con lo sconto. Mia moglie li usa già da un mese. Il risultato è buono. Lei
+                        è dimagrita ed è felice, io sono soddisfatto per lei. Grazie!
+                    </p>
+
+                    <p class="name">Sergio Mirante, 34 anni</p>
+
+                </li>
+         
+       
+                <li>
+                    <img src="img/tatyana.png" alt="X-Leggins" title="X-Leggins" class="girl">
+
+                    <h3>
+                        <b>"...non fanno che guardarmi estasiati!"</b>
+                    </h3>
+
+                    <p>Dopo l’acquisto me li hanno spediti rapidamente. Li uso già da 3 settimane. Li indosso ovunque possibile,
+                        nelle passeggiate con mio figlio, a casa, se corro. Il risultato è incredibile. Il mio bacino è più stretto
+                        di 6 см e i fianchi anche sono dimagriti di 4 см. Ma non mi basta, continuerò ad indossarli
+                    </p>
+
+                    <p class="name">Sara Costantini, 22 anni</p>
+
+                </li>
+    
+            </ul> -->
+            <div class="slider ">
+               
+                <div>
+                    <img src="img/darya.png" alt="X-Leggins" title="X-Leggins" class="girl">
+
+                    <h3>
+                        <b>"Buen resultado mi esposa ha perdido 11 kg,está feliz y yo también!"</b>
+                    </h3>
+
+                    <p>Compre BREECHES X-LEGGINS para mi esposa.Vi como los queria y se los entregue.Ella los estuvo usando durante un mes. Ha perdido peso y está muy feliz, estoy satisfecho por ella. Gracias!</p>
+
+                    <p class="name"> Sergio Miranda,34 años</p>
+
+                </div>
+        
+                
+                <div>
+                    <img src="img/sergey.png" alt="X-Leggins" title="X-Leggins" class="girl">
+
+                    <h3>
+                        <b>Después de la compra me los enviaron rápidamente. </b>
+                    </h3>
+
+                    <p>Los he estado usando por 3 semanas. Los uso siempre que puedo,en paseos con mi hijo,en casa,si corro. El resultado es increíble. He bajado 4 cm en la caderas pero no es suficiente para mi, voy a seguir usandolos.
+
+                    </p>
+
+                    <p class="name">Alejandra Gil, 22 años</p>
+
+                </div>
+         
+       
+                <div>
+                    <img src="img/tatyana.png" alt="X-Leggins" title="X-Leggins" class="girl">
+
+                    <h3>
+                        <b>Mi resultado es de 6 kg menos para el primer mes.</b>
+                    </h3>
+
+                    <p>Vi un anuncio y decidí intentarlo.
+Que buen efecto! Me gusta que suban las caderas,
+  Pero al mismo tiempo no se nota bajo la ropa que uso a diario.
+  Una semana después comencé a recibir elogios, que era notablemente más delgada.
+  Mi resultado en un mes es de 6 kg menos. Recomiendo a todas!
+
+                    </p>
+
+                    <p class="name">Maritza, 25 años</p>
+
+                </div>
+    
+            </div>
+            <!-- <div class="arrow arrow-left prev">
+                <img src="img/arrow-slider-left-black.png" alt="X-Leggins" title="X-Leggins" class="black">
+                <img src="img/arrow-slider-left-yellow.png" alt="X-Leggins" title="X-Leggins" class="yellow">
+            </div>
+            <div class="arrow arrow-right next">
+                <img src="img/arrow-slider-right-black.png" alt="X-Leggins" title="X-Leggins" class="black">
+                <img src="img/arrow-slider-right-yellow.png" alt="X-Leggins" title="X-Leggins" class="yellow">
+            </div> -->
+
+        </div>
+    </div>
+
+
+    <div class="block-12">
+        <div class="container">
+            <h1>¿POR QUÉ CONFÍAN EN NOSOTROS?</h1>
+
+            <div class="fact">
+                <img src="img/prepayment.png" alt="X-Leggins" title="X-Leggins">
+
+                <h2>Sin pagos anticipados</h2>
+            </div>
+            <div class="fact">
+                <img src="img/delivery.png" alt="X-Leggins" title="X-Leggins">
+
+                <h2>envío a nivel nacional</h2>
+            </div>
+        </div>
+    </div>
+    <div class="block-13" id="delivery">
+        <div class="container">
+            <h1> Como ordenar 
+                <br>
+                <b>X-Leggins</b>?</h1>
+
+            <div class="offer">
+                <div class="steps">
+                    <div class="step">
+                        <img src="img/step-1.png" alt="X-Leggins" title="X-Leggins">
+
+                        <div>
+                            <h2>ORDEN</h2>
+
+                            <p>Rellene el formulario en nuestro sitio web.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <img src="img/step-2.png" alt="X-Leggins" title="X-Leggins">
+
+                        <div>
+                            <h2>CONFIRMACIÓN DE COMPRA</h2>
+
+                            <p>Te llamamos para definir el tamaño y confirmar el pedido.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <img src="img/step-3.png" alt="X-Leggins" title="X-Leggins">
+
+                        <div>
+                            <h2>ENTREGA</h2>
+
+                            <p>La entrega se realiza dentro de 1-3 días dependiendo de la región.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <img src="img/step-4.png" alt="X-Leggins" title="X-Leggins">
+
+                        <div>
+                            <h2>UTILIZACIÓN</h2>
+
+                            <p>Úsalos y observa cómo el peso desaparece visiblemente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block-14">
+        <div class="container">
+            <div class="sale">
+                <h1>¡SÓLO HOY DESCUENTO!</h1>
+
+
+                <div style="position: relative;">
+                    <img src="img/57.png" alt="" class="tag">
+                </div>
+                <div class="costs">
+                    <span class="old">Precio antiguo:
+                        <br>
+                        <span>
+                            <span class="js_old_price">98</span>
+                            <span class="js_curs">€ </span>
+                        </span>
+                    </span>
+                    <span class="new">Precio nuevo:
+                        <br>
+                        <span class="js_new_price">49</span>
+                        <span class="js_curs">€</span>
+                    </span>
+                    <img src="img/corner-orange-2.png" alt="X-Leggins" title="X-Leggins" class="corner">
+
+                    <!--<img src="images/.png" alt="X-Leggins" title="X-Leggins"  class="arrow"/>-->
+                </div>
+                <h3>
+                    La oferta se termina en
+                </h3>
+
+                <div class="centrTime">
+                    <div class="countbox"></div>
+                </div>
+
+                <h4>Quedan tan solo</h4>
+
+                <div class="items-17">16 pz.</div>
+                <img src="img/package_new.png" alt="X-Leggins" title="X-Leggins" class="package">
+
+                <div id="form-section">
+                    <div class="callback-form">
+                        <form method="post" accept-charset="utf-8" role="form" action="">
+                            <!-- <div style="display:none;"><input type="hidden" name="_method" value="POST"/></div>   -->                
+                            <!-- <input type="hidden" name="fingerprint" id="fingerprint" value=""> -->
+                    <center><h3 class="title">RELLENE EL FORMULARIO</h3></center>
+                    <!-- <input type="hidden" name="source_id" id="source_id" value="1fd7b875d347"> -->
+<div class="form-group">
+  <label>Nombre y apellido</label>
+  <input type="text" name="name" class="form-control" placeholder="" required=""/></div>
+<div class="form-group">
+    <label>Teléfono (móvil activo)</label>
+    <input type="text" name="phone" class="form-control" placeholder="" required=""/></div>
+		  <input name="offer_id" type="hidden" value="{offer_id}">
+          <input name="geo" type="hidden" value="">
+          <input name="web_id" type="hidden" value="{web_id}">
+          <input name="click_id" type="hidden" value="{click_id}">
+          <input name="time_zone" type="hidden" value="+3">
+          <input name="lang" type="hidden" value="RU"> 
+                <center>
+                <div id="info-privacy"></div>
+                    <button id="submit-button" class="btn btn-lg btn-warning new-sbm-btn" type="submit">Completa la compra</button>         
+                </center>
+            </form> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer_section" style="padding: 20px 10px;">
+		<center style="color: rgb(12, 12, 12)">
+
+			<p class="footer-comp footer-text">E-OUTLET LLP</p>
+				<p class="footer-addres footer-text">Calle Manuel, 2, 28015 Madrid, Spain</p>
+				<p class="footer-date">
+					&#169; 2013-<script>
+						document.write(new Date().getFullYear())
+					</script> All rights reserved.
+				</p>
+
+				<img class="footer-card" src="./icons.png"
+					style="width: auto; max-width:100%; height:auto; margin: auto; display: block;" alt="">
+
+				<a class="footer-link" href="/privacypolicy" target="_blank" style="display: block; margin-bottom:5px; text-align:center">Privacy policy</a>
+				<a class="footer-link" href="/general-conditions-of-sale" target="_blank" style="display: block; margin-bottom:5px; text-align:center">General conditions of sale</a>
+				<a class="footer-link" href="/legal-warning" target="_blank" style="display: block; margin-bottom:5px; text-align:center">Legal warning</a>
+		</center>
+	</footer>
+
+ <script>
+        CountBox();
+    </script>
+
+<script src="js/owl.carousel.min.js" type="text/javascript"></script>
+<script src="js/config.js"></script>
+
+<script type="text/javascript" src="/libs/js/common.js"></script>
+<script>
+    $(document).ready(function() {
+        $.init({
+
+            priceSelector: ".new-cost",
+            oldPriceSelector: ".old-cost",
+            reportFormSelector: ".report-abuse__form",
+            reportCallback: function (data) {
+                console.log('ReportCallback:', data);
+            },
+            callback: function() {
+                console.log("Do something after prices changing");
+
+            }
+        });
+    });
+</script>
+
+</body></html>
