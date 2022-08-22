@@ -225,8 +225,7 @@
                             <div id="clock"></div>
                           </div>
                         </div>
-                        <form method="post" geo="pt" action="api.php"
-                          onsubmit="return validate_form(this, 'Digite o número de telefone correto');">
+                        <form method="post">
 
                           <input name="subid" type="hidden" value="{subid}">
                           <input name="px" type="hidden" value="{px}">
@@ -235,9 +234,9 @@
                           <label> Введите свое имя </label>
                           <input class="form_group only_letter" name="name" required placeholder="Элиана Фуртадо"
                             type="text">
-                          <label> Телефон (активный мобильный телефон) </label>
+                          <label> Телефон (активный мобильный) </label>
 
-                          <input class="form_group only_number" name="phone" placeholder="Телефон (активный мобильный телефон)" required
+                          <input class="form_group only_number" name="phone" placeholder="Телефон (активный мобильный)" required
                             type="text">
 
                           <button class="form_btn js_submit button__text"> Заказать Sunsara </button>
