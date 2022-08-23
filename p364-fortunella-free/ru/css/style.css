@@ -52,7 +52,7 @@ img{border:medium none;}
 .main-left{
     width:calc(100% - 260px);
 }
-p{font:87.5% Tahoma, Arial, sans-serif;color:rgb(43, 43, 43);text-align:justify;text-indent:20px;padding:3px 0 4px;line-height:129.7%;}
+p{font:87.5% Tahoma, Arial, sans-serif;color:rgb(43, 43, 43);text-align:left;text-indent:20px;padding:3px 0 4px;line-height:129.7%;}
 h1{font:162.5% Georgia, sans-serif;width:100%;font-weight:normal;line-height:28px;color:rgb(43, 43, 43);margin-bottom:10px;}
 h3{font:100% Tahoma;color:rgb(51, 51, 51);font-weight:bold;}
 .startdate{font:75% Tahoma, Arial, sans-serif;font-weight:normal;color:rgb(129, 129, 129);margin-bottom:32px;padding-top:1px;}
