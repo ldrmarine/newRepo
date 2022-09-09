@@ -184,6 +184,7 @@ a {
 
 .main__link {
   color: inherit;
+  cursor: pointer;
 }
 
 .main__link:hover {
@@ -302,4 +303,10 @@ a {
     padding: 20px 10px;
     text-align: center;
     margin-top: 30px;
+}
+.all-form__btn.btn-footer{
+height: fit-content;
+margin: 30px auto;
+display: block;
+flex: auto;
 }
