@@ -1,0 +1,934 @@
+<!DOCTYPE html><html style="scroll-behavior: smooth"><head>
+
+	<meta charset="utf-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
+    <title>Si può recuperare la funzionalità articolare! Salva i tuoi cari!</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/css.css" rel="stylesheet">
+
+    <script src="js/jquery-2.2.4.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<style>
+.form-top .p {
+    line-height: 1.2;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+.form-top .p2 {
+    font-size: 18px;
+}
+.form {
+    margin-top: 20px;
+}
+.content {
+    padding: 25px 0;
+}
+.content p, .content h1, .content h2 {
+    margin-bottom: 16px;
+    padding: 0 10px;
+}
+.content h2 {
+  padding-bottom: 16px;
+}
+.form .label > span {
+    font-size: 14px;
+}
+.content {
+    width: 100%;
+}
+
+.red-br {
+    border: 3px solid red;
+    padding: 5px;
+}
+.info-img {
+    padding: 12px 5px!important;
+    background: #00b26e;
+    color: #fff;
+    position: relative;
+    margin-bottom: 15px;
+}
+.s-video {
+  width: 100%;
+  max-width: 400px;
+  height: 240px;
+  margin: 0 auto;
+  display: block;
+}
+.nav {
+    background: #00b26e;
+    line-height: 40px;
+}
+.content h2 {
+    font-size: 19px;
+    border-bottom: 6px solid #00b26e;
+    padding-bottom: 10px;
+}
+.form {
+    border-top: 10px solid rgb(0 178 110);
+    background-color: rgb(247, 247, 247);
+}
+.form-top .p span {
+    color: rgb(0 178 110);
+    font-size: 25px;
+}
+.form {
+    border-top: 5px solid rgb(10 134 88);
+    background-color: rgb(0 178 110);
+}
+.form .label > span {
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(255 255 255);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.form .btn {
+    display: inline-block;
+    padding: 20px 30px;
+    border: none;
+    background-color: rgb(255, 89, 0);
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 20px;
+    cursor: pointer;
+    background: #334878;
+    font-weight: bold;
+}
+.form-top .p span {
+    color: rgb(255 4 75);
+    font-size: 25px;
+}
+.quantity {
+    color: #45688e;
+    font-weight: 700;
+    padding: 10px;
+    background: #324779;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.content .comment .avatar {
+    width: 50px;
+    margin-right: 0px;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 100%;
+    margin-left: 10px;
+}
+.content .comm_text .user_name {
+    color: #314679;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.content .comm_text .text {
+    font-size: 14px;
+}
+.content .comm_text .text {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.btn {
+    display: inline-block;
+    padding: 20px 30px;
+    border: none;
+    background-color: rgb(255, 89, 0);
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 20px;
+    cursor: pointer;
+    background: #334878;
+    font-weight: bold;
+}
+.comment {
+    border-bottom: 1px solid rgb(4 140 86 / 27%);
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.content .comm_text .time {
+    color: #999;
+    margin-bottom: 0;
+    font-size: 15px;
+    padding: 0;
+    padding-left: 22px;
+    position: relative;
+}
+.content .comm_text .time:after {
+    position: absolute;
+    content: ' ';
+    left: 0;
+    top: 5px;
+    background: url(fonts/time.svg) no-repeat;
+background-size: 18px 13px;
+    width: 18px;
+    height: 13px;
+}
+.content {
+    padding: 25px 0;
+    padding-bottom: 0;
+}
+.footer {
+    padding: 20px 1.5%;
+    margin: 0 auto;
+    background: #00b26e none repeat scroll 0% 0%;
+    text-align: center;
+    color: #fff;
+}
+.nav {
+    background: #00b26e;
+    line-height: normal;
+}
+.social {
+    right: 5px;
+    top: 50%;
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%);
+}
+</style>
+
+</head>
+
+<body><span id="warning-container"><i data-reactroot></i></span>
+    <ul class="nav">
+        <a class="burg" href="#form" onclick="document.location.hash='form';return false;"><img src="images/menu.png"></a>
+        <div class="container">
+            <li><a href="#form" onclick="document.location.hash='form';return false;">Entrare</a></li>
+            <li><a href="#form" onclick="document.location.hash='form';return false;">Home</a></li>
+            <li><a href="#form" onclick="document.location.hash='form';return false;">Notizie</a></li>
+            <li><a href="#form" onclick="document.location.hash='form';return false;">Politica</a></li>
+            <li><a href="#form" onclick="document.location.hash='form';return false;">Economia</a></li>
+            <li><a href="#form" onclick="document.location.hash='form';return false;">Mondo</a></li>
+            <li><a href="#form" onclick="document.location.hash='form';return false;">Lifestyle</a></li>
+            <li><a href="#form" onclick="document.location.hash='form';return false;">Sport</a></li>
+            <li><a href="#form" onclick="document.location.hash='form';return false;">Articoli</a></li>
+            <li><a href="#form" onclick="document.location.hash='form';return false;">Oggi TV</a></li>
+        </div>
+    </ul>
+    <div class="container">
+        <div class="content">
+            <h1> "Quando le articolazioni non permettono di vivere una vita piena, non resta che sperare in un miracolo!"- Un'intervista esclusiva con l'uomo leggendario che ha fatto un miracolo! </h1>
+            <img src="images/image001.webp" alt>
+            <div class="soc_crumbs">
+                <div class="soc_img">
+                    <a href="#form" onclick="document.location.hash='form';return false;"><img src="images/social-c.png"></a>
+                </div>
+                <span> Commenti: <a href="#form" onclick="document.location.hash='form';return false;">33</a></span>
+            </div>
+            <h2> Oggi abbiamo un ospite speciale, il leggendario inventore e scienzato Matteo Bassetti. </h2>
+            <p>
+                <b> — Ciao Matteo! Vuoi raccontarci qualcosa di te? </b>
+            </p>
+            <p>Sono nato e cresciuto a Genoa. Ho una laurea in medicina, ho finito gli studi nel 1995. All'università ho conosciuto la mia futura moglie Maria. Fino al 2011 ha lavorato come medico ortopedico.</p>
+            
+            <p>
+                <b>— È interessante. Ma cosa è successo nel 2011 e perché hai lasciato il tuo lavoro?</b>
+            </p>
+            <p>Nel 2009, a Maria hanno diagnosticato l'artrosi del ginocchio. Devo ammettere che è stato un punto di svolta nella nostra vita, anche se allora sembrava una prova insopportabile. <b>Per 2 anni, abbiamo provato di tutto: fisioterapia, abbandono dell'attività fisica, complessi vitaminici (condroitina, glucosamina, MSM e altri), gel, unguenti. Tutto è stato invano.</b> Niente ha funzionato, eravamo disperati. Non riuscivo a credere che con la mia laurea in medicina non potessi fare nulla per aiutare mia moglie. Ero veramente deluso del nostro sistema sannitario: davvero non ci fosse nessun modo per dare una vita lunga e felice alle persone? Così ho iniziato le mie ricerche.</p>
+                <img src="images/cont1.webp">
+                <img src="images/ph2.webp">
+            <p>
+                <b> — Quali ricerche? Possiamo saperne di più? </b>
+            </p>
+            <p>Quando ti rendi conto che tua moglie tra qualche anno potrebbe smettere di camminare, fai di tutto per impedirlo. Ho iniziato le ricerche. Ho studiato tutto che riguardava le malattie articolari, in modo diretto o indiretto. Ho studiato la fisiologia, la psicosomatica, la biochimica tante altre cose. Ho speso quasi tutti i miei soldi per imparare dai migliori professionisti dell'Asia, che sicuramente sapevano di più sulle articolazioni malate rispetto i medici occidentali.</p>
+            
+            <h2 style="font-size: 23px;font-weight: 900;color: #313a16;">TECNOLOGIA ARTROREVIVAL</h2>
+            <center>
+                <img src="images/cont5.webp" style="max-width: 350px">
+            </center>
+            <div class="info-img">
+            <p>Grazie all'ultima invenzione in ambito di biotecnologia,i componenti di Fortuflex raggiungono molto rapidamente i tessuti delle articolazioni danneggiate ed offrono un effetto fino a 10 volte più potente in quanto a recupero, rispetto a qualsiasi altro analogo!</p>
+
+            <p style="margin-bottom: 0">I componenti della crema vengono completamente assorbiti dalle cellule, raggiungendo rapidamente le zone danneggiate, aiutandole a rigenerarsi.</p>
+            </div>
+
+            <p>
+                <b>Nel mese di dicembre 2011 sono stato in grado di raccogliere tutte le conoscenze che ho accumulato a quel punto. E ho capito che, mescolando certi componenti, potevo ottenere un rimedio efficace per eliminare i dolori articolari per sempre. </b> Ma qui mi aspettava una sorpresa: i componenti necessari non erano in vendita nel nostro paese. Ho preso un prestito e ho ordinato loro dall'Asia. Dopo un mese i componenti sono arrivati, ma anche qui c’era un’altra sorpresa: nessuno voleva produrre il prodotto che volevo. Meno male che avevo gli amici universitari che mi hanno aiutato. Dopo 3 settimane ho ottenito una formula, che abbiamo subito provato con Maria.
+            </p>
+            <p>
+                <b><i>Dio Onnipotente! Ero al settimo cielo!</i></b>
+            </p>
+            <p>
+                <b> — Cosa? Che cos'è successo?</b>
+            </p>
+            <p>Maria migliorava ogni giorno. Dopo 7 giorni di trattamento lei poteva già andare nei negozi, e quando comprava i prodotti, sul suo viso cominciava ad apparire quel sorriso che mi mancava tanto. Dopo altre 2 settimane, l'artrosi è completamente scomparsa! Non credevo ai miei occhi, ma le analisi hanno dimostrato che Maria era sana come un pesce. Ero flicissimo. È stata la vera vittoria!</p>
+
+            <img src="images/image006.webp">
+            <p class="info-img">
+                1. Le conseguenze di una cattiva alimentazione. È necessario prendere «Fortuflex».<br>
+                2. La rigenerazione della cartilagine articolare dopo 2 settimane di utilizzo di «Fortuflex».<br>
+                3. La rigenerazione della cartilagine articolare dopo 3 settimane di utilizzo di «Fortuflex».<br>
+                4. L'articolazione sana dopo la fine del trattamento con «Fortuflex».
+            </p>
+
+            <p>La radiografia qui sotto mostra la rigenerazione dell'articolazione del ginocchio: </p>
+            <img src="images/image007.webp">
+
+            <p>
+                <b> — Sei bravissimo, un esempio per molte persone nel nostro paese! Ma cos’è successo dopo? </b>
+            </p>
+            <p>Prima abbiamo semplicemente goduto la vita e apprezzato ogni momento, durante quel periodo Maria ha dato alla luce la nostra bella figlia, ringraziandomi per la mia formula, perché la gravidanza comporta un enorme carico sulle articolazioni.</p>
+
+
+            <img src="images/cont3.webp">
+            <p class="info-img"><i>Secondo l'Organizzazione Mondiale della Sanità, le articolazioni danneggiate causano fino al 91% di varie malattie, da quelle del tratta gastrointestinale agli ictus e agli infarti.</i></p>
+
+            <p>Una sera Maria mi ha chiesto, se ci siano tante persone in Italia con le malattie articolari? <b>Abbiamo esaminato le statistiche e abbiamo scoperto che, purtroppo, è un problema abbastanza diffuso. Più di 1 milione di persone in Italia hanno varie malattie articolari con tanto di dolore.</b> Quindi, lei mi ha fatto una domanda che ha cambiato per sempre la mia vita: "Potresti aiutare gli altri come hai aiutato me? Renderli felici?". Mi sono innamorato di lei come la prima volta. Questa donna è la cosa migliore che mi sia mai capitata. Ero d’accordo con lei. Ci sono voluti circa 3 anni per perfezionare la formula e creare un prodotto che si chiama “Fortuflex” è la cosa migliore che gli abitanti del nostro paese possono permettersi.</p>
+            <p>
+                <img class="red-br" src="images/comm2.webp">
+                <b> — Sembra molto incoraggiante. Raccontaci di più di Fortuflex. </b>
+            </p>
+            <div class="list">
+                <p>Io e Maria abbiamo fatto quello che nessuno ha fatto prima di noi. Fortuflex è una pomata rivoluzionaria, basata su:</p>
+                <p>- radici di erba del tuono</p>
+                <p>- rizomi di gramigna</p>
+                <p>- resina di cedro sibiriano</p>
+                <p>- oli di betulla e di menta</p>
+                <p>- molti componenti ausiliari</p>
+                <p></p>
+            </div>
+            <p>
+                La maggior parte di questi componenti, purtroppo, non vengono venduti nel nostro paese, quindi portiamo loro dall'Asia.
+            </p>
+            
+            <video class="s-video" style="height: 230px" loop="true" autoplay muted replay playsinline>
+                    <source src="media/ria.mp4" type="video/mp4">
+            </video>
+
+
+            <div class="list">
+                <p>
+                    <b>Grazie alla sua formula unica, Fortuflex è in grado di curare qualsiasi malattia articolare: </b>
+                </p>
+                <p> - Artrite </p>
+                <p> - Artrosi </p>
+                <p> - Coxartrosi </p>
+                <p> - Osteoartrosi </p>
+                <p> - Osteocondrosi </p>
+                <p> - Osteocondrite </p>
+                <p> - Osteoporosi </p>
+                <p> - Lesioni del menisco </p>
+                <p> - Gonartrosi </p>
+            </div>
+            <img src="images/cont4.webp">
+            <p>
+                <b>— È incredibile! Sei il vero inventore del nostro tempo. Come l’hai fatto? </b>
+            </p>
+            <p>Non dimentichiamo che ci sono voluti molti anni di lavoro scrupoloso. L'anno prossimo dovremo festeggiare 10 anni di questo lavoro. Fino ad oggi, già 17 934 persone hanno ricominciato a vivere una vita piena, dimenticando i dolori articolari per sempre.
+                Sapete, noi con Maria non volevamo guadagnare su questo. Volevamo soltanto aiutare la gente! A proposito, ogni mese facciamo una lotteria con i premi preziosi per le persone che usano i nostri prodotti:
+                <img class="red-br" src="images/comm1.webp">
+            </p>
+            <p>
+                <b>- Dove si può comprare Fortuflex?</b>
+            </p>
+            <p>
+                Sfortunatamente, non si può comprarlo nelle farmacie. Loro vendono solo i prodotti delle grandi case farmaceutiche, che nel migliore dei casi non aiutano, per non parlare di quelli che causano gravi effetti collaterali.Sfortunatamente, non si può comprarlo nelle farmacie. Loro vendono solo i prodotti delle grandi case farmaceutiche, che nel migliore dei casi non aiutano, per non parlare di quelli che causano gravi effetti collaterali. <br>
+                <b> Abbiamo un sito ufficiale, dove è possibile ordinare Fortuflex originale. </b>
+            </p>
+            <img class="red-br" src="images/comm3.webp">
+            <p>
+                <b> — Cosa vorresti augurare ai nostri lettori? </b>
+            </p>
+            <p>Di recente, io e Maria abbiamo deciso di ridurre il prezzo di Fortuflex fino al 50%. Ora tutti possono usufruire di questa offerta speciale fino al incluso! Dopo questo periodo non sarà possibile ricevere Fortuflex ad un prezzo così basso.
+                Vi auguro buona salute! È un dono più importante. Nessun denaro vi porterà felicità, se non avete buona salute.
+            </p>
+            <p>
+                <b> - Tante belle cose, amici! </b>
+            </p>
+            <img class="prod" src="images/prod.png" style="">
+            
+            <style type="text/css">
+                .form {
+                    position: relative;
+                    padding-top: 40px;
+                }
+                .hologram {
+                    width: 100%!important;
+                    max-width: 50px!important;
+                    position: absolute;
+                    left: 15px;
+                    top: 5px;
+                }
+            </style>
+
+            <div class="form-part">
+                <div class="form-top">
+                    <p class="p">SOLO OGGI! SCONTO DEL 50%</p>
+                    <p class="p2">vecchio prezzo 78EUR</p>
+                    <p class="p">NUOVO PREZZO: <span>39EUR</span></p>
+					
+                    <form class="order_form submit-form form al-form" method="post" id="form" geo="it" action="api.php" 
+	onsubmit="return validate_form(this, 'Si prega di inserire un numero di telefono valido');">
+
+                    
+                        <img class="hologram" src="images/holo.png">
+
+<input name="subid" type="hidden" value="{subid}">
+<input name="px" type="hidden" value="{px}">
+<input name="bayer" type="hidden" value="{bayer}">
+
+                        <div class="input-wrapper">
+                            <label class="label"><span>Inserite il vostro nome:</span>
+							<input name="name" placeholder="Giulia Sarri" required type="text"></label>
+                        </div>
+                        <div class="input-wrapper">
+                            <label class="label"><span>Telefono (cellulare attivo)</span>
+							<input name="phone" placeholder="+39 347 65 34 259" required type="tel"></label>
+                        </div>
+                        <button class="form-btn lt8 btn">ordinare ora</button>
+                    </form>
+                </div>
+                <div class="social_block">
+                    <span> Ti è piaciuto l'articolo? Condividilo con i tuoi amici! </span>
+
+        <style type="text/css">
+            .social_block {display: block!important;border: 2px solid #e6e6e6;padding: 20px;margin-bottom: 20px;border-left: 0;border-right: 0;}
+            .social{display:inline-block;position: static;}.social a{display:block;width:40px;height:40px;margin:0 10px 10px 0;text-align:center;color:#fff;border-radius:24px;box-shadow:0 2px 4px rgba(0,0,0,0.15)}.social a:hover{border-color:#888;opacity:.8}.social svg{margin-top:7px;width:25px;height:25px}.facebook a{background:#3b5998}.google a{background:#e34133}.instagram a{background:#3f729b}.skype a{background:#00aff0}.twitter a{background:#00acee}.whatsapp a{background:#50b154}
+        </style>
+
+        <div class="social facebook">
+            <a href="#form" onclick="document.location.hash='form';return false;">
+                <svg role="img" viewBox="0 0 320 512">
+                    <path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+                </svg>
+            </a>
+        </div>
+        <div class="social google">
+            <a href="#form" onclick="document.location.hash='form';return false;">
+                <svg role="img" viewBox="0 0 488 512">
+                    <path fill="currentColor" d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/>
+                </svg>
+            </a>
+        </div>
+        <div class="social instagram">
+            <a href="#form" onclick="document.location.hash='form';return false;">
+                <svg role="img" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                </svg>
+            </a>
+        </div>
+        <div class="social skype">
+            <a href="#form" onclick="document.location.hash='form';return false;">
+                <svg role="img" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M424.7 299.8c2.9-14 4.7-28.9 4.7-43.8 0-113.5-91.9-205.3-205.3-205.3-14.9 0-29.7 1.7-43.8 4.7C161.3 40.7 137.7 32 112 32 50.2 32 0 82.2 0 144c0 25.7 8.7 49.3 23.3 68.2-2.9 14-4.7 28.9-4.7 43.8 0 113.5 91.9 205.3 205.3 205.3 14.9 0 29.7-1.7 43.8-4.7 19 14.6 42.6 23.3 68.2 23.3 61.8 0 112-50.2 112-112 .1-25.6-8.6-49.2-23.2-68.1zm-194.6 91.5c-65.6 0-120.5-29.2-120.5-65 0-16 9-30.6 29.5-30.6 31.2 0 34.1 44.9 88.1 44.9 25.7 0 42.3-11.4 42.3-26.3 0-18.7-16-21.6-42-28-62.5-15.4-117.8-22-117.8-87.2 0-59.2 58.6-81.1 109.1-81.1 55.1 0 110.8 21.9 110.8 55.4 0 16.9-11.4 31.8-30.3 31.8-28.3 0-29.2-33.5-75-33.5-25.7 0-42 7-42 22.5 0 19.8 20.8 21.8 69.1 33 41.4 9.3 90.7 26.8 90.7 77.6 0 59.1-57.1 86.5-112 86.5z"/>
+                </svg>
+            </a>
+        </div>
+        <div class="social twitter">
+            <a href="#form" onclick="document.location.hash='form';return false;">
+                <svg role="img" viewBox="0 0 512 512">
+                    <path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/>
+                </svg>
+            </a>
+        </div>
+        <div class="social whatsapp">
+            <a href="#form" onclick="document.location.hash='form';return false;">
+                <svg role="img" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+                </svg>
+            </a>
+        </div>
+
+                </div>
+                <div class="quantity">
+                    33 commenti per oggi
+                </div>
+                <div class="comments">
+                    <div class="comment">
+                        <img class="avatar" src="images/1.webp">
+                        <div class="comm_text">
+                            <p class="user_name"> Loredana Mazzini </p>
+                            <p class="text"> Ti sono così grata per il rimedio, Pietro. È da un po' che cercavo qualcosa di simile. L'ho ordinato col 50% di sconto e sto aspettando il pacco con impazienza! Grazie! </p>
+                            <p class="time"> un'ora fa </p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img class="avatar" src="images/2.webp">
+                        <div class="comm_text">
+                            <p class="user_name"> Marina Armieri </p>
+                            <p class="text"> Ho avuto l'artrosi. E adesso non l’ho più... è sparito per un corso di applicazione della pomata! Grazie per questo! </p>
+
+                            <p class="time"> un'ora fa </p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img class="avatar" src="images/3.webp">
+                        <div class="comm_text">
+                            <p class="user_name"> Marie Claude Boyer </p>
+                            <p class="text"> Lo stesso vale per me! È un rimedio molto efficace contro i disturbi articolari! I gomiti e le ginocchia non mi fanno più male. </p>
+                            <p class="time"> un'ora fa </p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img class="avatar" src="images/4.webp">
+                        <div class="comm_text">
+                            <p class="user_name"> John Terra-Nova </p>
+                            <p class="text"> Gregory, grazie per questo prodotto!!! Non solo hai salvato tua moglie, ma anche molte altre persone. Ho provato di recente ad applicare Fortuflex sul rachide cervicale, ho l'osteocondrosi, ora mi sento molto meglio. Spero che in futuro sarà ancora meglio! <br>
+                            </p>
+                            <p class="time"> un'ora fa </p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img class="avatar" src="images/5.webp">
+                        <div class="comm_text">
+                            <p class="user_name"> Gregory Cusanno </p>
+                            <p class="text"> Andrea, non preoccuparti e continua a usare Fortuflex. La cosa principale è seguire le istruzioni per l'uso della pomata. </p>
+                            <p class="text"> Cordiali saluti, Gregory. </p>
+                            <p class="time"> un'ora fa </p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img class="avatar" src="images/6.webp">
+                        <div class="comm_text">
+                            <p class="user_name"> Alessio Mortellaro </p>
+                            <p class="text"> Ragazzi, aiutatemi! Sono stanco di mal di schiena. Il disagio e il dolore non danno tragua. Non so più cosa fare. Prendo diverse pasticche, applico periodicamente tutti i tipi di gel sulla zona dolente, ma non mi aiuta niente:( </p>
+                            <p class="time"> un'ora fa </p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img class="avatar" src="images/7.webp">
+                        <div class="comm_text">
+                            <p class="user_name"> Sergio Bertoli </p>
+                            <p class="text"> Alessio, ordina Fortuflex, non te ne pentirai. Anche io avevo lo stesso problema, a causa delle articolazioni malate non riuscivo neanche a camminare. Grazie a mia madre, ho trovato questa pomata, lei mi ha consigliato di usarla. A proposito, la abbiamo comprato sei mesi fa, senza uno sconto (anche se il prezzo non era alto). Ora non ho più problemi con le articolazioni, mi muovo facilmente. Fidati, prendila, e tutto andrà bene vedrai, soprattutto perché ora con il 50% di sconto, non perdi nulla </p>
+                            <p class="time"> un'ora fa </p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img class="avatar" src="images/8.webp">
+                        <div class="comm_text">
+                            <p class="user_name"> Nora Lapin </p>
+                            <p class="text"> Come ordinare Fortuflex? </p>
+                            <p class="time"> un'ora fa </p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img class="avatar" src="images/9.webp">
+                        <div class="comm_text">
+                            <p class="user_name"> Vito Principe </p>
+                            <p class="text"> Nora, ecco il link sul <a href="#form" onclick="document.location.hash='form';return false;">sito ufficiale</a>, ti consiglio solo di sbrigarti se vuoi usufruire dell'offerta speciale, per riceverlo con il 50% di sconto. A me la pomata ha aiutato veramente tanto </p>
+                            <p class="time"> un'ora fa </p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img class="avatar" src="images/8.webp">
+                        <div class="comm_text">
+                            <p class="user_name"> Nora Lapin </p>
+                            <p class="text"> Vito, sì, grazie, l’ho già ordinata. Potresti dirmi, quanto tempo ci vuole per la consegna? </p>
+                            <p class="time"> un'ora fa </p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img class="avatar" src="images/9.webp">
+                        <div class="comm_text">
+                            <p class="user_name"> Vito Principe </p>
+                            <p class="text"> Antonella, arriverà dopo circa 3 giorni) </p>
+                            <p class="time"> un'ora fa </p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img class="avatar" src="images/10.webp">
+                        <div class="comm_text">
+                            <p class="user_name"> Rachel Allen </p>
+                            <p class="text"> L’ho ordinato per mia sorella due mesi fa. Ha sofferto a lungo dell'artrite. Come mi ha ringraziato dopo per aver rischiato e ordinato Fortuflex! </p>
+                            <p class="time"> un'ora fa </p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img class="avatar" src="images/11.webp">
+                        <div class="comm_text">
+                            <p class="user_name"> Michele Regini </p>
+                            <p class="text"> Rachel, è così efficace? Forse, vale la pena che lo ordini anche io, tanto c'è il 50% di sconto. </p>
+                            <p class="time"> un'ora fa </p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img class="avatar" src="images/12.webp">
+                        <div class="comm_text">
+                            <p class="user_name"> Vincenzo Samuzzo </p>
+                            <p class="text"> Anche io ho sentito parlare di questo prodotto. Qualcuno dei miei amici ha ordinato qualcosa del genere. Ho problemi con la gamba dopo l'infortunio, già il secondo anno che ho dolori forti, i medici non mi hanno aiutato... ora ho letto questo articolo e ho deciso di ordinare Fortuflex. Ora faccio un ordine, lo proverò di sicuro. </p>
+                            <p class="time"> un'ora fa </p>
+                        </div>
+                    </div>
+<!--                     <div class="comment">
+                        <img class="avatar" src="images/13.webp">
+                        <div class="comm_text">
+                            <p class="user_name"> Maurizio Tavano </p>
+                            <p class="text"> Vedo che non solo io ad avere tali problemi, grazie a dio che ho preso un mese fa Fortuflex, mi ha liberato dall’osteocondrosi così in fretta come non hanno mai fatto decine di rimedi per le articolazioni </p>
+                            <p class="time"> un'ora fa </p>
+                        </div>
+                    </div> -->
+                    <div class="comment">
+                        <img class="avatar" src="images/14.webp">
+                        <div class="comm_text">
+                            <p class="user_name"> Alessandro Rivolta </p>
+                            <p class="text"> Ragazzi, vi aiuta davvero? I farmaci e i medici ormai sono inutili per me </p>
+                            <p class="time"> un'ora fa </p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img class="avatar" src="images/15.webp">
+                        <div class="comm_text">
+                            <p class="user_name"> Marilena Becci </p>
+                            <p class="text"> Alessandro, certamente. L'effetto è molto forte, ma la cosa più importante è che non nuoce alla salute. Quindi, sbrigati a ordinare! Fortuflex mi ha aiutato a liberarmi completamente dei problemi alla schiena. </p>
+
+                            <p class="time"> un'ora fa </p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img class="avatar" src="images/16.webp">
+                        <div class="comm_text">
+                            <p class="user_name"> Annalisa Silani </p>
+                            <p class="text"> Grazie, Fortuflex mi ha aiutato davvero! L’ho ordinato proprio sul sito ufficiale! Non aspettare troppo, è meglio sbarazzarsi del problema ora, che poi capire che non riesci più a muoverti. <br>
+                            </p>
+                            <p class="time"> un'ora fa </p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img class="avatar" src="images/17.webp">
+                        <div class="comm_text">
+                            <p class="user_name"> Daniela Bianchi </p>
+                            <p class="text"> Grazie Pietro! Se non fosse stato per lei, non avrei mai creduto nell'efficacia di questo Fortuflex! Mio marito per più di 5 anni ha avuto lo stesso problema di sua moglie. Ha sofferto terribilmente. E ora corre come se avesse di nuovo18 anni. <br>
+                                Il pacco è arrivato molto velocemente. </p>
+                            <p class="time"> un'ora fa </p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img class="avatar" src="images/5.webp">
+                        <div class="comm_text">
+                            <p class="user_name"> Pietro Romani </p>
+                            <p class="text"> Daniela, non ringraziarmi. Sarebbe meglio se mi avesse detto, per favore, quanto tempo ci è voluto per il recupero? </p>
+                            <p class="text"> Cordiali saluti, Pietro </p>
+                            <p class="time"> un'ora fa </p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img class="avatar" src="images/17.webp">
+                        <div class="comm_text">
+                            <p class="user_name"> Daniela Bianchi </p>
+                            <p class="text"> Pietro, circa un mese di applicazione della pomata, ora si muove liberamente, non si lamenta del dolore. Sono molto contenta che stia bene. </p>
+                            <p class="time"> un'ora fa </p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img class="avatar" src="images/5.webp">
+                        <div class="comm_text">
+                            <p class="user_name"> Pietro Romani </p>
+                            <p class="text"> Daniela, ho capito, grazie. </p>
+                            <p class="text"> Cordiali saluti, Pietro </p>
+                            <p class="time"> un'ora fa </p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img class="avatar" src="images/18.webp">
+                        <div class="comm_text">
+                            <p class="user_name"> Elena Cigno </p>
+                            <p class="text"> Il risultato è superato le mie aspettative. La sciatica è scomparsa per sempre! L’ho ordinato per le mie amiche, una ha il mal di schiena, l'altra invece ha il dolore al gomito. </p>
+                            <p class="time"> 57 minuti fa </p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img class="avatar" src="images/19.webp">
+                        <div class="comm_text">
+                            <p class="user_name"> Marta Navarro </p>
+                            <p class="text"> Oggi, proprio poco tempo fa ho inoltrato la richiesta... <br>
+                                Ero sorpresa che lo vendessero davvero con il 50% di sconto! <br>
+                                Ho lasciato il numero di telefono sul sito ufficiale, quasi subito mi hanno richiamato per confermare l'ordine. Voglio finalmente vivere in pace, godere le passeggiate e così via) </p>
+                            <p class="time"> 55 minuti fa </p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img class="avatar" src="images/20.webp">
+                        <div class="comm_text">
+                            <p class="user_name"> Alice Sica </p>
+                            <p class="text"> L’ho ordinato per me, l'artrite mi tormentava terribilmente per diversi anni. Ogni volta con la pioggia o il cambiamento del tempo mi sentivo semplicemente senza gambe. Fortuflex mi ha aiutato in un paio di settimane. Non riuscivo nemmeno a pensare che fosse possibile. </p>
+                            <p class="time"> 53 minuti fa </p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img class="avatar" src="images/21.webp">
+                        <div class="comm_text">
+                            <p class="user_name"> Anna Ranieri </p>
+                            <p class="text"> Il nostro amico ha una farmacia privata, questa pomata lì costa quasi 100 euro, quindi non potevo comprarla. E qui l'ho visto scontato del 50% e l'ho ordinato subito, perché la mia pensione è una miseria, non ho soldi da buttare. Il ginocchio non fa più male, lavoro tranquillamente nel giardino senza dolore. Grazie! </p>
+                            <p class="time"> 48 minuti fa </p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img class="avatar" src="images/5.webp">
+                        <div class="comm_text">
+                            <p class="user_name"> Pietro Romani </p>
+                            <p class="text"> Anna, anche le farmacie vogliono venderla. È uno schifo, guadagnare così sulle disgrazie della gente. Ora seguiremo i nostri prodotti: dove e a chi li spediamo. </p>
+                            <p class="text"> Cordiali saluti, Pietro </p>
+                            <p class="time"> 36 minuti fa </p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img class="avatar" src="images/22.webp">
+                        <div class="comm_text">
+                            <p class="user_name"> Ida Freddo </p>
+                            <p class="text"> Fortuflex mi ha aiutato a liberarmi di gotta in un solo corso di applicazione, ora lo tengo sempre nell'armadietto dei medicinali, per qualsiasi emergenza. </p>
+                            <p class="time"> 36 minuti fa </p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img class="avatar" src="images/23.webp">
+                        <div class="comm_text">
+                            <p class="user_name"> Massimo Bardi </p>
+                            <p class="text"> L’ho ordinato per me. Ha funzionato benissimo. Se hai problemi alle articolazioni, ti consiglio vivamente, credimi: tutto passerà subito. La consegna è veloce, solo di tre giorni. </p>
+                            <p class="time"> 39 minuti fa </p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img class="avatar" src="images/5.webp">
+                        <div class="comm_text">
+                            <p class="user_name"> Pietro Romani </p>
+                            <p class="text"> Massimo, grazie! Cerchiamo di consegnare Fortuflex il più rapidamente possibile alle persone che potranno finalmente dimenticare i problemi articolari. </p>
+                            <p class="text"> Cordiali saluti, Pietro </p>
+                            <p class="time"> 36 minuti fa </p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img class="avatar" src="images/24.webp">
+                        <div class="comm_text">
+                            <p class="user_name"> Lucia Cucchi </p>
+                            <p class="text"> Ho letto l'articolo e ho deciso di ordinare la pomata immediatamente per provarla finché c’è questa promozione. Mi ha ispirato la storia di Pietro e sua moglie. Il fatto è che i farmaci “normali” mi hanno aiutato solo per un po’, dall'artrite, come mi è stato detto, è difficile liberarmi. Ora vi racconto dei miei risultati. Mi hanno consegnato Fortuflex molto rapidamente. Già il primo giorno mi sento così sollevata che non potevo non scriverne qui. Grazie mille, ora posso vivere bene! </p>
+                            <p class="time"> 31 minuti fa </p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img class="avatar" src="images/25.webp">
+                        <div class="comm_text">
+                            <p class="user_name"> Ilaria Colucci </p>
+                            <p class="text"> Ragazzi, dove lo avete ordinato? Nelle farmacie questo rimedio non viene venduto, ma in Internet ho paura di comprarlo. Non vorrei ricevere un prodotto falso, dal quale non avrò nessun beneficio. </p>
+                            <p class="time"> 27 minuti fa </p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img class="avatar" src="images/5.webp">
+                        <div class="comm_text">
+                            <p class="user_name"> Pietro Romani </p>
+                            <p class="text"> Ripeto ancora una volta, che Fortuflex può essere ordinato solo sul nostro <a href="#form" onclick="document.location.hash='form';return false;">sito ufficiale</a>, per non sbagliare, basta cliccare sul link qui sopra! Ricordo che si può ricevere Fortuflex con il 50% di sconto, ma la promozione sarà valida solo per poco tempo, quindi affrettatevi con l'ordine! <br>
+                                E attenzione ai falsi, per favore. </p>
+                            <p class="text"> Cordiali saluti, Pietro </p>
+                            <p class="time"> 15 minuti fa </p>
+                        </div>
+                    </div>
+
+                    <style type="text/css">
+                        textarea {
+                                display: block;width: 100%; height: 100px; border: 1px solid rgb(222, 222, 222); text-align: center;}
+                    </style>
+
+
+
+                    <br><br>
+                    <center>
+                    <p class="p" style="margin-bottom: 0">SOLO OGGI! SCONTO DEL 50%</p>
+                    <a class="btn" href="#form" onclick="document.location.hash='form';return false;" style="text-transform: uppercase;"> RICEVERE Fortuflex</a>
+                    </center>
+                </div>
+            </div>
+
+            <div class="footer">
+
+                <div class="lt97" style="margin-bottom: 20px">© 2010-<span class="js-current-year"><script>document.write(new Date().getFullYear())</script></span>. 
+				Tutti i diritti riservati.</div>
+
+                <div class="lt96">
+                    <a style="color: #fff" href="privacy.html" target="_blank">Política de privacidad</a> <br>
+                    <a style="color: #fff" href="cond.html" target="_blank">Condizioni d'uso</a> <br>
+                    <a style="color: #fff" href="#form" onclick="document.location.hash='form';return false;">Mappa del sito</a>
+                </div>
+          
+        
+            </div>
+        </div>
+
+
+        <script>
+        $(document).ready(function() {
+            $("a[href^='#']").on('click', function(e) {
+                var anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $(anchor.attr('href')).offset().top
+                }, 777);
+                e.preventDefault();
+                return false;
+            });
+        });
+        </script>
+
+
+    </div>
+
+
+    <style>
+        .hide,
+        .flag-dropdown {
+           display: none;
+        }
+         .error-box {
+           color: #fff;
+           background-color: #DE5042 !important;
+           border-radius: 5px;
+           text-align: center;
+           width: 240px;
+           font-size: 13px;
+           line-height: 20px;
+           margin: 5px auto !important;
+           z-index: 100;
+        }
+        input:invalid {
+           box-shadow: none;
+        }
+     </style>
+
+    <script src="js/jquery.min.js"></script>
+
+
+
+<script type="text/javascript" src="/libs/js/gdpr.js"></script>
+<link rel="stylesheet" href="/libs/js/gdpr.css">
+<script>
+		var phonePattern = {
+			'de': '+49 ___ ____ ?__',
+			'at': '+43 ____ ____ ?__',
+			'ch': '+41 __ ___ __ __ ?__',
+			'ru': '+7 (___) ___-__-__',
+			'ua': '+38-___-___-__-__',
+			'by': '+375 ___ ___ ___',
+			'kz': '+7 ___ ___ ____',
+			'kg': '+___ ___ __ __ __',
+			'md': '0 ___ _____',
+			'az': '+___-__-___-__-__',
+			'ge': '+995 ___ __ __ __',
+			'es': '+34 ___ __ __ __',
+			'pe': '+51 ___ ___ _?_',
+			'cl': '+56 _ ____ ____',
+			'ar': '+54 __ ____ ____',
+			'co': '+57 _______??_',
+			'mx': '+52 __ ____ ____',
+			'it': '+39-___-___-____',
+			'esp': '+34 ___ __ __ __',
+			'pt': '+351 ___ ___ ___',
+			'br': '+55 __ ___?_ ____',
+			'prt': '+351 ___ ___ ___',
+			'id': '+62 ___ ___ ___',
+			'gr': '+30 ___ _______',
+			'cy': '+357 __ ______',
+			'ro': '+40 ___ ___ __? _',
+			'bg': '+359 ___ __ __? _',
+			'cz': '+420 ___ ___ ___',
+			'sk': '+421 ___ ___ ___',
+			'si': '+386 _ ___ __ __',
+			'pl': '+48 ___ ___ ___',
+			'al': '+355 __ ___ ___?_',
+			'rs': '+381 __ _____?_',
+			'ph': '+63 _ ____ __?_',
+			'hu': '+36 _ ___ ____',
+			'hr': '+385 _ ____ __?_',
+			'ba': '+387 __ ______',
+			/* --- */
+		}
+
+		const inputs = document.querySelectorAll('form input[name="phone"]')
+
+
+		//функция на проверку соответствия количества введенных в инпут символов, количеству необходимых в маске
+		function validate_form(form, alert_text = "Please enter valid phone number") {
+			var input_ln = form.querySelector('input[name="phone"]').value.replace(/ /g, '').length,
+				pattern_ln = phonePattern[form.getAttribute('geo')].replace(/\?| /g, '').length;
+			if (input_ln >= pattern_ln) return true;
+			else { alert(alert_text); return false; }
+		}
+
+		//сама маска, срабатывающая от ивентов ввода, фокуса, потери фокуса и нажатия кнопки мыши
+		document.addEventListener("DOMContentLoaded", function () {
+
+			var isTimeoutSeted = false;
+			var inputInterval;
+
+			function createInterval(input) {
+				if (!isTimeoutSeted) {
+					isTimeoutSeted = true;
+
+					inputInterval = setInterval(() => {
+						input.selectionStart = input.value.length
+						input.setSelectionRange(input.value.length, input.value.length);
+					}, 15)
+				}
+			}
+
+			function deleteInterval() {
+				clearInterval(inputInterval)
+				isTimeoutSeted = false;
+			}
+
+			function setSelectionStart(input) {
+				input.selectionStart = input.value.length
+			}
+
+			function mask(event) {
+				var input = event.currentTarget;
+				var geo = input.form.getAttribute('geo');
+				var matrix = phonePattern[geo];
+				var i = 0;
+				var def = matrix.replace(/\D/g, "");
+				var val = input.value.replace(/\D/g, "");
+
+				if (!event.type == "blur") {
+					setSelectionStart(input)
+				}
+
+				// Ставим интервал для инпута
+				createInterval(input)
+
+				if (event.type == "blur") {
+					// Сбрасываем интервал для инпута
+					deleteInterval()
+					if (input.value.length == 2) {
+						input.value = ""
+					}
+				}
+
+				if (def.length >= val.length) {
+					val = def
+				};
+
+				input.value = matrix.replace(/./g, function (a) {
+					return /[_|?\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
+				});
+
+
+			};
+
+			inputs.forEach(input => {
+				input.addEventListener("input", mask, false);
+				input.addEventListener("blur", mask, false);
+				input.addEventListener("focus", mask, false);
+			})
+		});
+
+		$(document).ready(function () {
+			// Load GDPR
+			$(document).gdprCookieLaw({
+				moreLinkHref: '/privacypolicy',
+				theme: 'theme-1',
+				position: 'bottom-right',
+				width: '760px',
+				margin: '15px',
+				animation: 'fade-slide',
+				btnAcceptText: 'Ok'
+			});
+		});
+
+</script>
+
+</body></html>
