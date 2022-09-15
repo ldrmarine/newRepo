@@ -396,7 +396,7 @@ z-index: 999;
 }
 
 .discount-block > span {
-  font-family: Gilroy;
+  font-family: Roboto;
   font-style: normal;
   font-weight: 800;
   font-size: 17px;
@@ -405,7 +405,7 @@ z-index: 999;
 }
 
 .discount-block > p {
-  font-family: Gilroy;
+  font-family: Roboto;
   font-style: normal;
   font-weight: 800;
   font-size: 24px;
@@ -415,7 +415,7 @@ z-index: 999;
 }
 
 .discount-block > p {
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .new-price-block {
@@ -869,7 +869,7 @@ footer > p {
   color: #000000;
 }
 .rev_text_block > p {
-  font-family: Gilroy;
+  font-family: Roboto;
   font-style: normal;
   font-weight: 300;
   font-size: 19px;
