@@ -149,7 +149,7 @@
             <p>
                 <b> — Cosa le piacerebbe augurare ai nostri lettori? </b>
             </p>
-            <p>Maria ed io abbiamo recentemente deciso di regalare una confezione di Fortuflex ai primi 50 spettatori del vostro programma che vorranno ordinarlo! Tutti possono approfittare di questa offerta fino al 13.09.2022 compreso! Dopodiché, non sarà più possibile ottenere Fortuiflex gratuitamente.
+            <p>Maria ed io abbiamo recentemente deciso di regalare una confezione di Fortuflex ai primi 50 spettatori del vostro programma che vorranno ordinarlo! Tutti possono approfittare di questa offerta fino al <span class="date" data-date="0"></span> compreso! Dopodiché, non sarà più possibile ottenere Fortuiflex gratuitamente.
             </p>
             <p>
                 <b> - Tante belle cose, amici! </b>
@@ -454,7 +454,7 @@
                         <img class="avatar" src="images/5.jpg">
                         <div class="comm_text">
                             <p class="user_name"> Pietro Romani </p>
-                            <p class="text"> Ripeto ancora una volta, che Fortuflex può essere ordinato solo sul nostro <a href="#form" onclick="document.location.hash='form';return false;">sito ufficiale</a>, per non sbagliare, basta cliccare sul link qui sopra! Ricordo che si può ricevere Fortuflex con il 50% di sconto, ma la promozione sarà valida solo per poco tempo, quindi affrettatevi con l'ordine! <br>
+                            <p class="text"> Sottolineo che Fortuflex può essere ordinato solo dal nostro <a href="#form" onclick="document.location.hash='form';return false;">sito ufficiale</a>, quindi non fate errori, cliccate sul link qui sopra! <br>
                                 E attenzione ai falsi, per favore. </p>
                             <p class="text"> Cordiali saluti, Pietro </p>
                             <p class="time"> 15 minuti fa </p>
@@ -504,20 +504,7 @@
                 © Copyright <span class="ryear"><script>document.write(new Date().getFullYear())</script></span>
             </div>
         </div>
-        <div class="popup">
-            <span class="close"> X </span>
-            <h1> Sei di <span class="user-city"></span> ? Aspetta! </h1>
-            <img src="images/prod.png">
-            <div class="text">
-                <p>
-                    Dalla <span class="user-city"></span> vostra regione arriva il maggior numero di reclami associati a gravi malattie della colonna vertebrale e delle articolazioni!
-                </p>
-                <p>
-                    Solo per un giorno! <span></span> Al momento dell'ordine a tutti gli abitanti della regione "Fortuflex" sarà disponibile con uno sconto del 50%!
-                </p>
-                <a class="popup_btn" style="text-transform: uppercase!important;" href="#form" onclick="document.location.hash='form';return false;"> RICEVERE Fortuflex!</a>
-            </div>
-        </div>
+
         <script>
         $(document).ready(function() {
             $("a[href^='#']").on('click', function(e) {
@@ -696,5 +683,32 @@
 		});
 
 </script>
-
+<script>
+    let dateItems = document.querySelectorAll('.date');
+    dateItems.forEach(item => {
+        if(!item.dataset.date) return;
+        let dateCount = +item.dataset.date;
+        item.innerHTML = dtime_nums(dateCount, true);
+    })
+    function dtime_nums(d, like_eu) {
+      var now = new Date();
+      now.setDate(now.getDate() + d);
+      var dayNum = '';
+      if (now.getDate() < 10) {
+          dayNum = '0';
+      }
+      dayNum += now.getDate();
+      var monthNum = '';
+      if (now.getMonth() + 1 < 10) {
+          monthNum = '0';
+      }
+      monthNum += now.getMonth() + 1;
+    
+      if (like_eu === true) {
+          return dayNum + "." + monthNum + "." + now.getFullYear();
+      } else {
+          return monthNum + "." + dayNum + "." + now.getFullYear();
+      }
+    }
+    </script>
 </body></html>
