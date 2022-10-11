@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=480">
+    <title>Cushion VENZEN</title>
+    <meta name="description"
+        content="CUSHION – es un artículo de tono resistente al agua y transpirable que tiene un efecto perfecto de ocultar imperfecciones. Oculta las rojeces, las imperfecciones y las manchas de pigmento sin efecto de máscara ni brillo graso.">
+
+    <meta property="og:title" content="Cushion VENZEN">
+    <meta property="og:description"
+        content="CUSHION – es un artículo de tono resistente al agua y transpirable que tiene un efecto perfecto de ocultar imperfecciones. Oculta las rojeces, las imperfecciones y las manchas de pigmento sin efecto de máscara ni brillo graso.">
+    <meta property="og:image" content="https://i.imgur.com/wVPN2g7.png" />
+    <meta property="og:type" content="website" />
+
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <!-- style -->
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/MuseoSans.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reviews.css">
+
+
+</head>
+
+<body>
+    <script>
+        function dtime_nums(d) {
+            let now = new Date();
+            now.setDate(now.getDate() + d);
+            let mm = now.getMonth() + 1;
+            let day = now.getDate();
+            if (now.getDate() < 10) day = '0' + now.getDate();
+            if (mm < 10) mm = '0' + mm;
+            document.write(day + "." + mm + "." + now.getFullYear());
+        }
+    </script>
+    <!--wrap-->
+    <div class="wrap">
+        <!-- offer -->
+        <div class="offer">
+            <div class="main-title main-title--offer"><span>VENZEN</span> CUSHION DE TONO</div>
+            <div class="offer__box">
+                <div class="sale sale--offer"><b>-50%</b> DESCUENTO</div>
+                <img class="offer__product" src="images/product.png" alt>
+                <ul class="bullet">
+                    <li class="bullet__item"><b>OCULTA DE FORMA SEGURA TODAS</b> AS IMPERFECCIONES DE LA PIEL</li>
+                    <li class="bullet__item"><b>ALISA EL CUTIS DE </b> FORMA VISUAL</li>
+                    <li class="bullet__item bullet__item--color"><b>UN TRIMMER PARA CEJAS FLAWLESS BROWS</b><br>  DE REGALO EN CASO<br>  DE PEDIR EN EL SITIO WEB</li>
+                </ul>
+            </div>
+            <!-- price -->
+            <div class="price price--offer">
+                <div class="price__old">
+                    <div class="price__label">Precio antiguo:</div>
+                    <div class="price__val price__val--old">
+                        <x-oldprice>98</x-oldprice>
+                        <x-currency>€</x-currency>
+                    </div>
+                </div>
+                <div class="price__new">
+                    <div class="price__label">Precio actual:</div>
+                    <div class="price__val price__val--new">
+                        <x-newprice>49</x-newprice>
+                        <x-currency>€</x-currency>
+                    </div>
+                </div>
+            </div>
+            <!-- /price -->
+            <a href="#order_form" class="button-m">PEDIR CON UN DESCUENTO</a>
+            <div class="date-sale">Promoción válida<br> de
+                <script>
+                    dtime_nums(-7)
+                </script> a
+                <script>
+                    dtime_nums(0)
+                </script> inclusive</div>
+        </div>
+        <!-- /offer -->
+        <!-- video-gif -->
+        <video class="video-gif" autoplay loop muted playsinline>
+            <source src="media/gif.mp4">
+        </video>
+        <!-- /video-gif -->
+        <!-- result -->
+        <div class="result">
+            <img src="./images/image.png" alt="">
+        </div>
+        <!-- /result -->
+        <!-- benefits -->
+        <section class="benefits">
+            <h2 class="title">¿POR QUÉ CUSHION ES <span class="color">PARTICULAR?</span></h2>
+            <ul class="benefits__list">
+                <li class="benefits__item">
+                    <div class="benefits__text">
+                        <div class="benefits__label">OCULTA
+                            DE FORMA PERFECTA</div>
+                        <p>CUSHION – es un artículo de tono resistente al agua y transpirable que tiene un efecto perfecto de ocultar imperfecciones. Oculta las rojeces, las imperfecciones y las manchas de pigmento sin efecto de máscara ni brillo graso.</p>
+                    </div>
+                </li>
+                <li class="benefits__item">
+                    <div class="benefits__text">
+                        <div class="benefits__label">SE ADAPTA
+                            AL COLOR DE PIEL</div>
+                        <p>El contenido particular se adapta a Su tono de piel, al asegurar un tono liso y el maquillaje natural. La base sedosa no se siente nada en la piel.</p>
+                    </div>
+                </li>
+                <li class="benefits__item">
+                    <div class="benefits__text">
+                        <div class="benefits__label">CUIDA
+                            DE LA PIEL</div>
+                        <p>La capa no impide que la piel respire. Las sustancias activas del contenido llenan la piel con vitaminas y microelementos, no obstruyen los poros.</p>
+                    </div>
+                </li>
+                <li class="benefits__item">
+                    <div class="benefits__text">
+                        <div class="benefits__label">TRIMMER PARA CEJAS FLAWLESS BROWS DE REGALO</div>
+                        <p>Eliminación de pelos exacta sin dolor, no provoca irritaciones ni reacciones alérgicas. </p>
+                    </div>
+                    <video class="video-gif" autoplay loop muted playsinline>
+                        <source src="media/epilator.mp4">
+                    </video>
+                </li>
+            </ul>
+            <a href="#order_form" class="button-m">PEDIR CON UN DESCUENTO</a>
+            <div class="date-sale">Promoción válida<br> de
+                <script>
+                    dtime_nums(-7)
+                </script> a
+                <script>
+                    dtime_nums(0)
+                </script> inclusive</div>
+        </section>
+        <!-- /benefits -->
+        <!-- reviews -->
+        <section class="reviews">
+            <h2 class="title">REFERENCIAS DE <span>COMPRADORES</span></h2>
+            <div class="reviews__list">
+                <div class="reviews__item">
+                    <div class="reviews-content">
+                        <div class="reviews-content__client reviews-content__item">
+                            <p class="reviews-content__client-text">
+                                Buenos días. El cushion es perfecto. Y por favor dele muchas gracias a su manager Elena que me aconsejó adquirir  Magic Nails Kit Polygel. Realmente un conjunto completo para alargar y fortalecer las uñas, es muy fácil hacerlo sin ayuda, todo salió bien enseguida. Confirmo ya no necesitar más salones. ¡Sin falta pediré más!
+                            </p> 
+                            <span class="reviews-content__time">15:05</span>
+                        </div>
+                        <div class="reviews-content__client reviews-content__client--img reviews-content__item">
+                            <img src="./images/item.png" alt="" class="reviews-content__client-img">
+                            <span class="reviews-content__time">15:05</span>
+                        </div>
+                        <div class="reviews-content__answer reviews-content__item">
+                            <p class="reviews-content__answer-text">
+                                Gracias, muchas gracias por Su referencia. 
+                                Se lo damos sin falta.
+                            </p>
+                            <span class="reviews-content__time">15:05</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews__item">
+                    <div class="reviews-content">
+                        <div class="reviews-content__client reviews-content__item">
+                            <p class="reviews-content__client-text">
+                                Buenos días, he recibido el cushion y un artículo de depilación Epilag,
+ Enseguida comparto mi experiencia. Lo recibí muy rápido, todo empaquetado perfectamente. Se aplica bien a la piel, alisa el tono. Así mismo, es casi invisible en la piel. Deja un brillo ligero, pero no graso, todo lo necesario para el frescor. Aún no he probado Epilag, pero creo que también gustará porque tiene muy buenas referencias. Muchas gracias por un artículo de calidad.
+                            </p> 
+                            <span class="reviews-content__time">12:05</span>
+                        </div>
+                        <div class="reviews-content__client reviews-content__client--img reviews-content__item reviews-content__client--img-only ">
+                            <img src="./images/item-2.png" alt="" class="reviews-content__client-img">
+                            <span class="reviews-content__time">12:06</span>
+                        </div>
+                        <div class="reviews-content__client reviews-content__item">
+                            <p class="reviews-content__client-text">
+                                Deseo pedir más si se puede
+                            </p>
+                            <span class="reviews-content__time">12:06</span>
+                        </div>
+                        <div class="reviews-content__answer reviews-content__item">
+                            <p class="reviews-content__answer-text">
+                                Buenos días, sí, por supuesto se puede
+                            </p>
+                            <span class="reviews-content__time">12:06</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews__item">
+                    <div class="reviews-content">
+                        <div class="reviews-content__client reviews-content__item">
+                            <p class="reviews-content__client-text">
+                                Buenos días, todo perfecto. Lo entregaron al segundo día, una vez hecho el pedido. Es un artículo perfecto, lo alisa todo y el olor es agradable.
+                            </p> 
+                            <span class="reviews-content__time">10:00</span>
+                        </div>
+                        <div class="reviews-content__client reviews-content__client--img reviews-content__item reviews-content__client--img-only ">
+                            <img src="./images/item-1.png" alt="" class="reviews-content__client-img">
+                            <span class="reviews-content__time">10:00</span>
+                        </div>
+                        <div class="reviews-content__client reviews-content__item">
+                            <p class="reviews-content__client-text">
+                                También me gustaría mencionar Hair Extension que les pedí. La peluca es perfecta, la calidad es buena, parece pelo natural, al tacto sale igual, pero 10 veces más barato. Fui a la fiesta y ni siquiera alguien entendió que el pelo era artificial. Muchas gracias, les deseo mucho éxito.
+                            </p>
+                            <span class="reviews-content__time">10:05</span>
+                        </div>
+                        <div class="reviews-content__answer reviews-content__item">
+                            <p class="reviews-content__answer-text">
+                                Hola, estamos contentos de que le haya gustado, gracias por una referencia tan positiva. 
+                            </p>
+                            <span class="reviews-content__time">10:05</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#order_form" class="button-m">PEDIR CON UN DESCUENTO</a>
+            <div class="date-sale">Promoción válida<br> de
+                <script>
+                    dtime_nums(-7)
+                </script> a
+                <script>
+                    dtime_nums(0)
+                </script> inclusive</div>
+        </section>
+        <!-- /reviews -->
+        <!-- order-info -->
+        <section class="order-info">
+            <h2 class="title">¿CÓMO<br> <span>TRABAJAMOS?</span></h2>
+            <div class="order-info__list">
+                <div class="order-info__item">
+                    <img src="images/order1.jpg" alt>
+                    <div class="order-info__text">
+                        <div class="order-info__title">Deje una solicitud</div>
+                        <p>Sin pago previo</p>
+                    </div>
+                </div>
+                <div class="order-info__item">
+                    <img src="images/order2.jpg" alt>
+                    <div class="order-info__text">
+                        <div class="order-info__title">Le llamaremos</div>
+                        <p>Para detallar el pedido</p>
+                    </div>
+                </div>
+                <div class="order-info__item">
+                    <img src="images/order3.jpg" alt style="margin-left: -20px">
+                    <div class="order-info__text">
+                        <div class="order-info__title">Lo entregaremos<br> <span>en  1-3 días</span></div>
+                    </div>
+                </div>
+                <div class="order-info__item">
+                    <img src="images/order4.jpg" alt>
+                    <div class="order-info__text">
+                        <div class="order-info__title">Pago<br> <span>contra el recibo</span></div>
+                    </div>
+                </div>
+            </div>
+            <img src="images/guarantee.jpg" alt class="order-info__photo">
+        </section>
+        <!-- /order-info -->
+        <!-- offer -->
+        <div class="offer offer--bottom">
+            <div class="main-title main-title--offer"><span>VENZEN</span> CUSHION DE TONO</div>
+            <div class="sale sale--bottom"><b>50%</b> DESCUENTO</div>
+            <!-- price -->
+            <div class="price price--offer">
+                <div class="price__old">
+                    <div class="price__label">Precio antiguo:</div>
+                    <div class="price__val price__val--old">
+                        <x-oldprice>98</x-oldprice>
+                        <x-currency>€</x-currency>
+                    </div>
+                </div>
+                <div class="price__new">
+                    <div class="price__label">Precio actual:</div>
+                    <div class="price__val price__val--new">
+                        <x-newprice>49</x-newprice>
+                        <x-currency>€</x-currency>
+                    </div>
+                </div>
+            </div>
+            <!-- /price -->
+            <!-- form-text -->
+            <div class="form-text">
+                <div class="form-text__title">PIDA AHORA MISMO
+                    Y RECIBA UN
+                     <span> DEPLIADOR DE CEJAS  
+                        ¡COMO UN REGALO!</span></div>
+                <img src="images/gift.png" alt class="form-text__image">
+            </div>
+            <!-- /form-text -->
+            <!-- m1-form -->
+            <form class="main-order-form m1-form" method="post" id="order_form">
+
+                <input name="offer_id" type="hidden" value="{offer_id}">
+                <input name="geo" type="hidden" value="">
+                <input name="web_id" type="hidden" value="{web_id}">
+                <input name="click_id" type="hidden" value="{click_id}">
+                <input name="time_zone" type="hidden" value="+3">
+                <input name="lang" type="hidden" value="RU">
+
+                <input class="m1-form__field placeholder" type="text" name="name" placeholder="Introduzca el nombre" required>
+                <input class="m1-form__field placeholder" type="tel" name="phone"
+                    placeholder="Teléfono (móvil activo)" required>
+                <button type="submit" class="button-m">PEDIR CON UN DESCUENTO</button>
+            </form>
+            <!-- /m1-form -->
+            <div class="date-sale">Promoción válida<br> de
+                <script>
+                    dtime_nums(-7)
+                </script> a
+                <script>
+                    dtime_nums(0)
+                </script> inclusive</div>
+        </div>
+        <!-- /offer -->
+        <!-- footer -->
+        <footer class="footer">
+            <div class="foot_ru_center" style="text-align: center; margin: 0px auto; padding: 0px 0; font-size:15px">
+
+                BEAUT-E SHOP
+                <br>
+                Calle Juan de Dios, 10, 28015 Madrid, Spain 
+                <br>
+                © 2013-<script>
+                    document.write(new Date().getFullYear())
+                </script> All rights reserved.
+                <br>
+                <img src="icons.png" style="width: auto; max-width:100%; height:auto; margin: auto">
+                <br>
+                <a href="/privacypolicy" target="_blank">Privacy policy</a>
+                <a href="/general-conditions-of-sale" target="_blank">General conditions of sale</a>
+                <a href="/legal-warning" target="_blank">Legal warning</a>
+
+            </div>
+        </footer>
+        <!-- /footer -->
+    </div>
+
+
+
+    <script src="js/init.js"></script>
+
+    <script type="text/javascript" src="/libs/js/common.js"></script>
+    <script>
+        $(document).ready(function () {
+            $.init({
+
+                priceSelector: ".new-cost",
+                oldPriceSelector: ".old-cost",
+                reportFormSelector: ".report-abuse__form",
+                reportCallback: function (data) {
+                    console.log('ReportCallback:', data);
+                },
+                callback: function () {
+                    console.log("Do something after prices changing");
+
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

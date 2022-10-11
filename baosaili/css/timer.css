@@ -1,0 +1,19 @@
+.timer{
+  margin-bottom: 10px;
+}
+.timer__inner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.timer-count{
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 700;
+}
+.timer-delimeter{
+  font-size:20px;
+  line-height: 1;
+  font-weight: 700;
+}

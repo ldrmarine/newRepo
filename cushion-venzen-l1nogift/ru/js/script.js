@@ -1,0 +1,1 @@
+$(document).ready((function(){$('a[href^="#"]').not("[data-target]").click((function(){var t=$(this).attr("href"),a=$(t).offset().top;return jQuery("html:not(:animated), body:not(:animated)").animate({scrollTop:a},600),!1}))}));

@@ -1,0 +1,1924 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+      var flag = true;
+      $(window).mouseout(function (e) {
+        if (e.pageY - $(window).scrollTop() < 1 && flag == true) {
+          $(".fadepopup, .eoxp").fadeIn(300);
+          $(".eeee").fadeIn(300);
+          flag = false;
+        }
+      });
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".eeee").click(function () {
+          $(".eeee").addClass("actsss"); // добавляем в нажатую ссылку класс act
+          $(".fadepopup").addClass("actsss"); // добавляем в нажатую ссылку класс act
+          $(".fadepopup").removeClass("xxxc"); // добавляем в нажатую ссылку класс act
+          $(".eeee").removeClass("xxxc"); // добавляем в нажатую ссылку класс act
+          $(".hikj").removeClass("actss"); // добавляем в нажатую ссылку класс act
+          $("body").removeClass("modal-show"); // добавляем в нажатую ссылку класс act
+        });
+      });
+    </script>
+
+    <style type="text/css">
+      .oui {
+        width: 781px;
+        height: 460px; /*background: #7ca0cc;*/
+        background: rgba(60, 114, 181, 1);
+        background: -moz-linear-gradient(
+          -45deg,
+          rgba(60, 114, 181, 1) 0%,
+          rgba(123, 159, 204, 1) 100%
+        );
+        background: -webkit-gradient(
+          left top,
+          right bottom,
+          color-stop(0%, rgba(60, 114, 181, 1)),
+          color-stop(100%, rgba(123, 159, 204, 1))
+        );
+        background: -webkit-linear-gradient(
+          -45deg,
+          rgba(60, 114, 181, 1) 0%,
+          rgba(123, 159, 204, 1) 100%
+        );
+        background: -o-linear-gradient(
+          -45deg,
+          rgba(60, 114, 181, 1) 0%,
+          rgba(123, 159, 204, 1) 100%
+        );
+        background: -ms-linear-gradient(
+          -45deg,
+          rgba(60, 114, 181, 1) 0%,
+          rgba(123, 159, 204, 1) 100%
+        );
+        background: linear-gradient(
+          135deg,
+          rgba(60, 114, 181, 1) 0%,
+          rgba(123, 159, 204, 1) 100%
+        );
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3c72b5', endColorstr='#7b9fcc', GradientType=1 );
+        font-family: Roboto !important;
+        position: relative;
+        border: 5px solid #dddddd;
+      }
+      .actsss {
+        display: none !important;
+      }
+      .eeee {
+        background-color: rgba(0, 0, 0, 0.7);
+        display: none;
+        width: 100%;
+        height: 100%;
+        z-index: 333;
+        position: fixed;
+        cursor: pointer;
+      }
+      .kmacb-form2 .modal-block {
+        left: 50%;
+        margin-left: -396px;
+        position: fixed;
+        top: 6%;
+        z-index: 8105;
+        width: 792px;
+        height: 470px;
+        border-radius: 5px;
+        border: 0;
+        box-shadow: none;
+        font-family: Arial, sans-serif;
+        overflow: hidden;
+        color: #222;
+      }
+      p.ouimainp {
+        margin: 0 !important;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        padding-top: 23px;
+        display: block;
+        color: #fff;
+        text-align: center;
+      }
+      .ouimain-text-img {
+        display: block;
+        width: 90%;
+        padding: 0 5%;
+      }
+      .ouimain-img {
+        float: left;
+        display: block;
+        width: 32%;
+        margin: 0 auto;
+      }
+      .ouimain-img img {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .ouimain-text {
+        display: block;
+        width: 62%;
+        float: right;
+        margin-left: 5%;
+        margin-top: 30px;
+      }
+      .ouimain-text p {
+        margin: 0 !important;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.5;
+        text-align: left;
+        color: #fff;
+        font-size: 22px;
+        padding-bottom: 5px;
+      }
+      .ouimain-text-img:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .kmacb-form form {
+        margin: 30px 0;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        background: 0;
+        position: static;
+        padding: 0;
+        border: 0;
+      }
+      .kmacb-form2 form * {
+        box-sizing: border-box;
+      }
+      .kmacb-form form input {
+        float: none;
+      }
+      .kmacb-form form input[type="text"] {
+        height: 56px;
+        line-height: 56px;
+        color: #222;
+        border: 2px solid #bdbdbd;
+        padding: 0 15px;
+        width: 100%;
+        display: inline-block;
+        text-indent: 0;
+        border-radius: 3px;
+        background: #fff;
+        font-size: 20px;
+        font-style: normal;
+        box-shadow: none;
+        position: static;
+        margin: 0 0 10px 0;
+      }
+      .kmacb-form input[type="button"] {
+        position: absolute;
+        cursor: pointer;
+        border: 1px solid rgba(73, 155, 234, 1);
+        background: rgba(222, 69, 92, 1);
+        background: -moz-linear-gradient(
+          -45deg,
+          rgba(222, 69, 92, 1) 0%,
+          rgba(222, 69, 92, 1) 13%,
+          rgba(192, 31, 55, 1) 76%,
+          rgba(192, 31, 55, 1) 100%
+        );
+        background: -webkit-gradient(
+          left top,
+          right bottom,
+          color-stop(0%, rgba(222, 69, 92, 1)),
+          color-stop(13%, rgba(222, 69, 92, 1)),
+          color-stop(76%, rgba(192, 31, 55, 1)),
+          color-stop(100%, rgba(192, 31, 55, 1))
+        );
+        background: -webkit-linear-gradient(
+          -45deg,
+          rgba(222, 69, 92, 1) 0%,
+          rgba(222, 69, 92, 1) 13%,
+          rgba(192, 31, 55, 1) 76%,
+          rgba(192, 31, 55, 1) 100%
+        );
+        background: -o-linear-gradient(
+          -45deg,
+          rgba(222, 69, 92, 1) 0%,
+          rgba(222, 69, 92, 1) 13%,
+          rgba(192, 31, 55, 1) 76%,
+          rgba(192, 31, 55, 1) 100%
+        );
+        background: -ms-linear-gradient(
+          -45deg,
+          rgba(222, 69, 92, 1) 0%,
+          rgba(222, 69, 92, 1) 13%,
+          rgba(192, 31, 55, 1) 76%,
+          rgba(192, 31, 55, 1) 100%
+        );
+        background: linear-gradient(
+          135deg,
+          rgba(222, 69, 92, 1) 0%,
+          rgba(222, 69, 92, 1) 13%,
+          rgba(192, 31, 55, 1) 76%,
+          rgba(192, 31, 55, 1) 100%
+        );
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de455c', endColorstr='#c01f37', GradientType=1 );
+        color: #fff;
+        padding: 0 10px;
+        text-transform: uppercase;
+        line-height: 60px;
+        vertical-align: top;
+        display: block;
+        text-indent: 0;
+        font-style: normal;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 402px;
+        height: 64px;
+        opacity: 1;
+        bottom: 29px;
+        margin-left: 195px;
+        text-align: center;
+        font-size: 28px;
+        font-weight: 900;
+        border-radius: 10px;
+        transition: 0.6s ease;
+      }
+      .kmacb-form form input[type="submit"]:hover {
+        background: rgba(222, 69, 92, 1);
+        background: -moz-linear-gradient(
+          top,
+          rgba(222, 69, 92, 1) 0%,
+          rgba(222, 69, 92, 1) 13%,
+          rgba(192, 31, 55, 1) 76%,
+          rgba(192, 31, 55, 1) 100%
+        );
+        background: -webkit-gradient(
+          left top,
+          left bottom,
+          color-stop(0%, rgba(222, 69, 92, 1)),
+          color-stop(13%, rgba(222, 69, 92, 1)),
+          color-stop(76%, rgba(192, 31, 55, 1)),
+          color-stop(100%, rgba(192, 31, 55, 1))
+        );
+        background: -webkit-linear-gradient(
+          top,
+          rgba(222, 69, 92, 1) 0%,
+          rgba(222, 69, 92, 1) 13%,
+          rgba(192, 31, 55, 1) 76%,
+          rgba(192, 31, 55, 1) 100%
+        );
+        background: -o-linear-gradient(
+          top,
+          rgba(222, 69, 92, 1) 0%,
+          rgba(222, 69, 92, 1) 13%,
+          rgba(192, 31, 55, 1) 76%,
+          rgba(192, 31, 55, 1) 100%
+        );
+        background: -ms-linear-gradient(
+          top,
+          rgba(222, 69, 92, 1) 0%,
+          rgba(222, 69, 92, 1) 13%,
+          rgba(192, 31, 55, 1) 76%,
+          rgba(192, 31, 55, 1) 100%
+        );
+        background: linear-gradient(
+          to bottom,
+          rgba(222, 69, 92, 1) 0%,
+          rgba(222, 69, 92, 1) 13%,
+          rgba(192, 31, 55, 1) 76%,
+          rgba(192, 31, 55, 1) 100%
+        );
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de455c', endColorstr='#c01f37', GradientType=0 );
+      }
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#111111" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#111111" />
+    <title>
+      "I metodi italiani di trattamento dell'osteocondrosi provocano solo
+      sconcerto"
+    </title>
+    <link rel="icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/timeto_v_5.css"
+      media="all" />
+    <link
+      rel="stylesheet"
+      media="all"
+      href="css/css_SnJme265NTARihf45EIt7I8Le44eS3jTHoUbZBw4Aqw_v_15.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/spin_v_8.css"
+      media="all" />
+    <link
+      rel="stylesheet"
+      id="knife-theme-css"
+      href="css/styles.min.css"
+      type="text/css"
+      media="all" />
+    <link rel="stylesheet" href="css/boxes_style.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/form.css" media="all" />
+    <link
+      rel="stylesheet"
+      href="css/validationEngine.jquery.css"
+      type="text/css" />
+    <script type="text/javascript">
+      /*<![CDATA[*/
+      var __ai = {
+        a: new Date().getTime(),
+        x: function (a, b) {
+          window[/*@cc_on !@*/ 0 ? "attachEvent" : "addEventListener"](
+            /*@cc_on "on"+@*/ a,
+            b,
+            !1
+          );
+        },
+        z: document,
+      };
+      __ai.x("beforeunload", function () {
+        var a = window,
+          c,
+          k = __ai.z,
+          e,
+          b = function (a, c) {
+            for (
+              var b = __ai.z,
+                e = b.getElementsByTagName(a),
+                g = 0,
+                f = [],
+                d,
+                b = b.domain;
+              (d = e[g++]);
+
+            )
+              (d = d[c ? (1 < c ? "href" : "data") : "src"]) &&
+                (0 > d.indexOf(b) || 12 < d.indexOf(b)) &&
+                !d.match(
+                  /^(about|chrome-extension|javascript|localhost|mailto|skype|tel):/
+                ) &&
+                f.push(
+                  d
+                    .replace(/.*\/\/([^\/]+).*/, "$1")
+                    .replace(/(.+\.)?([^\.]+)\.([^\.]+)$/, "$2.$3")
+                );
+            return f
+              .filter(function (e, i, f) {
+                return f.lastIndexOf(e) === i;
+              })
+              .join("@");
+          },
+          h = new Date().getTime(),
+          g,
+          f,
+          a =
+            a.performance ||
+            a.msPerformance ||
+            a.webkitPerformance ||
+            a.mozPerformance;
+        "undefined" !== typeof a
+          ? ((a = a.timing),
+            (e = a.responseEnd),
+            (g = a.domContentLoadedEventStart),
+            (f = a.loadEventStart),
+            (j = a.connectEnd),
+            (i = a.responseStart),
+            (l = a.connectStart),
+            (m = a.domainRedirectEnd),
+            (n = a.secureConnectionStart),
+            (o = a.loadEventEnd),
+            (p = a.domContentLoadedEventEnd),
+            (q = a.msFirstPaint),
+            (q = q == "indefined" ? a.getEntriesByType("paint")[0] : q),
+            (x = __ai.b ? __ai.b - __ai.a : 0),
+            (y = __ai.c ? __ai.c - __ai.a : 0),
+            (c = [
+              m ? m - a.domainRedirectStart : 0,
+              l - a.domainLookupStart,
+              j - l,
+              n ? j - n : 0,
+              i - j,
+              e - i,
+              (g ? g : h) - e,
+              (f ? f : h) - e,
+              (o ? o : h) - e,
+              (p ? p : h) - e,
+              (q ? q : h) - e,
+            ]))
+          : (c = [0, 0, 0, 0, 0, 0, x, y, y, x, x]);
+        try {
+          c = c.concat(
+            k.documentElement.innerHTML.length,
+            b("script"),
+            b("iframe"),
+            b("embed"),
+            b("object", 1),
+            b("a", 2)
+          );
+        } catch (e) {}
+        new Image().src = "/airee_rum/" + c.join(",");
+      });
+      __ai.x("load", function () {
+        __ai.c = new Date().getTime();
+      });
+      __ai.z.addEventListener
+        ? __ai.z.addEventListener(
+            "DOMContentLoaded",
+            function () {
+              __ai.b = new Date().getTime();
+            },
+            !1
+          )
+        : __ai.z.attachEvent("onreadystatechange", function () {
+            "loading" !== __ai.z.readyState
+              ? (__ai.b = new Date().getTime())
+              : setTimeout(arguments.callee, 10);
+          });
+      /*]]>*/
+    </script>
+    <style>
+      td {
+        color: black !important;
+      }
+    </style>
+
+    <script type="text/javascript">
+      function date(d) {
+        var now = new Date();
+        now.setDate(now.getDate() + d + 0);
+        document.write(
+          ("0" + now.getDate()).slice(-2) +
+            "." +
+            ("0" + (now.getMonth() + 1)).slice(-2) +
+            "." +
+            now.getFullYear()
+        );
+      }
+    </script>
+    <link rel="stylesheet" href="./css/header-it.css" />
+  </head>
+  <body class="is-single is-post">
+    <div id="hiddenDiv" style="display: none"></div>
+
+    <div class="eeee" style="display: none"></div>
+
+    <header class="x-header-medical">
+      <div class="header_desktop">
+        <div class="header_content">
+          <div class="header_content_text-holder">
+            <div class="header-left">
+              <p class="header-left__title">Sostieni il nostro giornalismo.</p>
+              <p class="header-left__text">
+                Leggere quello che gli altri non dicono dipende da te.
+              </p>
+              <a href="#roulette" class="header-left__link"> SOSTIENICI </a>
+            </div>
+            <img src="./images/logo.png" alt="" class="header-logo" />
+            <div class="header-right">
+              <a href="#roulette" class="burger">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+              </a>
+              <a href="#roulette" class="header-right__link">
+                <img
+                  src="./images/search.svg"
+                  alt=""
+                  class="header-right__icon" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="header_menu">
+          <ul>
+            <li>
+              <a href="#roulette" rel="noopener noreferrer">
+                <p>CHI SIAMO</p>
+              </a>
+            </li>
+            <li>
+              <a href="#roulette" rel="noopener noreferrer">
+                <p>AD OGGI</p>
+              </a>
+            </li>
+            <li>
+              <a href="#roulette" rel="noopener noreferrer">
+                <p>ARTICOLI</p>
+              </a>
+            </li>
+            <li>
+              <a href="#roulette" rel="noopener noreferrer">
+                <p>CENTRO DIAGNOSTICO</p>
+              </a>
+            </li>
+            <li>
+              <a href="#roulette" rel="noopener noreferrer">
+                <p>I NOSTRI SPECIALISTI</p>
+              </a>
+            </li>
+            <li>
+              <a href="#roulette" rel="noopener noreferrer">
+                <p>UNISCITI A NOI</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header_mobile">
+        <p class="header_mobile-publication">
+          Pubblicato da <span class="date-day"></span>.<span
+            class="date-mont"></span
+          >.<span class="date-year"></span>
+        </p>
+      </div>
+    </header>
+    <style type="text/css">
+      .text_color {
+        color: dodgerblue;
+        text-align: center;
+        font-weight: bold;
+      }
+    </style>
+    <section class="content">
+      <div class="post" id="post-5218">
+        <div class="entry-header">
+          <div class="entry-header__info">
+            <div class="meta">
+              <a class="meta__item scrollto" href="#roulette" rel="author"
+                >Alessandro Ferrari</a
+              ><span class="meta__item"
+                ><script type="text/javascript">
+                  d = new Date();
+                  p = new Date(d.getTime() - 4 * 86400000);
+                  monthA = "01,02,03,04,05,06,07,08,09,10,11,12".split(",");
+                  document.write(
+                    p.getDate() - 0 + "." + monthA[p.getMonth()] + "."
+                  );
+                  var d = new Date();
+                  document.write(d.getFullYear());
+                </script>
+              </span>
+            </div>
+          </div>
+          <h1 class="entry-header__title">
+            <font color="darkred"
+              >"I metodi italiani di trattamento dell'osteocondrosi provocano solo sconcerto". Un noto reumatologo tedesco ha rilasciato una franca intervista a una pubblicazione italiana.</font>
+          </h1>
+          <ol>
+            <li><b>Come curare l'osteocondrosi una volta e per 10 anni?</b></li>
+            <li><b>Come eliminare la "gobba della vedova"?</b></li>
+            <li>
+              <b>Come eliminare i sali dalle articolazioni e vivere una vita piena?</b>
+            </li>
+            <li>
+              <b
+                >Perché in Italia 9 medici su 10 non hanno idea di come trattare correttamente la colonna vertebrale e le articolazioni?</b
+              >
+            </li>
+          </ol>
+          <p>
+            <b
+              >A queste domande risponderà il professore tedesco di reumatologia Karl Kirschmeyer.</b
+            >
+          </p>
+          <p>
+            <b>Il dottor Karl Kirschmayer </b> è il responsabile del Centro di Reumatologia Tumorzentrum Eva Mayr-Stihl presso l'ospedale Charité di Berlino, famoso in tutto il mondo:
+          </p>
+          <div class="qoute">
+            <p>
+              La causa dell'osteocondrosi è una sola, ma è quella che 9 medici italiani su 10 ignorano.
+            </p>
+            <img src="images/right-quote.png" />
+          </div>
+          <div class="box-img">
+            <picture><img src="images/doc3.jpg" /></picture>
+          </div>
+          <p style="text-align: center; font-size: 14px">
+            Dr. Karl Kirschmeyer: "In Italia l'osteocondrosi è ancora trattata con farmaci obsoleti e inefficaci che richiedono un uso costante per tutta la vita. In Germania, invece, l'osteocondrosi viene trattata con la stessa facilità di un naso che cola: una volta sola e per 10 anni".
+          </p>
+          <p>
+            L'anno scorso Carl Kirschmeier è venuto in Italia per studiare l'esperienza dei suoi colleghi italiani. Quello che ha visto in Italia, ha detto, non si spiega. Secondo Karl, nel nostro Paese la reumatologia è ferma alla metà del secolo scorso.
+          </p>
+          <p>
+            Dopo aver pronunciato discorsi ad alta voce in Germania, il dottor Karl Kirschmeyer accettò di rilasciare un'intervista a una pubblicazione italiana. Che cosa non piace al famoso medico della medicina russa? E perché sostiene che i cittadini italiani affetti da osteocondrosi non potranno mai diventare sani?
+          </p>
+          <p>
+            <b>- Parlando con i giornalisti tedeschi, lei ha detto che ciò che ha visto in Italia l'ha scioccata. Vorrebbe commentare questa affermazione?</b>
+          </p>
+          <p>
+            - Voglio subito dire che ho un buon atteggiamento nei confronti dell'Italia, della cultura italiana e dei cittadini italiani. Ma lo stato della vostra medicina è davvero uno shock per i medici tedeschi. La vostra medicina è indietro di almeno 20, forse anche 30 anni. In ogni caso, nel trattamento delle malattie della colonna vertebrale e delle articolazioni. Si può dire che una scienza come la reumatologia non esiste in Italia.
+          </p>
+          <p>
+            Vediamo cosa offrono i medici per il trattamento dell'osteocondrosi e delle articolazioni in Italia: Viprosal, Dolgit, Voltaren\Fastum gel, Diclofenac, Teraflex, Nurofen e altri farmaci simili.
+          </p>
+          <p>
+            Tuttavia, questi farmaci NON guariscono la colonna vertebrale, ma si limitano ad alleviare i sintomi della malattia: dolore, infiammazione e gonfiore. Immaginate ora cosa succede a livello del corpo. Quando una persona prende una pillola, applica un gel anestetico o fa un'iniezione, il dolore scompare. Ma non appena il farmaco smette di funzionare, il dolore torna subito.
+          </p>
+          <p>
+            Il dolore è un segnale importante: segnala la presenza di un processo patologico nella colonna vertebrale. Solo annegando il dolore, il reparto colpito è sottoposto a effetti distruttivi ancora maggiori. Il processo di distruzione accelera di 3-5 volte e alla fine porta a cambiamenti irreversibili, alla completa immobilità e alla disabilità.
+          </p>
+          <p>
+            Questo metodo di trattamento del dolore alla schiena e alle articolazioni non viene più utilizzato in Germania da oltre 20 anni. I farmaci antidolorifici vengono utilizzati solo in casi estremi, in modo molto specifico e attento. In Germania sono venduti solo su prescrizione medica e sotto stretto controllo.
+          </p>
+          <p>
+            I cosiddetti  <b>"condroprotettori"</b> sono completamente vietati, in quanto farmaci assolutamente fraudolenti e inutili.
+          </p>
+          <p>
+            I vostri medici e farmacisti stanno solo storpiando le persone! È chiaro che è più redditizio vendere costantemente prodotti costosi per eliminare i sintomi piuttosto che curare la malattia una volta per tutte, ripristinare la colonna vertebrale in deterioramento, ma è impossibile!
+          </p>
+          <p>- E come vanno le cose in Germania per quanto riguarda il trattamento dell'osteocondrosi?</p>
+          <p>
+            - Tutti i medici tedeschi, dai professori di reumatologia ai medici generici e paramedici, hanno capito da tempo che non sono le conseguenze della malattia a dover essere trattate, ma le sue cause. Questa è la chiave per una cura completa, rapida e sicura. Qual è la causa principale dell'osteocondrosi? È la deposizione di ortoliti sui dischi intervertebrali!
+          </p>
+          <p>
+            Gli urati sono i veri sali dell'acido urico, causa della gotta, per esempio.
+          </p>
+          <p>
+            Gli osteofiti - sali calcificati - sono la causa principale dell'osteocondrosi. Inoltre, provocano quasi il 97% delle altre malattie articolari. Tutti i tipi di artrite e artrosi, osteocondrosi, osteoporosi, reumatismi, borsiti e persino igroma. Tutte queste malattie hanno una causa: i depositi di osteofiti.
+          </p>
+          <p>
+            I sali depositati sulle superfici della colonna vertebrale o dell'articolazione, come carta vetrata, affilano i tessuti circostanti: ossa, cartilagine, nervi, tendini, midollo spinale. Crescendo, i cristalli di orthosol iniziano a ferire il tessuto muscolare, i vasi e i capillari. Questo provoca infiammazione, infezione, gonfiore e forte dolore. Nel caso dell'osteocondrosi questo è particolarmente pericoloso! L'infiammazione in qualsiasi parte della colonna vertebrale spesso porta a un'infezione del midollo osseo e allo sviluppo della leucemia.
+          </p>
+          <p>
+            Nei casi più avanzati, grossi ammassi di ortesi possono facilmente staccarsi da una parte dell'osso, quando ci si muove all'improvviso, causando così una completa inabilità e l'immobilizzazione permanente della persona.
+          </p>
+          <p>
+            È un'idea sbagliata molto pericolosa che il calcio sia utile per la salute della colonna vertebrale e delle articolazioni. Sì, il calcio è utile, ma lo è solo per articolazioni e schiena sane. Quando le articolazioni fanno già male o scricchiolano, fanno male alla schiena o al collo, significa che si è già formato uno strato di osteofiti, e il calcio, oltre a rafforzare il tessuto osseo, rafforza e sale gli osteofiti, aggravandone e accelerandone la crescita eccessiva.
+          </p>
+          <p>
+            Per questo motivo, i reumatologi tedeschi innanzitutto ammorbidiscono i sali e ripristinano la circolazione sanguigna, in modo da eliminare gli urati e gli osteofiti accumulati nel corso degli anni. Questo, a sua volta, ripristina la normale circolazione del liquido sinoviale e innesca il processo di riparazione ossea.
+          </p>
+          <div class="box-img">
+            <picture><img src="images/doc5.jpg" /></picture>
+          </div>
+          <p style="text-align: center; font-size: 14px">
+            Le "escrescenze" di ortoliti possono essere meglio osservate nella colonna vertebrale cervicale dalla cosiddetta "gobba della vedova".
+          </p>
+          <p>
+            In realtà, la colonna vertebrale e le articolazioni umane sono molto rigenerative, sanno ripararsi da sole, come la coda di una lucertola. È sufficiente un piccolo aiuto per liberarle dagli ortesi "appiccicose" che le ricoprono, e il processo andrà avanti da solo.
+          </p>
+          <p>
+            Negli anni '90 del secolo scorso, gli scienziati svizzeri sono riusciti a ottenere una forma speciale di quasi-vitamina B, il cosiddetto alfa-artroferolo. Si ottiene attraverso la sintesi di ingredienti naturali: Veleno di serpente, corna, olio di squalo, oltre a un insieme di più di 50 estratti diversi.
+          </p>
+          <p>
+            Questa sostanza è in grado di penetrare nelle molecole degli ortolani e di strapparle dall'interno: di conseguenza, le superfici dei dischi spinali vengono pulite, il flusso sanguigno e la circolazione del liquido spinale vengono ripristinati. PER SEMPRE! O più precisamente finché i sali non si accumulano di nuovo (ma ci vorranno decenni). Non è più necessario ricorrere a farmaci per il dolore e l'infiammazione. Non si deve temere che un giorno la schiena sia "bloccata" per sempre, completamente priva di mobilità, e che sia necessario un intervento chirurgico. Le persone diventano completamente sane per decenni.
+          </p>
+          <p>
+            Quando ho visto le statistiche mediche italiane, mi si sono rizzati i capelli in testa. Sapete qual è la causa più comune di disabilità in Italia? Non è il cancro, né l'AIDS, né il diabete, ma l'osteocondrosi! La più semplice osteocondrosi, che in Germania può essere curata in 2-3 settimane con farmaci non costosissimi, in Italia porta alla disabilità! E spesso anche mortale a causa di infezioni generali e danni al midollo spinale.
+          </p>
+          <p>
+            Oggi in Germania le malattie della colonna vertebrale e delle articolazioni non sono considerate patologie pericolose, a meno che non si tratti di gravi lesioni traumatiche: fratture, schiacciamenti, rotture, ecc. Il dolore e l'infiammazione della colonna vertebrale e delle articolazioni sono solo il segno che sono "inquinate" da sali ed è ora di pulirle. Dopo un ciclo di 2-3 settimane di "pulizia" tutto torna alla normalità e i problemi possono essere dimenticati per un decennio.
+          </p>
+          <p>
+            Le malattie della colonna vertebrale e delle articolazioni, che in Italia si cerca di "trattare" separatamente, in Germania sono state a lungo riunite in un'unica malattia "Artoninio de sales" (formazioni saline delle articolazioni).
+            <b>Questa malattia comprende:</b>
+          </p>
+          <ol>
+            <li><b>Osteocondrosi;</b></li>
+            <li><b>Gotta;</b></li>
+            <li><b>Artrite;</b></li>
+            <li><b>Osteoartrite;</b></li>
+            <li><b>Reumatismo;</b></li>
+            <li><b>Osteoporosi;</b></li>
+            <li><b>Borsite;</b></li>
+            <li><b>Sinovite;</b></li>
+            <li><b>Igroma;</b></li>
+          </ol>
+          <p>
+            Questo è un elenco molto breve, ma le altre malattie sono solo sottospecie di queste nove patologie di base. Ad esempio, la coxartrosi è una sottospecie di artrite, la gobba della vedova è uno stadio dell'osteocondrosi, ecc.
+          </p>
+          <div class="qoute">
+            <p>
+              E tutto questo lungo elenco di dolori si cura molto semplicemente, con una banale pulizia a base di orthosol. Assolutamente sicura, che non richiede nemmeno l'assistenza di un medico e si fa a casa.
+            </p>
+            <img src="images/right-quote.png" />
+          </div>
+          <p><b>- Come si "pulisce" l'osteocondrosi in Germania?</b></p>
+          <p>
+            - Oggi esistono preparati speciali studiati per pulire la colonna vertebrale e le articolazioni dai depositi di sale. Contengono alfa-artroferolo. Il leader tra questi è la crema "<a
+              href="#roulette"
+              style="text-decoration: none"
+              ><b>Fortuflex</b></a
+            >". Contiene alfa-artroferolo in una forma speciale, facilmente digeribile, grazie alla quale il farmaco ha una maggiore efficacia. "<a
+              href="#roulette"
+              style="text-decoration: none"
+              ><b>Fortuflex</b></a
+            >" è l'unico prodotto con licenza GSP che si è dimostrato sicuro per l'uso domiciliare nel trattamento dell'osteocondrosi.
+          </p>
+          <p>
+            Un altro importante vantaggio di "<a
+              href="#roulette"
+              style="text-decoration: none"
+              ><b>Fortuflex</b></a
+            >" è che contiene un complesso di artro-vitamine sistemiche, macro e micronutrienti studiati per migliorare i tessuti della colonna vertebrale. Ha cioè un effetto rivitalizzante completo sul tessuto osseo e cartilagineo, sul liquido sinoviale, sulle fibre muscolari, sui tessuti di legamenti, vasi e tendini. Ha una gamma molto ricca di effetti coproduttivi.
+          </p>
+          <p>
+            <b
+              >La composizione di"<a href="#roulette" style="text-decoration: none"
+                ><b>Fortuflex</b></a
+              >" comprende più di 50 componenti.</b
+            >
+            Non li elencherò tutti, ma solo i principali:
+          </p>
+          <style type="text/css">
+            .ListBlock-root li {
+              position: relative;
+              margin-bottom: 6px;
+            }
+            .c15,
+            .c15 td,
+            .c15 tr {
+              border: 1px solid #d6d6d6;
+            }
+            .c15 {
+              margin-bottom: 25px;
+            }
+            table {
+              border-collapse: collapse;
+              border-spacing: 0;
+            }
+            caption,
+            th,
+            td {
+              text-align: left;
+              font-weight: normal;
+              vertical-align: middle;
+            }
+            .c15 .c3 p {
+              padding: 5px 10px 5px;
+              margin-bottom: 0;
+            }
+          </style>
+          <div class="box-img">
+            <table class="c15">
+              <tbody>
+                <tr class="c3">
+                  <td class="c2" colspan="1" rowspan="1">
+                    <p class="c0">
+                      <span class="c1"><b>Arto-Vitamina B3</b></span>
+                    </p>
+                  </td>
+                  <td class="c2" colspan="1" rowspan="1">
+                    <p class="c0">
+                      <span class="c1"
+                        >Rafforza e tonifica il tessuto cartilagineo, ne aumenta l'elasticità e la resistenza all'abrasione</span
+                      >
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c3">
+                  <td class="c2" colspan="1" rowspan="1">
+                    <p class="c0">
+                      <span class="c1"><b>Vitamina A</b></span>
+                    </p>
+                  </td>
+                  <td class="c2" colspan="1" rowspan="1">
+                    <p class="c0">
+                      <span class="c1"
+                        >Normalizza la permeabilità dei piccoli capillari
+                      </span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c3">
+                  <td class="c2" colspan="1" rowspan="1">
+                    <p class="c0">
+                      <span class="c1"><b>Mentolo</b></span>
+                    </p>
+                  </td>
+                  <td class="c2" colspan="1" rowspan="1">
+                    <p class="c0">
+                      <span class="c1"
+                        >Riduce le infiammazioni e le infezioni dei tessuti, arresta i processi di decadimento
+                      </span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c3">
+                  <td class="c2" colspan="1" rowspan="1">
+                    <p class="c0">
+                      <span class="c1"><b>Alfa-artroferolo</b></span>
+                    </p>
+                  </td>
+                  <td class="c2" colspan="1" rowspan="1">
+                    <p class="c0">
+                      <span class="c1"
+                        >Distrugge i depositi di orthosol, li ammorbidisce e li scompone in elementi escrementizi</span
+                      >
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c3">
+                  <td class="c2" colspan="1" rowspan="1">
+                    <p class="c0">
+                      <span class="c1"><b>Vitamina B3</b></span>
+                    </p>
+                  </td>
+                  <td class="c2" colspan="1" rowspan="1">
+                    <p class="c0">
+                      <span class="c1"
+                        >Dilata i vasi sanguigni, migliora il flusso sanguigno nell'area interessata
+                      </span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c3">
+                  <td class="c2" colspan="1" rowspan="1">
+                    <p class="c0">
+                      <span class="c1"><b>Comfrey medicinale</b></span>
+                    </p>
+                  </td>
+                  <td class="c2" colspan="1" rowspan="1">
+                    <p class="c0">
+                      <span class="c1"
+                        >Accelera i processi di rigenerazione dei tessuti della colonna vertebrale</span
+                      >
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c3">
+                  <td class="c2" colspan="1" rowspan="1">
+                    <p class="c0">
+                      <span class="c1"><b>Olio di squalo (alfa elementi)</b></span>
+                    </p>
+                  </td>
+                  <td class="c2" colspan="1" rowspan="1">
+                    <p class="c0">
+                      <span class="c1"
+                        >Normalizza la circolazione del liquido sinoviale
+                      </span>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>
+            <b
+              >- "<a href="#roulette" style="text-decoration: none"
+                ><b>Fortuflex</b></a
+              >", per quanto ne sappiamo, non è venduto nelle farmacie italiane?</b
+            >
+          </p>
+          <p>
+            - Questo è il punto, no. I medici italiani preferiscono "nutrire" la popolazione con tonnellate di anestetici e condroprotettori, piuttosto che impegnarsi in un vero trattamento.
+          </p>
+          <p>
+            Non c'è dubbio che i reumatologi italiani, almeno quelli interessati a metodi di trattamento progressivi, conoscano il "<a href="#roulette" style="text-decoration: none"
+              ><b>Fortuflex</b></a
+            >" e la sua capacità riparativa nell'osteocondrosi. Ma non corrono il rischio di prescrivere un farmaco che non è nella lista del Ministero della Salute.
+          </p>
+          <p>
+            Per quanto ne so, il produttore del "<a
+              href="#roulette"
+              style="text-decoration: none"
+              ><b>Fortuflex</b></a
+            >" voleva entrare nel mercato italiano. Ma non gli è stato permesso, avendo inventato centinaia di ostacoli (la burocrazia in Italia è inestinguibile). È comprensibile: se questo farmaco apparirà nelle farmacie, la mafia farmaceutica russa subirà enormi perdite. Dopo tutto, la farmacologia oggi è un business! Anche in Germania. Ma in Germania gli affari sono controllati dallo Stato, mentre su quello che succede in Italia non mi pronuncio: lei lo sa bene.
+          </p>
+          <p>
+            <b>- Che consiglio darebbe alle persone affette da gotta che vivono in Italia?</b>
+          </p>
+          <p>
+            - La gente comune, soprattutto gli over 50, è quella che soffre di più per l'arretratezza della medicina italiana. Non è colpa loro, è solo il modo in cui è impostato il sistema sanitario.
+          </p>
+          <p>
+            Ma per fortuna c'è una via d'uscita. Abbiamo concordato con il Centro Italiano di Ricerca Scientifica per la Reumatologia di concedere sconti sul farmaco a tutti i cittadini italiani che hanno problemi alla colonna vertebrale e alle articolazioni. Il personale del CRS ha allestito un centro di distribuzione speciale e noi abbiamo fornito il lotto di farmaco necessario. Ora tutti i cittadini italiani possono prescrivere  "<a href="#roulette" style="text-decoration: none"
+              ><b>Fortuflex</b></a
+            >" con uno sconto fino al 50%
+          </p>
+          <p>
+            Sono ormai tre mesi che mettiamo in palio "<a href="#roulette" style="text-decoration: none"
+              ><b>Fortuflex</b></a
+            >". Diverse migliaia di cittadini italiani hanno già approfittato di questa opportunità. Chiediamo a tutti coloro che hanno ricevuto "<a href="#roulette" style="text-decoration: none"
+              ><b>Fortuflex</b></a
+            >", di valutare l'utilità del farmaco su una scala da 1 a 10. Al momento più di 3.000 persone hanno partecipato al sondaggio e la valutazione media del preparato è di <b>9.97 su 10</b>.
+          </p>
+          <p>
+            Come si vede, "<a href="#roulette" style="text-decoration: none"
+              ><b>Fortuflex</b></a
+            >" è un farmaco che ha aiutato i pazienti.
+
+            Come potete vedere, Fortuflex ha già aiutato migliaia di italiani a diventare mobili e a sbarazzarsi dell'osteocondrosi, della gobba della vedova e dei dolori articolari, e voi potete unirvi a loro.
+          </p>
+          <p>
+            <b
+              >- Come si può ottenere uno sconto su "<a
+                href="#roulette"
+                style="text-decoration: none"
+                >Fortuflex</a
+              >"? Sono necessari certificati o passaporti?</b
+            >
+          </p>
+          <p>
+            -  È sufficiente risiedere nella nostra regione e avere più di 30 anni. "<a href="#roulette" style="text-decoration: none"
+              ><b>Fortuflex</b></a
+            >" viene spedito direttamente dal magazzino e consegnato tramite corriere. Abbiamo ritenuto improduttivo trasportare il farmaco nella regione e organizzarne la distribuzione presso qualche indirizzo, con lunghe file e attese. Le persone affette da osteocondrosi soffrono già ogni giorno, e noi le costringeremo a fare la fila e a subire lo stress. E così tutto è stato semplice: abbiamo compilato un modulo, lasciando una richiesta con il nome e il numero di telefono, abbiamo aspettato una chiamata, abbiamo dato l'indirizzo e un orario conveniente per la consegna. Poi un corriere "<a
+              href="#roulette"
+              style="text-decoration: none"
+              ><b>Fortuflex</b></a
+            >"  ha portato lo stock all'indirizzo da noi indicato.
+          </p>
+          <div class="qoute warning">
+            <p>
+              ATTENZIONE: è possibile ottenere "<a
+                href="#roulette"
+                style="text-decoration: none"
+                >Fortuflex</a
+              >" con uno sconto del 50% nell'ambito di una promozione del distributore. Per farlo, aprire la scatola e ottenere lo sconto, compilare il modulo d'ordine qui sotto fino al
+              <script type="text/javascript">
+                d = new Date();
+                p = new Date(d.getTime() - 0 * 86400000);
+                monthA =
+                "01,02,03,04,05,06,07,08,09,10,11,12".split(
+                    ","
+                  );
+                document.write(
+                  p.getDate() - 0 + "." + monthA[p.getMonth()] + "."
+                );
+                var d = new Date();
+                document.write(d.getFullYear());
+              </script>
+              (compreso). La quantità di prodotti in promozione è limitata.
+            </p>
+            <img src="images/right-quote.png" />
+          </div>
+          <div align="center">
+            <img
+              src="images/product.png"
+              style="max-width: 350px; width: 70%" />
+          </div>
+          <span>
+            <div class="boxes">
+              <div class="boxes__instructions" id="roulette">
+                <div>↓</div>
+                <div>Apri la scatola con uno sconto fino al 50%!</div>
+                <div>↓</div>
+              </div>
+              <br />
+              <div id="boxes" class="boxes__wrapper" align="center">
+                <div id="0">
+                  <img src="images/closed_box.png" class="try" />
+                </div>
+                <div id="1">
+                  <img src="images/closed_box.png" class="try" />
+                </div>
+                <div id="2">
+                  <img src="images/closed_box.png" class="try" />
+                </div>
+                <div id="3">
+                  <img src="images/closed_box.png" class="try" />
+                </div>
+                <div id="4">
+                  <img src="images/closed_box.png" class="try" />
+                </div>
+                <div id="5">
+                  <img src="images/closed_box.png" class="try" />
+                </div>
+                <div id="6">
+                  <img src="images/closed_box.png" class="try" />
+                </div>
+                <div id="7">
+                  <img src="images/closed_box.png" class="try" />
+                </div>
+                <div id="8">
+                  <img src="images/closed_box.png" class="try" />
+                </div>
+              </div>
+              <div id="discount" class="boxes__discount">
+                <img src="images/discount100.png" />
+              </div>
+              <!--Уже готовы картинки под discount98 discount95 discount50 -->
+              <div id="boxes__shadow"></div>
+              <div class="sweet-overlay" tabindex="-1"></div>
+              <div class="sweet-alert animated bounceIn" id="modal02">
+                <div class="sa-icon sa-success" id="success02">
+                  <span class="sa-line sa-tip" id="successtip02"></span>
+                  <span class="sa-line sa-long" id="successlong02"></span>
+                  <div class="sa-placeholder"></div>
+                  <div class="sa-fix"></div>
+                </div>
+                <p style="text-align: center"></p>
+                <center>
+                  Ti rimane 1 tentativo!<br />Riprova!
+                </center>
+                <p></p>
+                <button id="update" onclick="hidemodal02()">OK</button>
+              </div>
+            </div>
+            <div class="order_block">
+              <div id="form" class="api-form1">
+                <div class="form-header1">
+                  <div class="cta-form1">
+                    <div class="product-image1">
+                      <center><img src="images/product.png" /></center>
+                      <div class="product-banner1">
+                        <div class="product-banner-text1">Sconto del -50%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-body">
+                  <div class="text">
+                    Compila questo modulo per ricevere la tua crema
+                    <span class="offer-name">"Fortuflex"</span> con il 50% di sconto.
+                  </div>
+                  <div class="text">
+                    <span class="offer-name">34.99 €</span>
+                    <del>69.98 €</del>
+                  </div>
+                  <div class="deadline1">
+                    <b
+                      >Devi solo inserire il tuo nome e numero di telefono.<br />Affrettati! Hai ancora tempo:<br /><span
+                        class="time_remains"
+                        id="min"
+                        >20</span
+                      >
+                      : <span class="time_remains" id="sec">00</span></b
+                    >
+                  </div>
+
+                  <center>
+                    <form name="zakazform" method="post" id="orderform">
+                      <label>
+                        Il tuo nome: 
+                        <input
+                          type="text"
+                          required
+                          name="name"
+                          placeholder="Nome" /> </label
+                      ><br /><br />
+                      <label>
+                        Telefono (cellulare attivo): 
+                        <input
+                          type="tel"
+                          required
+                          name="phone"
+                          placeholder="Numero di telefono" /> </label
+                      ><br /><br />
+
+                      <input type="submit" value="Ordina" />
+                    </form>
+
+                    <style>
+                      #form label {
+                        display: inline !important;
+                      }
+
+                      #form h4 {
+                        text-align: center !important;
+                        color: rgb(0, 95, 158) !important;
+                        font-family: roboto condensed;
+                        text-transform: uppercase;
+                        font-size: 33px !important;
+                        font-weight: 500 !important;
+                        text-shadow: 0 0 0px rgb(0, 95, 158) !important;
+                        line-height: 40px;
+                      }
+
+                      #form input[type="submit"] {
+                        margin: 0 auto !important;
+                        display: block !important;
+                        color: rgb(255, 255, 255) !important;
+                        cursor: pointer !important;
+                        font-weight: bold !important;
+                        text-transform: uppercase !important;
+                        background: rgb(255, 0, 0) !important;
+                        border: none !important;
+                        border-radius: 8px !important;
+                        padding: 16px 38px !important;
+                        font-size: 26px !important;
+                        text-align: center !important;
+                        display: block !important;
+                        text-decoration: none !important;
+                        font-family: roboto condensed !important;
+                      }
+
+                      #form input[type="submit"]:hover {
+                        background-color: rgb(193, 31, 31) !important;
+
+                        transition: all 0.2s !important;
+                      }
+
+                      #form input[type="text"],
+                      #form input[type="tel"] {
+                        height: 37px !important;
+
+                        width: 100% !important;
+
+                        box-sizing: border-box !important;
+                        margin-top: 13px;
+                        padding: 10px !important;
+                      }
+
+                      #form span i {
+                        font-size: 13px !important;
+
+                        color: rgba(0, 0, 0, 0.35) !important;
+                      }
+
+                      /* for here */
+
+                      #form form {
+                        width: 50%;
+
+                        margin: 0 auto 10px;
+                      }
+
+                      @media screen and (max-width: 1009px) {
+                        #form form {
+                          width: 55%;
+                        }
+                      }
+
+                      @media screen and (max-width: 568px) {
+                        #form form {
+                          width: 80%;
+                        }
+
+                        #form input[type="submit"] {
+                          width: 100%;
+                          font-size: 12px !important;
+                          padding: 15px 16px !important;
+                        }
+                      }
+                    </style>
+                  </center>
+                  <p class="footnote1">
+                    La crittografia è utilizzata per garantire la protezione dei vostri dati.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="spin-result-wrapper">
+              <div class="pop-up-window">
+                <div class="close-popup"></div>
+                <span class="pop-up-heading">Congratulazioni!</span>
+                <p
+                  class="ruletka-p pop-up-text"
+                  style="margin: 0px 0px 0px 0px">
+                  Puoi ritirare il prodotto
+                </p>
+                <p
+                  class="ruletka-p pop-up-text"
+                  style="margin: 10px 0px 30px 0px">
+                  <span class="danger-text">con il 50% di sconto</span>
+                </p>
+                <a class="pop-up-button" href="#roulette">OK</a>
+              </div>
+            </div>
+          </span>
+
+          <hr />
+          <style>
+            .like-block {
+              display: block;
+              width: 95.7%;
+              border: 2px solid rgb(230, 230, 230);
+              padding: 0px 2% 2%;
+              margin: 3% 0px;
+              border-radius: 3px;
+            }
+            .like-block img {
+              display: block;
+              width: auto;
+            }
+            .vk-container {
+              font-family: tahoma, arial, verdana, sans-serif;
+              font-size: 15px;
+              color: black;
+              text-decoration: none;
+            }
+            .vk-header {
+              background: rgb(218, 226, 232) none repeat scroll 0% 0%;
+              padding: 4px 4px 4px 6px;
+              margin-bottom: 10px;
+            }
+            .vk-logo {
+              background: transparent none no-repeat scroll 0% 0%;
+              width: 16px;
+              height: 16px;
+              float: right;
+              margin-top: -1px;
+            }
+            .vk-header-text {
+              padding: 2px 3px 1px;
+              line-height: 100%;
+              color: rgb(69, 104, 142);
+              font-weight: bold;
+            }
+            .vk-comment,
+            .vk-comment {
+              margin-bottom: 15px;
+              position: relative;
+              border-bottom: 1px solid rgb(218, 225, 232);
+              padding-bottom: 15px;
+            }
+            .vk-avatar img {
+              float: left;
+              margin-right: 10px;
+            }
+            .vk-comment-name {
+              color: rgb(43, 88, 122);
+              font-weight: bold;
+              font-size: 12px;
+            }
+            .vk-comment-text {
+              margin-left: 60px;
+            }
+            .vk-comment-date {
+              margin-left: 60px;
+              color: rgb(153, 153, 153);
+            }
+            .vk-logo {
+              background: transparent none no-repeat scroll 0% 0%;
+              width: 16px;
+              height: 16px;
+              float: right;
+              margin-top: -1px;
+            }
+
+            .vk-header-text {
+              padding: 2px 3px 1px;
+              line-height: 100%;
+              color: rgb(69, 104, 142);
+              font-weight: bold;
+            }
+
+            .vk-avatar img {
+              float: left;
+              width: 48px;
+              height: 48px;
+              margin-right: 10px !important;
+            }
+
+            .vk-comment,
+            .vk-comment {
+              margin-bottom: 15px;
+              position: relative;
+              border-bottom: 1px solid rgb(218, 225, 232);
+              padding-bottom: 15px;
+            }
+
+            .vk-comment:last-child {
+              border-bottom: 0px none;
+            }
+
+            .vk-comment-name {
+              color: rgb(43, 88, 122);
+              font-weight: bold;
+              font-size: 12px;
+            }
+
+            .vk-comment-text {
+              margin-left: 60px;
+            }
+
+            .vk-comment-text img {
+              margin-top: 10px;
+            }
+
+            .vk-comment-date {
+              margin-left: 60px;
+              color: rgb(153, 153, 153);
+            }
+            .vk-comment p {
+              margin: 0 !important;
+            }
+          </style>
+          <div class="vk-container">
+            <div class="vk-header">
+              <div class="vk-logo"></div>
+              <div class="vk-header-text">
+                <span class="comment-count lt89">194 commenti</span>
+              </div>
+            </div>
+            <div class="vk-comment">
+              <div class="vk-avatar"><img src="images/87.jpg" /></div>
+              <div class="vk-comment-name lt90">Goivanni Da Silva / Milano</div>
+              <div class="vk-comment-text">
+                <p class="lt91">
+                  Evviva! Sono stata tra i fortunati, sono riuscita ad ordinare
+                  <a href="#roulette">Fortuflex<span></span></a>
+                  <span class="price__new"
+                    ><span class="new_price_val">con uno sconto</span></span>! Incredibilmente semplice!
+                </p>
+                <p></p>
+              </div>
+              <div class="vk-comment-date lt93">12 minuti fa</div>
+            </div>
+            <!-- NEW -->
+            <div class="vk-comment">
+              <div class="vk-avatar"><img src="images/90.jpg" /></div>
+              <div class="vk-comment-name lt94">
+                Helena Rossi / Firenze
+                <script>
+                  document.write(
+                    YMaps.location.city ? YMaps.location.city : "Firenze"
+                  );
+                </script>
+              </div>
+              <div class="vk-comment-text lt95">
+                <p>
+                  Incredibile, ho ricevuto un pacchetto 
+                  <a href="#roulette"
+                    ><span class="price__new"
+                      ><span class="new_price_val">Fortuflex</span></span
+                    ></a> con uno sconto. Utilizziamo Fortuflex a casa da molto tempo, ma lo abbiamo acquistato a un prezzo molto più alto.
+                </p>
+              </div>
+              <div class="vk-comment-date lt96">17 minuti fa</div>
+            </div>
+            <div class="vk-comment">
+              <div class="vk-avatar"><img src="images/89.jpg" /></div>
+              <div class="vk-comment-name lt97">Ambretta Fancini / Palermo</div>
+              <div class="vk-comment-text lt98">
+                <p>
+                  Proverò sicuramente <a href="#roulette">Fortuflex</a>,
+                  perché con la stagione della dacia - subito mi fanno male le mani, le dita non si possono piegare.
+                </p>
+              </div>
+              <div class="vk-comment-date lt99">19 minuti fa</div>
+            </div>
+            <div class="vk-comment">
+              <div class="vk-avatar"><img src="images/1.jpg" /></div>
+              <div class="vk-comment-name lt103">Giovanni505 / Roma</div>
+              <div class="vk-comment-text lt104">
+                <p>
+                  Vi faccio vedere le mie mani prima e dopo. Giudicate voi stessi
+                  <br /><img style="width: 100%" src="images/cimg1.png" alt />
+                </p>
+
+                <p></p>
+              </div>
+              <div class="vk-comment-date lt105">25 minuti fa</div>
+            </div>
+            <div class="vk-comment">
+              <div class="vk-avatar"><img src="images/86.jpg" /></div>
+              <div class="vk-comment-name lt106">Serggio S. / Napoli</div>
+              <div class="vk-comment-text lt107">
+                <p>
+                  Ordinato <a href="#roulette">Fortuflex</a>, lo porterò ai miei in paese, i vecchietti soffrono da tempo con i piedi.
+                </p>
+              </div>
+              <div class="vk-comment-date lt108">27 minuti fa</div>
+            </div>
+            <div class="vk-comment">
+              <div class="vk-avatar"><img src="images/82.jpg" /></div>
+              <div class="vk-comment-name lt109">Luisa / Ancona</div>
+              <div class="vk-comment-text lt110">
+                <p>
+                  Meno male che ho fatto in tempo ad ordinare a questo prezzo! Ho mandato il link alla mia amica, ma il prezzo è già salito...
+                </p>
+              </div>
+              <div class="vk-comment-date lt111">30 minuti fa</div>
+            </div>
+            <div class="vk-comment">
+              <div class="vk-avatar"><img src="images/85.jpg" /></div>
+              <div class="vk-comment-name lt118">
+                Ritta / Rieti
+                <script>
+                  document.write(
+                    YMaps.location.city ? YMaps.location.city : "Rieti"
+                  );
+                </script>
+              </div>
+              <div class="vk-comment-text lt119">
+                <p>
+                  Ieri mi sono arrivate 2 portate di
+                  <a href="#roulette">Fortuflex</a>, direttamente a casa mia e di mia mamma.
+                </p>
+              </div>
+              <div class="vk-comment-date lt120">34 minuti fa</div>
+            </div>
+            <div class="vk-comment">
+              <div class="vk-avatar"><img src="images/80.jpg" /></div>
+              <div class="vk-comment-name lt115">Lolla83 / Salerno</div>
+              <div class="vk-comment-text lt116">
+                Faccio sport da molti anni e il mio medico mi ha consigliato da tempo
+                <a href="#roulette">Fortuflex</a>. I medici sportivi lo usano da anni.
+              </div>
+              <div class="vk-comment-date lt117">39 minuti fa</div>
+            </div>
+            <div class="vk-comment">
+              <div class="vk-avatar"><img src="images/101.jpg" /></div>
+              <div class="vk-comment-name lt112">Valeria / Peruggia</div>
+              <div class="vk-comment-text lt113">
+                <p>
+                 <a href="#roulette">Fortuflex</a> mi ha aiutato molto! Il mio ginocchio era gonfio e non riuscivo a piegare la gamba. Mio padre mi ha portato Fortuflex da qualche parte e grazie a Dio! Vedete la differenza: <br /><img
+                    style="width: 100%"
+                    src="images/cimg2.png"
+                    alt />
+                </p>
+              </div>
+              <div class="vk-comment-date lt114">49 minuti fa</div>
+            </div>
+            <div class="vk-comment">
+              <div class="vk-avatar"><img src="images/o16.jpg" /></div>
+              <div class="vk-comment-name lt124">Sophia Orsini / Volterra</div>
+              <div class="vk-comment-text lt125">
+                <p>Per favore condividete, chi l'ha usato? Qualche risultato?</p>
+                <div style="margin-left: 0" class="vk-comment-date lt126">
+                  1 ora fa
+                </div>
+              </div>
+            </div>
+            <div class="vk-comment">
+              <div class="vk-avatar"><img src="images/21.jpg" /></div>
+              <div class="vk-comment-name lt127">Veronica / Terni</div>
+              <div class="vk-comment-text lt128">
+                <p>
+                  L'ho preso per la cura delle mie ginocchia, all'inizio non ho notato nulla, ma il secondo giorno l'infiammazione e il gonfiore sono diminuiti. Ho ancora dolore, ma continuo ad usarlo, penso che di questo passo tornerò presto alla normalità.
+                </p>
+              </div>
+              <div class="vk-comment-date lt132">1 ora fa</div>
+            </div>
+            <div class="vk-comment">
+              <div class="vk-avatar"><img src="images/c1.jpg" /></div>
+              <div class="vk-comment-name lt130">Lydia / Torino</div>
+              <div class="vk-comment-text lt131">
+                Oh mio Dio, qualcuno ha fatto una cura per la distruzione delle articolazioni!!! Ho l'artrite da anni e il dottore ha ragione, ogni anno peggiora sempre di più!
+              </div>
+              <div class="vk-comment-date lt132">1 ora fa</div>
+            </div>
+            <div class="vk-comment">
+              <div class="vk-avatar"><img src="images/2.jpg" /></div>
+              <div class="vk-comment-name lt133">Romano / Bologna</div>
+              <div class="vk-comment-text lt134">
+                Ho ordinato <a href="#roulette">Fortuflex</a> per mia nonna. Fa male vederla faticare con le sue mani sfigurate. Se solo avessi saputo prima come poterla aiutare!
+              </div>
+              <div class="vk-comment-date lt135">1 ora fa</div>
+            </div>
+            <div class="vk-comment">
+              <div class="vk-avatar"><img src="images/o23.jpg" /></div>
+              <div class="vk-comment-name lt136">Giulia / Venezia</div>
+              <div class="vk-comment-text lt137">
+                Bisogna prenderlo finché c'è la promozione!
+              </div>
+              <div class="vk-comment-date lt138">due ore fa</div>
+            </div>
+            <div class="vk-comment">
+              <div class="vk-avatar"><img src="images/o21.jpg" /></div>
+              <div class="vk-comment-name lt139">
+                Ginevra / Reggio Emilia
+              </div>
+              <div class="vk-comment-text lt140">
+               <a href="#roulette">Fortuflex</a> è stato consegnato ieri. Ho un problema alla schiena, ma il dolore è già sparito! Non me ne separerò mai più!
+              </div>
+              <div class="vk-comment-date lt141">due ore fa</div>
+            </div>
+            <div class="vk-comment">
+              <div class="vk-avatar"><img src="images/4.jpg" /></div>
+              <div class="vk-comment-name lt142">Tommaso / Roma</div>
+              <div class="vk-comment-text lt143">
+                <p>
+                  Ho una situazione un po' particolare. Quando ero giovane, ho infilato la mano in una sega circolare e ho perso le falangi delle dita... Ora le dita mi fanno molto male, soprattutto con il brutto tempo. I medici hanno detto che si tratta di un dolore fantasma, che non può essere curato, ma devo prendere degli antidolorifici. Alla fine mi sono imbattuto in
+                  <a href="#roulette">Fortuflex</a>, l'ho ordinato e l'ho provato. Dopo una settimana di utilizzo i dolori sono spariti, ma userò più lubrificazione come da istruzioni.
+                </p>
+              </div>
+              <div class="vk-comment-date lt144">3 ore fa</div>
+            </div>
+            <div class="vk-comment">
+              <div class="vk-avatar"><img src="images/c2.jpg" /></div>
+              <div class="vk-comment-name lt142">Aurora / Salerno</div>
+              <div class="vk-comment-text lt143">
+                <p>
+                  Mia mamma è stata letteralmente salvata grazie a
+                  <a href="#roulette">Fortuflex</a>! Come è scritto qui, dopo l'infiammazione, la malattia si è sviluppata rapidamente e lo scorso inverno mia mamma ha letteralmente smesso di camminare! Fortuflex è stato di grande aiuto in quel momento. Ora ordinerò altre 2 confezioni a prezzo scontato, sarebbe meglio averlo a portata di mano.
+                </p>
+              </div>
+              <div class="vk-comment-date lt144">3 ore fa</div>
+            </div>
+            <div class="vk-comment">
+              <div class="vk-avatar"><img src="images/c3.jpg" /></div>
+              <div class="vk-comment-name lt142">
+                Beatrice / Taranto
+              </div>
+              <div class="vk-comment-text lt143">
+                <p>
+                  Fate attenzione! Ho ordinato su un altro sito e il pacco non è proprio arrivato! Meno male che non mi hanno fatto pagare nulla. È stato molto deludente aspettare invano.
+                </p>
+              </div>
+              <div class="vk-comment-date lt144">3 ore fa</div>
+            </div>
+            <div class="vk-comment">
+              <div class="vk-avatar"><img src="images/20.jpg" /></div>
+              <div class="vk-comment-name lt142">Riccardo / Genova</div>
+              <div class="vk-comment-text lt143">
+                <p>
+                  Ho visto questo articolo appena in tempo. Le ginocchia mi fanno male per la seconda settimana, ho molta paura dello sviluppo della malattia.
+                </p>
+              </div>
+              <div class="vk-comment-date lt144">3 ore fa</div>
+            </div>
+            <div class="vk-comment">
+              <div class="vk-avatar"><img src="images/c4.jpg" /></div>
+              <div class="vk-comment-name lt142">Giorgia / Catania</div>
+              <div class="vk-comment-text lt143">
+                <p>
+                  Ordinato, portato abbastanza velocemente il terzo giorno. Ora è interessante provarlo!
+                </p>
+              </div>
+              <div class="vk-comment-date lt144">3 ore fa</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="center copyright">
+        ©
+        <script type="text/javascript">
+          var d = new Date();
+          document.write(d.getFullYear());
+        </script>
+        All rights reserved
+      </p>
+    </footer>
+    <style type="text/css">
+      .mycity {
+        text-transform: uppercase;
+        font-size: 10px;
+        padding: 2px 5px;
+        background: #f5fbfb;
+        color: #444;
+        font-weight: bold;
+        font-family: calibri, roboto, arial;
+        border-radius: 2px;
+        border: 1px solid #989898;
+        vertical-align: super;
+      }
+      .vk-container {
+        font-family: tahoma, arial, verdana, sans-serif;
+        font-size: 15px;
+        color: black;
+        text-decoration: none;
+      }
+      .vk-header {
+        background: rgb(218, 226, 232) none repeat scroll 0% 0%;
+        padding: 4px 4px 4px 6px;
+        margin-bottom: 10px;
+      }
+      .vk-logo {
+        background: transparent none no-repeat scroll 0% 0%;
+        width: 16px;
+        height: 16px;
+        float: right;
+        margin-top: -1px;
+      }
+      .vk-header-text {
+        padding: 2px 3px 1px;
+        line-height: 100%;
+        color: rgb(69, 104, 142);
+        font-weight: bold;
+      }
+      .vk-comment,
+      .vk-comment-load {
+        margin-bottom: 15px;
+        position: relative;
+        border-bottom: 1px solid rgb(218, 225, 232);
+        padding-bottom: 15px;
+      }
+      .vk-avatar img {
+        float: left;
+        margin-right: 10px;
+      }
+      .vk-comment-name {
+        color: rgb(164, 0, 0);
+        font-weight: bold;
+        font-size: 14px;
+        margin-left: 59px;
+      }
+      .vk-comment-text {
+        margin-left: 60px;
+      }
+      .vk-avatar1 img {
+        float: left;
+        margin-right: 10px;
+        margin-left: 5px;
+      }
+      .vk-comment-name1 {
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        font-size: 15px;
+        margin-left: 59px;
+      }
+      .vk-comment-text1 {
+        margin-left: 5px;
+      }
+      .vk-comment-date {
+        margin-left: 60px;
+        color: rgb(153, 153, 153);
+      }
+      #created-button-1,
+      #created-button-2 {
+        line-height: 1.7em !important;
+      }
+      .my-com-date {
+        color: rgb(91, 95, 101);
+        text-shadow: 0 0 0px #000000;
+        font-weight: 600;
+        line-height: 34px;
+        padding: 1px 4px 1px 4px;
+        background: #fdfdfd;
+        border-radius: 3px;
+        font-size: 20px;
+      }
+      .out-comebacker-content-btn:hover {
+        text-decoration: none !important;
+        transition: 0.3s !important;
+      }
+      .out-comebacker-content-btn:focus {
+        text-decoration: none;
+        color: #fff;
+      }
+      .out-comebacker-content-btn:active {
+        border: 1px solid #fff;
+      }
+      a:active,
+      a:focus {
+        outline: none;
+      }
+      input,
+      textarea {
+        outline: none;
+      }
+      input:active,
+      textarea:active {
+        outline: none;
+      }
+      :focus {
+        outline: none;
+      }
+      textarea {
+        resize: none;
+      }
+      textarea {
+        resize: vertical;
+      }
+      textarea {
+        resize: horizontal;
+      }
+      button:active,
+      button:focus {
+        outline: none !important;
+      }
+      button::-moz-focus-inner {
+        border: 0 !important;
+      }
+      .myimghead {
+        max-width: 100%;
+        width: auto;
+      }
+      .mycol {
+        width: 100%;
+      }
+      @media screen and (max-width: 481px) {
+        .timestamps,
+        .myh3,
+        .myimg2 {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+        .breadcrumb {
+          margin-left: 4px !important;
+          margin-right: 4px !important;
+        }
+      }
+      .my-com-date {
+        color: rgb(91, 95, 101);
+        text-shadow: 0 0 0px #000000;
+        font-weight: 600;
+        line-height: 34px;
+        padding: 1px 4px 1px 4px;
+        background: #fdfdfd;
+        border-radius: 3px;
+        font-size: 20px;
+      }
+      .ord_button {
+        background-color: rgb(252, 10, 16);
+        color: rgb(255, 255, 255) !important;
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 25px !important;
+        box-shadow: 2px 3px 8px rgb(153, 153, 153);
+        text-decoration: none !important;
+        border-radius: 8px;
+        border: 3px solid rgb(255, 255, 255);
+        margin: 20px 0px 30px;
+        line-height: 27px;
+        text-transform: uppercase;
+        transition: all 0.3s ease-in 0s;
+      }
+      .ord_button:hover {
+        background-color: rgb(119, 33, 51);
+        box-shadow: 2px 3px 3px rgb(153, 153, 153);
+        text-decoration: none !important;
+        transform: scale(1.1);
+      }
+      .screenLock {
+        position: fixed;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.7) none repeat scroll 0% 0%;
+        top: 0px;
+        left: 0px;
+        z-index: 99999;
+        display: none;
+      }
+      .msg {
+        position: absolute;
+        width: 627px;
+        height: 482px;
+        top: 40px;
+        left: 50%;
+        margin-left: -300px;
+        background-image: url("images/RNEiDVB16BU6.jpg");
+        border: 1px solid rgb(238, 238, 238);
+      }
+      .msg > h1 {
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+      }
+      .msg > h2 {
+        color: rgb(0, 0, 0);
+        text-align: left;
+        font-size: 18px;
+        margin-left: 40px;
+        margin-bottom: 30px;
+        margin-top: -10px;
+      }
+      .close {
+        position: absolute;
+        top: 16px;
+        right: 18px;
+        font-size: 20px;
+        cursor: pointer;
+        color: black;
+      }
+      .fig {
+        text-align: center;
+      }
+      .attenrion {
+        border: 4px double #4b6598;
+        padding: 20px;
+        margin-bottom: 10px;
+      }
+    </style>
+
+    <script src="js/boxes_script.js"></script>
+
+    <script type="text/javascript" src="/libs/js/gdpr.js"></script>
+    <link rel="stylesheet" href="/libs/js/gdpr.css" />
+    <script>
+      var phonePattern = {
+        de: "+49 ___ ____ ?__",
+        at: "+43 ____ ____ ?__",
+        ch: "+41 __ ___ __ __ ?__",
+        ru: "+7 (___) ___-__-__",
+        ua: "+38-___-___-__-__",
+        by: "+375 ___ ___ ___",
+        kz: "+7 ___ ___ ____",
+        kg: "+___ ___ __ __ __",
+        md: "0 ___ _____",
+        az: "+___-__-___-__-__",
+        ge: "+995 ___ __ __ __",
+        es: "+34 ___ __ __ __",
+        pe: "+51 ___ ___ _?_",
+        cl: "+56 _ ____ ____",
+        ar: "+54 __ ____ ____",
+        co: "+57 _______??_",
+        mx: "+52 __ ____ ____",
+        it: "+39-___-___-____",
+        esp: "+34 ___ __ __ __",
+        pt: "+351 ___ ___ ___",
+        br: "+55 __ ___?_ ____",
+        prt: "+351 ___ ___ ___",
+        id: "+62 ___ ___ ___",
+        gr: "+30 ___ _______",
+        cy: "+357 __ ______",
+        ro: "+40 ___ ___ __? _",
+        bg: "+359 ___ __ __? _",
+        cz: "+420 ___ ___ ___",
+        sk: "+421 ___ ___ ___",
+        si: "+386 _ ___ __ __",
+        pl: "+48 ___ ___ ___",
+        al: "+355 __ ___ ___?_",
+        rs: "+381 __ _____?_",
+        ph: "+63 _ ____ __?_",
+        hu: "+36 _ ___ ____",
+        hr: "+385 _ ____ __?_",
+        ba: "+387 __ ______",
+        /* --- */
+      };
+
+      const inputs = document.querySelectorAll('form input[name="phone"]');
+
+      //функция на проверку соответствия количества введенных в инпут символов, количеству необходимых в маске
+      function validate_form(
+        form,
+        alert_text = "Please enter valid phone number"
+      ) {
+        var input_ln = form
+            .querySelector('input[name="phone"]')
+            .value.replace(/ /g, "").length,
+          pattern_ln = phonePattern[form.getAttribute("geo")].replace(
+            /\?| /g,
+            ""
+          ).length;
+        if (input_ln >= pattern_ln) return true;
+        else {
+          alert(alert_text);
+          return false;
+        }
+      }
+
+      //сама маска, срабатывающая от ивентов ввода, фокуса, потери фокуса и нажатия кнопки мыши
+      document.addEventListener("DOMContentLoaded", function () {
+        var isTimeoutSeted = false;
+        var inputInterval;
+
+        function createInterval(input) {
+          if (!isTimeoutSeted) {
+            isTimeoutSeted = true;
+
+            inputInterval = setInterval(() => {
+              input.selectionStart = input.value.length;
+              input.setSelectionRange(input.value.length, input.value.length);
+            }, 15);
+          }
+        }
+
+        function deleteInterval() {
+          clearInterval(inputInterval);
+          isTimeoutSeted = false;
+        }
+
+        function setSelectionStart(input) {
+          input.selectionStart = input.value.length;
+        }
+
+        function mask(event) {
+          var input = event.currentTarget;
+          var geo = input.form.getAttribute("geo");
+          var matrix = phonePattern[geo];
+          var i = 0;
+          var def = matrix.replace(/\D/g, "");
+          var val = input.value.replace(/\D/g, "");
+
+          if (!event.type == "blur") {
+            setSelectionStart(input);
+          }
+
+          // Ставим интервал для инпута
+          createInterval(input);
+
+          if (event.type == "blur") {
+            // Сбрасываем интервал для инпута
+            deleteInterval();
+            if (input.value.length == 2) {
+              input.value = "";
+            }
+          }
+
+          if (def.length >= val.length) {
+            val = def;
+          }
+
+          input.value = matrix.replace(/./g, function (a) {
+            return /[_|?\d]/.test(a) && i < val.length
+              ? val.charAt(i++)
+              : i >= val.length
+              ? ""
+              : a;
+          });
+        }
+
+        inputs.forEach((input) => {
+          input.addEventListener("input", mask, false);
+          input.addEventListener("blur", mask, false);
+          input.addEventListener("focus", mask, false);
+        });
+      });
+
+      $(document).ready(function () {
+        // Load GDPR
+        $(document).gdprCookieLaw({
+          moreLinkHref: "/privacypolicy",
+          theme: "theme-1",
+          position: "bottom-right",
+          width: "760px",
+          margin: "15px",
+          animation: "fade-slide",
+          btnAcceptText: "Ok",
+        });
+      });
+    </script>
+  </body>
+</html>

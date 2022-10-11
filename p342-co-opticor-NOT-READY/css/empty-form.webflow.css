@@ -1,0 +1,49 @@
+.div-block {
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.image {
+  margin-bottom: 20px;
+}
+
+.paragraph {
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 700;
+}
+
+.text-span {
+  color: red;
+  text-decoration: line-through;
+}
+
+.text-span-2 {
+  color: #1ca32a;
+}
+
+._1 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+._2 {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #404040;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.submit-button {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #1ca32a;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 700;
+}
